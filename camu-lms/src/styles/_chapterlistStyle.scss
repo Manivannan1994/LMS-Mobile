@@ -416,3 +416,150 @@ ul.list-cont_date li + li:before {
 .quick-next {
   margin-right: 30px;
 }
+
+@media (max-width: 768px) {
+  .item-lists {
+    padding: 0 10px;
+  }
+  .panel-list_items {
+    padding: 8px 10px;
+  }
+  .model-content_header {
+    padding: 16px 20px;
+  }
+  .model-content_content {
+    padding: 12px 16px;
+  }
+  .model-content_footer {
+    padding: 16px 20px;
+  }
+  .tooltip-suchapter_items:after {
+    width: 180px; /* Reduced tooltip width */
+  }
+  .chapter-progress_cont {
+    padding: 12px;
+  }
+  .quick-continer {
+    flex-wrap: wrap;
+    margin: 10px 0; /* Adjust margin */
+  }
+  .quick-view {
+    min-width: 48%; /* Allow two columns */
+    margin-bottom: 10px;
+    height: auto; /* Adjust height */
+    padding: 10px; /* Add some padding */
+  }
+  .quick-flex p {
+    font-size: 14px; /* Reduce font size */
+    margin-left: 8px;
+    padding-top: 0; /* Remove padding-top if align-items center */
+  }
+  .quick-flex img {
+    margin-left: 10px; /* Reduce margin */
+    width: 24px; /* Slightly reduce icon size */
+    height: 24px;
+  }
+  .quick-next {
+    margin-right: 10px; /* Reduce margin */
+    width: 16px; /* Slightly reduce icon size */
+    height: 16px;
+  }
+  .sub-chap_name,
+  .model-header_content,
+  .progress-label,
+  .file-loader_label { /* map-get($font-sizes, "small") or similar */
+    font-size: 13px; /* Example adjustment */
+  }
+  .file-loader_heading { /* map-get($font-sizes, "medium") */
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-lists {
+    padding: 0 5px;
+  }
+  .panel-list_items {
+    padding: 6px 8px;
+    flex-direction: column; /* Stack content within list items if complex */
+    align-items: flex-start;
+  }
+  .panel-list_items > *:not(:last-child) { /* Spacing for stacked items in list */
+      margin-bottom: 5px;
+  }
+  .selected_list { /* Container for options on the right of a list item */
+    width: 100%;
+    justify-content: flex-start; /* Align options to start when stacked */
+    margin-top: 5px;
+  }
+
+  .model-content_header {
+    padding: 12px 15px;
+  }
+  .model-header_content {
+    font-size: 15px; /* Further reduce modal header font */
+  }
+  .model-content_content {
+    padding: 10px 12px;
+  }
+  .model-content_footer {
+    padding: 12px 15px;
+    flex-direction: column; /* Stack footer buttons */
+  }
+  .model-content_footer button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .model-content_footer button:last-child {
+    margin-bottom: 0;
+  }
+
+  .tooltip-suchapter_items:after {
+    width: 150px; /* Further reduce tooltip width */
+    font-size: 11px;
+  }
+  .chapter-progress_cont {
+    padding: 10px;
+  }
+  .chapter-progress {
+    margin: 0 10px; /* Reduce margin for progress bar section */
+  }
+  .quick-view {
+    min-width: 100%; /* Stack quick view items */
+    padding: 8px 12px; /* Adjust padding */
+  }
+  .quick-flex p {
+    font-size: 13px;
+  }
+  .quick-flex img {
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+  }
+  .quick-next {
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .sub-chap_name,
+  .progress-label,
+  .file-loader_label,
+  .stud-chapter_label,
+  .req-item_label,
+  .list__date li,
+  .assignment-due { /* Typically 'small' or 'xs-small' */
+    font-size: 12px;
+  }
+  .file-loader_heading,
+  .file-complete_label { /* Typically 'medium' */
+    font-size: 14px;
+  }
+  .assign-missed, .assign-grad, .assign-submit, .assign-dues { /* Badges */
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+  .dots-separates {
+      margin: 0 4px; /* Reduce space for dot separators */
+  }
+}

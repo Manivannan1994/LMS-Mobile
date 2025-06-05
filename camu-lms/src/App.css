@@ -131,3 +131,22 @@ body {
     overflow: auto;
     border-radius: 20px 0 0;
   }
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin-left: 0;
+  }
+  .content__box {
+    width: 100%;
+    border-radius: 0; /* Adjust border-radius for mobile */
+  }
+  .dashboard-rubrics_block {
+    border-radius: 0; /* Adjust border-radius for mobile */
+  }
+}

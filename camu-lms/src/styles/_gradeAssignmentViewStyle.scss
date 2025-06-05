@@ -479,3 +479,216 @@
   margin-left: 2px;
   
 }
+
+@media (max-width: 768px) {
+  .student-assignment_heading {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .student-assignment_heading .student-assign_content { /* Assuming student-assign_content is the left part */
+    margin-bottom: 10px; /* If right part (e.g., buttons) wraps */
+    flex-basis: 100%; /* Allow title area to take full width if actions wrap */
+  }
+  .student-assign_content h6 { /* 'large' font */
+    font-size: 20px;
+  }
+  .grade-assignment_lists {
+    padding: 16px;
+  }
+  .assignment-submission_details {
+    padding: 24px 16px;
+  }
+  .assignment-subject_img {
+    width: 100%; /* Ensure image scales */
+  }
+  .student-list_dropdown {
+    padding: 10px 16px;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-around; /* Better spacing for wrapped items */
+  }
+  .student-list_dropdown > * { /* Add some margin to wrapped items */
+      margin: 5px;
+  }
+  .stud-grade_list {
+    padding: 10px 12px;
+  }
+  .submit-date_label {
+      margin-bottom: 24px; /* Reduced margin */
+  }
+  /* Adjusting various 'small' mapped font sizes */
+  .student-assign_content p,
+  .grade-assignment_cont,
+  .assignment-cont_name,
+  .submit-date_label,
+  .date-view_label,
+  .late-submission_label,
+  .grade-mark_label,
+  .mark-view_label,
+  .student-names_list,
+  .total-stud_label,
+  .stud-names_label,
+  .stud-upgrade_label,
+  .stud-grade_label,
+  .stud-missed_label,
+  .edit-stud_name,
+  .edit-info_grade,
+  .edit-label_date,
+  .posted-info_label,
+  .edit-info_label,
+  .group-info-label,
+  .group-info-label-link,
+  .edit-info_date,
+  .rubrics-name_view,
+  .rubrics-name_point,
+  .rubrics-exemplary,
+  .grade-max_mark,
+  .drop-info_cont,
+  .stud-chapter_label {
+    font-size: 13px; /* Example target size for 'small' */
+  }
+   /* Adjusting various 'xs-small' mapped font sizes */
+  .assign-grade_value,
+  .submission-comments_label,
+  .group-details_label,
+  .rubrics-model_name,
+  .rubrics-exemplary_content {
+    font-size: 12px; /* Example target size for 'xs-small' */
+  }
+}
+
+@media (max-width: 480px) {
+  .student-assignment_heading {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .student-assignment_heading .student-assign_label { /* The right side of header, if any */
+      width: 100%;
+      margin-top: 10px;
+  }
+  .student-assign_content h6 {
+    font-size: 18px;
+  }
+  .student-assign_content p {
+      font-size: 12px;
+  }
+  .grade-assignment_lists {
+    padding: 10px;
+    max-height: none;
+  }
+  .grade-submission_image {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .assignment-img_download {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .assignment-files_container,
+  .assignment-submission_url {
+    margin-top: 20px;
+  }
+  .assignment-cont_files,
+  .assignment-url_name {
+    padding: 10px;
+  }
+  .student-list_dropdown {
+    padding: 8px 10px;
+    flex-direction: column;
+  }
+  .student-list_dropdown > * {
+      width: 100%;
+      margin: 5px 0;
+      /* Assuming buttons/dropdowns inside, they might need text-align:left or specific styling */
+  }
+  .assignment-submission_details,
+  .assignment-submission_details_group {
+    padding: 16px 10px;
+    min-height: auto; /* Remove fixed min-height */
+  }
+  .submit-date_label {
+    margin-bottom: 16px;
+    font-size: 12px; /* Adjusted from 13px for mobile */
+  }
+  .date-view_label,
+  .mark-view_label {
+      font-size: 12px; /* Adjusted from 13px for mobile */
+  }
+  .grade-assign_view {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .assign-grade_value { /* xs-small */
+    padding-right: 0;
+    margin-bottom: 5px;
+    font-size: 11px; /* Adjusted from 12px for mobile */
+  }
+  .submission-comments_cont {
+    margin-top: 20px;
+  }
+  .filter-stud_list { /* Student filter/search area */
+      flex-direction: column;
+      align-items: stretch; /* Make children full width */
+  }
+  .filter-stud_list > *:not(:last-child) {
+      margin-bottom: 10px;
+  }
+  .stud-search_list{ /* Search input area for students */
+      padding: 10px;
+  }
+  .stud-grade_list { /* Individual student item in a list */
+    padding: 8px 10px;
+  }
+  .stud-list_grade { /* Container for student name and grade */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .stud-list_grade > *:not(:last-child) {
+      margin-bottom: 5px;
+  }
+  .stud-names_label,
+  .stud-upgrade_label,
+  .stud-grade_label,
+  .stud-missed_label,
+  .edit-stud_name,
+  .total-stud_label,
+  .edit-info_grade,
+  .edit-label_date,
+  .edit-info_label,
+  .edit-info_date,
+  .group-info-label,
+  .group-info-label-link,
+  .rubrics-name_view,
+  .rubrics-name_point,
+  .rubrics-exemplary,
+  .grade-max_mark,
+  .drop-info_cont { /* 'small' fonts adjusted from 13px to 12px for mobile */
+    font-size: 12px;
+  }
+  .posted-info_label{
+      margin-left: 10px;
+      font-size: 12px;
+  }
+  .group-students-list {
+      min-height: auto;
+      max-height: 150px;
+  }
+  .rubrics-exemplary_content,
+  .rubrics-model_name,
+  .submission-comments_label,
+  .group-details_label { /* 'xs-small' fonts adjusted from 12px to 11px for mobile */
+    font-size: 11px;
+  }
+  .cont-drop_info{
+    padding: 4px 10px;
+    margin: 10px 0 0 0; /* Take full width if parent is column */
+    flex-direction: column; /* Stack icon and text */
+    align-items: flex-start;
+  }
+  .show-filter_label,
+  .show-filter_label svg {
+      font-size: 12px; /* Ensure filter toggle is readable */
+  }
+}

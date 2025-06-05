@@ -117,3 +117,91 @@
 .icon-right_side {
   float: right;
 }
+
+@media (max-width: 768px) {
+  .svg-icon_large { /* 36px */
+    width: 32px;
+    height: 32px;
+  }
+  .svg-icon_default { /* 30px */
+    width: 28px;
+    height: 28px;
+  }
+  .close-icon {
+    right: 20px; /* Adjust if parent padding reduced */
+    top: 12px;
+  }
+  .close-icon-network {
+    right: 20px;
+    top: 8px;
+  }
+  .close-icon-banner {
+    right: 10px;
+    top: 10px;
+  }
+  .left-icon {
+    margin-left: 12px;
+  }
+  .right-icon {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .svg-icon_large {
+    width: 30px;
+    height: 30px;
+  }
+  .svg-icon_default {
+    width: 26px;
+    height: 26px;
+  }
+  .svg-icon_small { /* 22px */
+      width: 20px;
+      height: 20px;
+  }
+  .svg-icon_normal { /* 24px */
+      width: 22px;
+      height: 22px;
+  }
+
+  .close-icon {
+    right: 15px;
+    top: 10px;
+  }
+  .close-icon-network {
+    right: 15px;
+    top: 8px;
+  }
+   .close-icon svg, .close-icon-network svg, .close-icon-banner svg { /* Ensure tap target if SVG */
+      width: 20px; height: 20px; /* Example if original was larger */
+  }
+  .icon-left { /* Icon inside input/button */
+    left: 8px;
+    top: 6px; /* Adjust based on parent height changes */
+  }
+  .icon-right {
+    right: 10px;
+    top: 6px; /* Adjust based on parent height changes */
+  }
+  .nav-icon { /* Icon used in navigation */
+      padding: 12px;
+      width: 48px;
+      height: 48px;
+  }
+  .left-icon {
+    margin-left: 8px;
+  }
+  .right-icon {
+    margin-right: 8px;
+  }
+  .icon-space {
+    margin-right: 4px;
+  }
+  .icon-space_left {
+    margin-right: 4px;
+  }
+  .icon-space_right {
+    margin-left: 4px;
+  }
+}

@@ -99,3 +99,80 @@
     width: 350px;
     flex-wrap:wrap;
 }
+
+@media (max-width: 768px) {
+  .image-color-container {
+    width: 100%;
+    max-width: 330px; /* Maintain max-width for larger tablets if desired */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px auto; /* Center the container */
+  }
+  .image-container {
+    height: auto;
+    min-height: 160px; /* Maintain a minimum height */
+    aspect-ratio: 16/9; /* Or a suitable aspect ratio */
+  }
+  .image-container img {
+      height: 100%; /* Ensure image fills the new responsive height */
+      object-fit: cover; /* Maintain aspect ratio of image */
+  }
+  .text-container h6 {
+    margin-bottom: 20px; /* Reduced margin */
+    font-size: 16px; /* Adjust font size */
+  }
+  .text-container p { /* 'normal' font */
+      font-size: 13px; /* Adjust if map-get too large */
+  }
+  .color-pallet-container {
+    width: 100%;
+    justify-content: center; /* Center color palettes */
+  }
+  .updt-img-content {
+    width: 150px; /* Adjust size */
+    height: auto;
+    padding: 8px;
+    top: 45px; /* Adjust position relative to its anchor */
+    right: 5px;
+  }
+  .upload_file-content {
+      font-size: 13px;
+      left: 0; /* Adjust if needed */
+      top: 8px;
+      text-align: center;
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-color-container {
+    max-width: 100%; /* Allow full width on small mobile */
+    margin: 10px 0; /* No side margins if full width */
+  }
+  .text-container h6 {
+    font-size: 15px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+   .text-container p {
+      font-size: 12px;
+  }
+  .updt-img-content-menu { /* Menu icon on preview */
+      width: 32px;
+      height: 32px;
+      padding: 6px;
+  }
+  .updt-img-content {
+    width: 130px;
+    top: 40px; /* Adjust if menu icon size/pos changed */
+  }
+  .upload_file-content {
+      font-size: 12px;
+  }
+  .color-pallet { /* Individual color swatch */
+      width: 36px;
+      height: 36px;
+  }
+  .color-pallet-container{
+      gap: 8px; /* Reduce gap between swatches */
+  }
+}

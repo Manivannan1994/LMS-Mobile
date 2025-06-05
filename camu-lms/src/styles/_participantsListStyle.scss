@@ -230,3 +230,181 @@
 	top: 0 !important;
 	left: 0 !important;
   }
+
+@media (max-width: 768px) {
+  .cont-nav {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .cont-nav > *:first-child { /* Assuming title is first */
+      margin-bottom: 10px; /* If options wrap below */
+  }
+  .course-name h6 { /* 'large' font */
+    font-size: 20px;
+  }
+  .participants-course {
+    padding: 20px;
+    display: flex; /* Enable flex for stacking children */
+    flex-direction: column;
+  }
+  .course-cont_box {
+    border-right: none; /* Remove border when stacking */
+    padding-right: 0;
+    margin-bottom: 16px; /* Space when stacked above email invites */
+  }
+  .email-invite {
+    padding: 0; /* Remove side padding */
+  }
+  .participants-content_tab {
+    padding: 0 16px;
+  }
+  .participants-tabs_cont {
+    padding: 16px;
+  }
+  .course-link_label { /* 'medium' font */
+      font-size: 16px;
+      margin-right: 16px;
+  }
+  .url-cont_label,
+  .stud-list_view,
+  .stud-progress_labal,
+  .category-inst_name,
+  .group-alert_label,
+  .group-info-label-link,
+  .course-name p { /* 'small' font */
+    font-size: 13px;
+  }
+  .participant-empty_cont p { /* 'large' font */
+    font-size: 18px;
+    padding-top: 100px;
+  }
+  .view-options_cont_group {
+    width: 90vw;
+    max-width: 450px;
+    height: auto;
+    max-height: 80vh;
+    left: 50% !important;
+    transform: translateX(-50%);
+    top: 5vh !important;
+  }
+  .view-options_cont_studs {
+    width: auto;
+    max-width: 300px;
+    left: 50% !important;
+    transform: translateX(-50%);
+    top: 5vh !important;
+  }
+  .participants-group-students { /* Max height for scrollable list in modal */
+      max-height: 50vh;
+  }
+  .groups_container {
+    height: 50vh;
+  }
+  .group-label {
+    width: auto;
+    margin-right: 8px;
+    font-size: 13px;
+  }
+  .group-name {
+      font-size: 15px;
+  }
+  .group-stud-names {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cont-nav {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-options { /* Options button in header */
+      margin-left: 0;
+      margin-top: 10px;
+  }
+  .course-name h6 {
+    font-size: 18px;
+  }
+  .participants-course {
+    padding: 16px;
+  }
+  .course-link_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course-link_label {
+    margin-right: 0;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  .url-link_box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .url-link_box > *:not(:last-child) { /* Assuming input and button */
+      margin-bottom: 8px;
+  }
+  .select-stud_list {
+    flex-direction: column;
+    align-items: stretch; /* Make children full width */
+    gap: 8px;
+  }
+  .select-stud_list > * {
+      width: 100%;
+  }
+  .invite-email_cont {
+      margin-top: 16px;
+  }
+  .participants-content_tab {
+    padding: 0 10px;
+  }
+  .participants-tabs_cont {
+    padding: 12px;
+  }
+  .student-participants_search { /* Assuming this might contain an input */
+      width: 100%;
+  }
+  .stud-progress_stus { /* Progress bar and label */
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .stud-progress_labal {
+      margin-left: 0;
+      margin-top: 4px;
+  }
+  .participant-empty_cont p {
+    font-size: 16px;
+    padding-top: 50px;
+  }
+  .view-options_cont_group {
+    max-width: 90vw;
+    max-height: 75vh;
+    top: 2.5vh !important;
+  }
+  .view-options_cont_studs {
+    max-width: 280px;
+    top: 2.5vh !important;
+  }
+  .participants-group-students {
+      max-height: 45vh;
+  }
+  .groups_container {
+    height: auto;
+    max-height: 40vh;
+  }
+  .group-name {
+      font-size: 14px;
+  }
+  .group-stud-names,
+  .url-cont_label,
+  .stud-list_view,
+  .stud-progress_labal,
+  .category-inst_name,
+  .group-alert_label,
+  .group-info-label-link,
+  .course-name p {
+    font-size: 12px;
+  }
+}

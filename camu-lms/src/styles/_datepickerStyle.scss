@@ -84,3 +84,63 @@
 .rdtPicker th.rdtSwitch {
   background-color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .date-picker {
+    width: 100%; /* Make it responsive, assuming it's a block element */
+    padding: 0 38px 0 10px; /* Adjust padding for icon */
+  }
+  .date-picker_block { /* Already 100% width */
+    padding: 0 38px 0 10px; /* Adjust padding for icon */
+  }
+  .date-picker_transparent {
+    width: 80%; /* More flexible width */
+  }
+  .date-picker_transparent .form-control {
+    font-size: 20px; /* Reduced font size */
+  }
+  .rdtPicker {
+    min-width: 280px;
+    left: 0; /* Adjust if it causes overflow, or make it centered */
+  }
+  .rdtPicker td,
+  .rdtPicker th {
+    height: 36px;
+    font-size: 13px; /* Assuming base font size is 14px */
+  }
+}
+
+@media (max-width: 480px) {
+  .date-picker,
+  .date-picker_block {
+    padding: 0 35px 0 8px; /* Further adjust padding */
+    font-size: 13px; /* Adjust base font size of input */
+  }
+  .calendar_icon { /* Ensure icon scales or has enough space */
+      background-size: 16px 16px; /* Example: if icon is too large */
+      background-position: right 10px top 50%;
+  }
+  .date-picker_transparent {
+    width: 100%;
+  }
+  .date-picker_transparent .form-control {
+    font-size: 18px;
+  }
+  .rdtPicker {
+    min-width: 0;
+    width: 90vw; /* Fit most of screen */
+    left: 50% !important; /* Center the picker */
+    transform: translateX(-50%) !important;
+    padding: 8px; /* Reduce padding of picker itself */
+  }
+  .rdtPicker td,
+  .rdtPicker th {
+    height: 32px;
+    font-size: 12px;
+  }
+  .rdtPicker .rdtTimeToggle,
+  .rdtPicker .rdtSwitch { /* Buttons within picker */
+      font-size: 13px;
+      padding: 4px 0; /* Adjust padding */
+  }
+}

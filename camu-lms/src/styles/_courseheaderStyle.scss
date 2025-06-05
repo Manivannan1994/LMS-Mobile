@@ -116,6 +116,82 @@ button:focus {
   border-color: transparent transparent #091E42 transparent;
 }
 
+@media (max-width: 768px) {
+  .cont-nav {
+    padding: 16px;
+    flex-wrap: wrap; /* Allow main sections to wrap */
+  }
+  .course-name {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px; /* Space if manual-setting wraps below */
+  }
+  .manual-setting {
+    float: none;
+    width: 100%;
+    justify-content: flex-start; /* Align items to the start when wrapped */
+    flex-wrap: wrap; /* Allow items within manual-setting to wrap */
+  }
+  .course-name h6 { /* large font */
+    font-size: 22px;
+  }
+  .toggle-switch_tooltip {
+    width: 160px; /* Slightly reduce tooltip width */
+    right: 16px; /* Adjust position if needed */
+  }
+  .expand-box { /* If manual-setting items wrap, this might look odd with a left border */
+    border-left: none;
+    padding-left: 0;
+    margin-left: 8px; /* Add some margin if border is removed */
+  }
+}
+
+@media (max-width: 480px) {
+  .cont-nav {
+    padding: 12px;
+    /* If .course-name and .manual-setting are direct children and need stacking */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+  .course-name h6 {
+    font-size: 18px;
+  }
+  .manual-setting {
+    justify-content: space-around; /* Distribute items more evenly on small screens */
+  }
+  .manual-setting > * { /* Add some bottom margin to all items in manual-setting if they wrap a lot */
+    margin-bottom: 5px;
+  }
+  .info-icons {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .header-options {
+    margin-left: 8px; /* Reduce margin */
+  }
+  .expand-box {
+    margin-left: 8px; /* Ensure consistent spacing */
+  }
+  .toggle-btn_cont {
+    margin-left: 8px;
+    width: 100%; /* Allow toggle and label to take more space if needed */
+    justify-content: center;
+  }
+  .switch-mode_label {
+    padding-left: 4px; /* Reduce padding */
+  }
+  .toggle-switch_tooltip {
+    width: 120px;
+    font-size: 11px; /* Adjust font size for smaller tooltip */
+    padding: 6px;
+    top: 60px; /* Adjust if header height changes more significantly */
+    right: 10px;
+  }
+  .toggle-switch_tooltip::after { /* Reposition tooltip arrow if needed */
+    left: 50%; /* Center arrow */
+  }
+}
+
 // .toggle-switch {
 //   background: #f4f5f7;
 //   color: #101010;

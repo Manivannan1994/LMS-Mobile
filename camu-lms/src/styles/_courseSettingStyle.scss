@@ -23,6 +23,138 @@
   padding: 20px;
   border-radius: 4px;
 }
+
+.grade-category_table { /* Added for potential table overflow */
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .course-setting_container {
+    padding: 24px;
+  }
+  .course-setting,
+  .grade-course_setting,
+  .grade-course_scheme,
+  .notification-course_scheme {
+    padding: 16px;
+  }
+  .course-setting_list {
+    flex-wrap: wrap;
+  }
+  .course-setting_label { /* Text content next to an icon/image */
+    flex-basis: calc(100% - 50px); /* Assuming icon is around 40px + margin */
+    margin-left: 10px; /* Ensure margin if not already there */
+  }
+  .grade-course_select,
+  .category-table_heading {
+    flex-wrap: wrap;
+  }
+  /* Assuming the right part of these flex containers might need to wrap full width */
+  .grade-course_select > *:last-child,
+  .category-table_heading > *:last-child {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .course-setting_header,
+  .course-form_header,
+  .course-label_header,
+  .grade-input_head,
+  .category-inst_name { /* 'normal' font */
+    font-size: 15px; /* Adjust if map-get is too large */
+  }
+  .course-setting_content,
+  .course-form_content,
+  .course-label_cont,
+  .add-grade_category,
+  .grade-notfound,
+  .grade-add,
+  .add-grade_scheme,
+  .select-cont_check span,
+  .grade-range_table td { /* 'small' font */
+    font-size: 13px; /* Adjust if map-get is too large */
+  }
+  .grade-head_table th { /* 'xs-small' font */
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+  .grade-range_table td {
+    padding: 12px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-setting_container {
+    padding: 16px;
+  }
+  .course-setting,
+  .grade-course_setting,
+  .grade-course_scheme,
+  .notification-course_scheme {
+    padding: 12px;
+  }
+  .course-setting_list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .course-setting_label {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .grade-course_select,
+  .category-table_heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .grade-course_select > *:not(:last-child),
+  .category-table_heading > *:not(:last-child) {
+    margin-bottom: 8px; /* Space for stacked items */
+  }
+  .grade-course_select > *:last-child, /* Ensure input/select takes full width */
+  .category-table_heading > *:last-child {
+     width: 100%;
+  }
+  .course-setting_btn {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .course-setting_btn .btn { /* Assuming buttons have .btn */
+      width: 100%;
+  }
+
+  .course-setting_header,
+  .course-form_header,
+  .course-label_header,
+  .grade-input_head,
+  .category-inst_name {
+    font-size: 14px;
+  }
+  .course-setting_content,
+  .course-form_content,
+  .course-label_cont,
+  .add-grade_category,
+  .grade-notfound,
+  .grade-add,
+  .add-grade_scheme,
+  .select-cont_check span,
+  .grade-range_table td {
+    font-size: 12px;
+  }
+  .grade-head_table th {
+    font-size: 11px;
+    padding: 6px 4px;
+  }
+  .grade-range_table td {
+    padding: 10px 4px;
+  }
+  .add-grade_category span,
+  .grade-add span {
+    margin-right: 8px;
+  }
+  .add_cat_remain, .add_cat_remain_over { /* 'small-xs' */
+      font-size: 11px;
+  }
+}
 .course-form_header {
   margin: 0;
   font-size: map-get($font-sizes, "normal");

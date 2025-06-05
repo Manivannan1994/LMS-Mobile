@@ -85,3 +85,57 @@
   position: relative;
   top: 2px;
 }
+
+@media (max-width: 768px) {
+  .assignment-lists {
+    padding: 12px;
+    flex-wrap: wrap; /* Allow content and options to wrap */
+  }
+  .assignment-option_list {
+    /* If it wraps, it might take full width and need some top margin */
+    flex-basis: 100%; /* Example: make it take full width if it wraps */
+    margin-top: 8px;
+    justify-content: flex-start;
+  }
+  .assignment-selection {
+    padding: 16px;
+  }
+  .assignment_heading { /* 'normal' font size */
+    /* font-size: 15px; /* Adjust if needed, but map-get should be responsive */
+  }
+}
+
+@media (max-width: 480px) {
+  .assignment-lists {
+    padding: 10px;
+    flex-direction: column; /* Stack main content and options list */
+    align-items: flex-start;
+  }
+  .assignment-titles, .assignment-titles_hide { /* Ensure title area takes full width */
+    width: 100%;
+    margin-bottom: 8px; /* Space between title block and options */
+  }
+  .assignment-option_list {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: flex-start; /* Or space-around if multiple small options */
+  }
+  .assignment-selection {
+    padding: 12px;
+  }
+  .assignment_heading, .assignment_heading--hide { /* 'normal' font size */
+    font-size: 15px; /* More specific reduction for mobile */
+  }
+  .assignment_content, .assignment_content--hide { /* 'xs-small' font size */
+    font-size: 13px; /* More specific adjustment for mobile */
+  }
+  .assignment-dropdown {
+    margin-right: 10px; /* Adjust spacing */
+  }
+  .option-list_dropdown { /* Assuming this is for items within a dropdown menu */
+    padding-left: 8px;
+  }
+  .dots-icon { /* Make dots slightly larger for tapping if they are interactive */
+    transform: scale(1.2);
+  }
+}

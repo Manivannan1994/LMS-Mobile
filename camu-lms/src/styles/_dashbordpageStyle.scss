@@ -120,3 +120,79 @@
 .dropdown-default::-ms-expand {
   display: none !important;
 }
+
+@media (max-width: 768px) {
+  .nav-heading {
+    padding: 16px 24px;
+  }
+  .dashboard-contents {
+    padding: 40px 16px 24px 16px;
+  }
+  .cont-search-box {
+    width: 100%; /* Take full width */
+  }
+  .selector-course {
+    float: none; /* Clear float */
+    display: block;
+    width: auto; /* Adjust width as needed, or 100% */
+    margin-top: 10px; /* Add space above */
+    text-align: left; /* Or right, depending on desired alignment */
+  }
+  .search-box { /* The global search box */
+    width: 70%;
+  }
+  .cont-searchbox { /* The input field itself */
+    padding: 5px 20px 5px 38px !important; /* Adjust padding, keep space for icon */
+  }
+  .dashboard-content { /* The grid */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Slightly reduce min for more flexibility */
+    grid-gap: 16px 16px; /* Add gap for rows and columns */
+    padding: 16px 16px 40px 16px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-heading {
+    padding: 12px 16px;
+  }
+  .nav-heading p {
+    font-size: 13px;
+  }
+  .nav-heading h5 {
+    font-size: 15px;
+  }
+  .dashboard-contents {
+    padding: 20px 12px 20px 12px;
+  }
+  /* .cont-search-box is already 100% width from tablet */
+  .selector-course {
+    width: 100%; /* Ensure full width on mobile */
+    text-align: left;
+  }
+  .search-box { /* The global search box */
+    width: 100%;
+    margin-top: 16px;
+  }
+  .cont-searchbox { /* The input field itself */
+    padding: 5px 15px 5px 35px !important; /* Further adjust padding */
+    height: 38px !important; /* Optionally reduce height */
+  }
+  .icons-search { /* Adjust search icon if input height changes */
+    height: 38px;
+    width: 33px;
+    padding: 7px;
+  }
+  .dashboard-content { /* The grid */
+    grid-template-columns: 1fr; /* Force single column */
+    grid-gap: 16px 0px; /* Row gap, no column gap */
+    padding: 16px 12px 30px 12px; /* Adjust padding */
+  }
+  .notification-badge {
+    right: 10px;
+    bottom: 10px;
+    justify-content: center; /* Center if it takes full width conceptually */
+  }
+  .badge-list {
+    font-size: 13px; /* Slightly reduce font size */
+  }
+}

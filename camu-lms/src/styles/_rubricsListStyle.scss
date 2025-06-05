@@ -99,3 +99,90 @@
   transform: translateX(0%) translateY(0);
 }
 
+@media (max-width: 768px) {
+  .cont-nav {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .rubric-name { /* Assuming this is the left part of .cont-nav */
+    width: 100%; /* Allow it to take full width if .more-options_view wraps */
+    margin-bottom: 10px; /* Space if options wrap below */
+  }
+  .rubric-name h6 { /* 'large' font */
+    font-size: 22px;
+  }
+  .rubrics-selection {
+    padding: 16px;
+  }
+  .rubrics-select {
+    float: none;
+    width: 100%; /* Make select full width if search is above */
+    margin-top: 10px; /* If .rubrics-search is present */
+  }
+  .rubrics-search { /* Ensure search input is also responsive if not already */
+    width: 100%;
+  }
+  .rubrics-lists {
+    padding: 12px;
+  }
+  .rubrics-label_empty { /* 'large' font */
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .tooltip-slide_rubric:after {
+    width: 200px;
+    right: auto; /* Adjust positioning */
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    top: -55px; /* Adjust vertical position */
+  }
+}
+
+@media (max-width: 480px) {
+  .cont-nav {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .more-options_view { /* Button in header */
+      margin-left: 0;
+      margin-top: 10px;
+  }
+  .rubric-name h6 {
+    font-size: 18px;
+  }
+  .rubrics-selection {
+    padding: 12px;
+  }
+  .rubrics-search {
+    margin-bottom: 12px;
+  }
+  .rubrics-lists {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* If .rubrics-lists has a right-side options container, style it here */
+  .rubrics-lists > div:last-child:not(:first-child) { /* Assuming options are in a div */
+      width: 100%;
+      margin-top: 10px;
+      /* Add styles for buttons/dropdowns within this options container if needed */
+  }
+  .rubrics-list_heading { /* 'normal' font */
+    font-size: 15px;
+  }
+  .rubrics-list_content { /* 'xs-small' font */
+    font-size: 12px;
+  }
+  .rubrics-list_dropdown { /* Assuming this is for items in a dropdown menu */
+      padding-left: 8px;
+  }
+  .rubrics-label_empty {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .tooltip-slide_rubric:after {
+    width: 150px; /* Or max-width: 90vw */
+    font-size: 12px;
+  }
+}

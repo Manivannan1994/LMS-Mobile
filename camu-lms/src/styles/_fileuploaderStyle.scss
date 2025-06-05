@@ -246,3 +246,139 @@
   visibility: visible; 
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .edit-module_header {
+    padding: 20px;
+  }
+  .page-input_title {
+    flex-wrap: wrap;
+  }
+  .publish-btn {
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: flex-end;
+  }
+  .page-input_details {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    top: 0;
+  }
+  .text-editor {
+    padding: 20px;
+  }
+  .file-upload_content {
+    padding: 20px;
+  }
+  .file-upload_box {
+    padding: 16px;
+  }
+  .uploaded-filename {
+    padding: 10px 12px;
+    flex-wrap: wrap;
+  }
+  .uploaded-files_name { /* Container for icon and filename */
+    margin-bottom: 5px; /* Space if options wrap below */
+    flex-basis: 100%; /* Allow it to take full width before options wrap */
+  }
+  .more-options { /* Container for edit/delete options */
+    flex-basis: 100%;
+    justify-content: flex-end;
+  }
+  .external-file_modal {
+    width: 250px;
+    right: 10px !important; /* Adjust position */
+    left: auto !important;
+  }
+  .file-select_name {
+    max-width: 300px;
+  }
+  .tooltip--top_filed:after {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-module_header {
+    padding: 16px 15px;
+  }
+  .page-input_title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .publish-btn {
+    width: 100%;
+    margin-top: 15px;
+    justify-content: flex-start;
+  }
+  .publish-btn .btn, .save-page_btn .btn { /* Assuming buttons have .btn */
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+  .save-page_btn {
+      margin-left: 0;
+  }
+  .text-editor {
+    padding: 16px 10px;
+  }
+  .file-upload_content {
+    padding: 16px 10px;
+  }
+  .drag-files {
+    font-size: 13px; /* Reduce font size */
+  }
+  .file-selection {
+    flex-direction: column;
+    align-items: stretch; /* Make buttons full width */
+    gap: 8px;
+  }
+  .option-file {
+      margin-right: 0;
+  }
+  .uploaded-filename {
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .uploaded-files_name {
+      margin-bottom: 8px;
+  }
+  .more-options {
+      width: 100%;
+      justify-content: flex-start;
+  }
+  .views-option_file {
+    margin-left: 0; /* Remove margin if it's the first item */
+    margin-right: 8px; /* Add margin if there are other items */
+  }
+  .external-file_modal {
+    width: calc(100vw - 30px); /* Near full width */
+    right: 15px !important;
+    left: 15px !important;
+    top: 60px !important; /* Adjust if needed based on header */
+  }
+  .file-select_name {
+    max-width: calc(100% - 20px); /* Adjust to fit within its container */
+  }
+  .tooltip--top_filed:after {
+    width: 120px; /* Or use max-width */
+    max-width: 80vw;
+  }
+  .edit-box_heading,
+  .check-box-text,
+  .published-view_label,
+  .unpublished-view_label,
+  .file-option,
+  .reload-content,
+  .add-file_label,
+  .form_add_label,
+  .external-form_list { /* 'small' or 14px fonts */
+    font-size: 13px;
+  }
+  .uploaded-files { /* 'normal' font */
+      font-size: 14px;
+  }
+}
