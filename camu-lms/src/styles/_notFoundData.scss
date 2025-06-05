@@ -1,0 +1,28 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.no-data-block {
+    display: flex;
+    justify-content: center;
+}
+.no-data-container {
+    height: 86px;
+    margin: 20px 0;
+    width: 680px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 1px 0px #091E4240, 0px 2px 1px 0px #091E420D;
+    border-radius: 24px;
+}
+.no-data-container h1{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.no-data-container p {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 3px;
+}

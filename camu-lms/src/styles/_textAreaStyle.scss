@@ -1,0 +1,23 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.text-area_default {
+  border: solid 2px #dfe1e5;
+  height: 72px;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  width: 100%;
+}
+
+.text-area_table {
+  border: solid 2px #dfe1e5;
+  height: 72px;
+  width: 320px;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}

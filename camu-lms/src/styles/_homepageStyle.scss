@@ -1,0 +1,52 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.fixed-header {
+  position: fixed;
+  z-index: 99;
+  width: calc(100% - 79px);
+  background-color: white;
+  height: 88px;
+}
+
+.fixed-list_content {
+  height: 100%;
+  top: 88px;
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  background-color: white;
+  z-index: 1;
+  width: 220px;
+  border-right: solid 1px #ebecf0;
+}
+.fixed-page_content {
+  margin-left: 220px;
+  position: relative;
+  padding-top: 88px;
+  min-height: 100vh;
+  background-color: #f4f5f7;
+}
+.loader-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.loader-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.course-alert{
+  padding: 16px;
+  background-color: #FDF3BF;
+  text-align: center;
+}
+.course-alert_label{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default" );
+  font-weight: map-get($font-weight, "large-weight");
+}

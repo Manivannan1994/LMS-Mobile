@@ -1,0 +1,94 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.export-header_box{
+    padding: 22px 24px;
+    background-color: #ffffff;
+}
+.export-header{
+    display: flex;
+    align-items: center;
+}
+.export-head_label{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "large");
+    font-weight: map-get($font-weight, "normal-weight" );
+    padding-left: 24px;
+}
+.export-container_box{
+    padding: 32px 16px;
+}
+.export-start_box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.export-cont_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.start-export_label{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "normal");
+    font-weight: map-get($font-weight, "normal-weight" );
+}
+.start-cont_label{
+    margin: 0;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "small");
+    padding-top: 4px;
+}
+.recent-exports_table{
+    margin-top: 48px;
+}
+.exports-table_label{
+    margin: 0;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "normal");
+    font-weight: map-get($font-weight, "normal-weight" );
+}
+.exports-table_box{
+    margin-top: 16px;
+}
+.progress-view_box{
+    margin-top: 16px;
+}
+.progress-view_label{
+    margin: 0;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "small");
+    padding-top: 8px;
+}
+.progress-view_error{
+    background-color: #fef1f3;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.progress-error_cont{
+    display: flex;
+    align-items: center; 
+}
+.progress-retry_cont{
+    display: flex;
+    align-items: center; 
+}
+.error-report_cont{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "small");
+    padding-left: 14px;
+}
+.report-retry_label{
+    margin: 0;
+    color: map-get($font-color, "primary");
+    font-size: map-get($font-sizes, "small");
+    padding-right: 14px;
+}

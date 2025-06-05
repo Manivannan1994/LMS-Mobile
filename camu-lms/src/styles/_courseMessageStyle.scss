@@ -1,0 +1,138 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.message-nav {
+    padding: 22px 24px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+
+.message-head-name h6 {
+    font-size: map-get($font-sizes, "large");
+    color: map-get($font-color, "default");
+    font-weight: map-get($font-weight, "normal-weight");
+    margin: 0;
+}
+
+.message-head-name p {
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "small-weight");
+    padding-top: 3px;
+    margin: 0;
+}
+
+.message-head-name a {
+    color: #495973
+}
+
+.message-base-content {
+    padding: 0
+}
+
+.message-content_tab {
+    padding: 0 24px;
+    border-bottom: solid 1px #ebedf0;
+    background-color: white;
+}
+
+
+.message-tabs_cont {
+    padding: 24px;
+}
+
+.message-list_search {
+    margin-bottom: 24px;
+}
+
+.message-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border: solid 1px #dfe1e5;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    
+}
+
+.messages-titles {
+    cursor: pointer;
+    width: 100%;
+}
+
+.message_heading {
+    margin: 0;
+    font-size: map-get($font-sizes, "normal");
+    color: map-get($font-color, "default");
+    font-weight: map-get($font-weight, "normal-weight");
+    padding-bottom: 3px;
+}
+
+.message_content {
+    margin: 0;
+    font-size: map-get($font-sizes, "xs-small");
+    color: map-get($font-color, "subdued");
+}
+
+.chat-profile-image {
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.chat-profile-icon {
+    margin-right: 5px;
+    background-color: #091E42;
+    border-radius: 50%;
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 8px;
+    font-weight: 800;
+}
+
+.message-nocontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: #091E42;
+    }
+}
+
+.no-message-text {
+    margin: 10px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.no-newmessage-btn {
+margin: 5px;
+}
+
+.message-left-content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.message-list-width{
+    width: 38%;
+}
+
+.nogroup-records{
+    margin: 0;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 1.5rem;
+    color: #091e42;
+}

@@ -1,0 +1,208 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.sidenav {
+  height: 100%;
+  width: 72px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fafbfc;
+  // overflow-x: hidden;
+  // border-right: solid 2px #ebecf0;
+
+  z-index: 3;
+}
+.camu-logo img {
+  margin: 0 auto;
+  display: block;
+  padding: 15px 0px;
+  width: 40px;
+  margin-bottom: 20px;
+}
+.sidenav li a {
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 5px 8px 5px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #505f79;
+  display: block;
+}
+.sidenav a i {
+  background: #f4f5f7;
+  padding: 12px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.main {
+  margin-left: 79px;
+
+  padding: 0;
+}
+.border-active {
+  // border-left: solid 4px #788396;
+}
+
+.sidenav ul li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidenav ul li:hover {
+  // border-left: solid 4px #788396;
+  transition: 0.3s;
+}
+.sidenav ul li:hover a .main-menu_icon {
+  background: #009be986;
+  transition: 0.3s;
+  color: white;
+}
+.bottom-navlist:hover {
+  border: 0 !important;
+  cursor: pointer;
+}
+.selected {
+  // border-left: solid 3px #788396;
+}
+.selected:hover {
+  border-left: solid 0px #788396;
+}
+.selected:hover .main-menu_icon {
+  background: #009ce9 !important;
+}
+.selected .main-menu_icon {
+  background: #009ce9;
+  border-radius: 12px;
+  transition: 0.3s;
+  color: white;
+}
+
+.down-listnav {
+  position: absolute;
+  bottom: 15px;
+}
+.down-listnav img {
+  width: 44px;
+  height: 44px;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
+.down-listnav-search {
+  position: absolute;
+
+  bottom: 180px;
+  font-size: 18px;
+  text-align: center;
+}
+.down-listnav-info {
+  position: absolute;
+  bottom: 80px;
+  font-size: 18px;
+  text-align: center;
+}
+.down-listnav-alert {
+  position: absolute;
+  bottom: 130px;
+  font-size: 18px;
+  text-align: center;
+}
+.icons-list {
+  color: #505f79;
+}
+.main-menu_icon {
+  background: #f4f5f7;
+  padding: 16px;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+}
+.portal-menu_icon {
+  padding: 16px;
+  width: 54px;
+  height: 54px;
+  border-top: solid 1px #ebedf0;
+  padding-bottom: 0px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+[class^="tooltip"] {
+  position: relative;
+}
+[class^="tooltip"]:after {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  content: attr(data-tooltip);
+  padding: 8px;
+  transform: translateX(-50%) translateY(-2px);
+  background: #091e42;
+  color: white;
+  white-space: normal !important;
+  border-radius: 8px;
+  transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+    transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+[class^="tooltip"]:hover:after {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip--right_nav:after {
+  position: absolute;
+  top: 12px;
+  left: 60px !important;
+  transform: translateX(12%) translateY(0) !important;
+  z-index: 9999;
+  width: max-content;
+
+}
+.tooltip--right_nav:hover:after {
+  transform: translateX(10%) translateY(0);
+}
+
+
+.tooltip--right_input:after {
+  position: absolute;
+  top: 12px;
+  left: 60px !important;
+  transform: translateX(-60%) translateY(20%) !important;
+  z-index: 9999;
+  width: max-content;
+
+}
+.tooltip--right_input:hover:after {
+  transform: translateX(10%) translateY(0);
+}
+
+
+.tooltip--right_feedback:after {
+  position: absolute;
+  top: 12px;
+  left: 60px !important;
+  transform: translateX(-90%) translateY(20%) !important;
+  z-index: 9999;
+  width: max-content;
+
+}
+.tooltip--right_feedback:hover:after {
+  transform: translateX(10%) translateY(0);
+}
+
+.portal-url {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "subdued");
+  text-align: center;
+  cursor: pointer;
+  font-weight: map-get($font-weight, "large-weight");
+}

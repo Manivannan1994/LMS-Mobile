@@ -1,0 +1,112 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.student-cont_nav {
+	padding: 22px 24px;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffffff;
+}
+
+.stud-view_img {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+}
+
+.user-profile_view {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.user-name_cont {
+	margin: 0;
+	font-size: map-get($font-sizes, "large");
+	color: map-get($font-color, "default");
+	font-weight: map-get($font-weight, "normal-weight");
+}
+
+.user-id_cont {
+	margin: 0;
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+}
+
+.header-options {
+	background: #f4f5f7;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 8px;
+	border: solid 1px #dfe1e5;
+}
+
+.user-grade-points {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.participants-options_cont {
+	top: 60px !important;
+	box-shadow: 0 1px 7px #d8d8d8;
+	border: none;
+	z-index: 1;
+	left: -20px !important;
+}
+
+.participants-info_contents {
+	padding: 6px 16px !important;
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "default");
+	cursor: pointer;
+}
+
+.participants-options_dropdown {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "default");
+}
+
+.participants-grade_point {
+	background-color: #E2F3FB;
+	margin: 0;
+	font-size: map-get($font-sizes, "normal");
+	color: map-get($font-color, "primary");
+	padding: 2px 8px;
+	border-radius: 14px;
+	font-weight: map-get($font-weight, "normal-weight");
+}
+
+.participants-grade_overall {
+	margin: 0;
+	font-size: map-get($font-sizes, "normal");
+	color: map-get($font-color, "default");
+}
+
+.participants-view_tab {
+	padding: 0 24px;
+	border-bottom: solid 1px #ebedf0;
+	background-color: white;
+}
+
+.participants-tabs_view {
+	padding: 24px;
+}
+
+.table-list_header {
+	font-size: map-get($font-sizes, "normal");
+	color: map-get($font-color, "subdued");
+	font-weight: map-get($font-weight, "normal-weight");
+	margin: 0;
+	padding-bottom: 12px;
+}
+
+.table-list_participants {
+	padding-bottom: 40px;
+}

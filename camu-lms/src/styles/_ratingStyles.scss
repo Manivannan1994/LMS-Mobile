@@ -1,0 +1,58 @@
+.starRatingWrap {
+    display: inline-block;
+    touch-action: none;
+  }
+  
+  .simpleStarRating {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    touch-action: none;
+  }
+  
+  .fillIcons {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  // .emptyIcons {
+  //   display: flex;
+  // }
+  
+  .rating-tooltip {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #333;
+    color: #fff;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  .c-star {
+    // width: var(--size, 32px);
+    // height: var(--size, 32px);
+    fill: lightgrey;
+  }
+  .active {
+    fill: #fed94b;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .c-star {
+      width:24px !important;
+      height:24px !important;
+    }
+  }
+  

@@ -1,0 +1,109 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+
+.notification-nav{
+    padding: 22px 24px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.notification-name h6 {
+    font-size: map-get($font-sizes, "large");
+    color: map-get($font-color, "default");
+    font-weight: map-get($font-weight, "normal-weight");
+    margin: 0;
+  }
+  .notification-name p {
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "small-weight");
+    padding-top: 3px;
+    margin: 0;
+  }
+  .notification-selection {
+    padding: 24px;
+  }
+  .notification-search {
+    margin-bottom: 24px;
+  }
+  .notification-select{
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+  }
+  .label-notification{
+    font-size: map-get($font-sizes, "normal");
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "normal-weight");
+    margin: 0;
+  }
+  .label-notification_early{
+    font-size: map-get($font-sizes, "normal");
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "normal-weight");
+    margin: 0;
+    padding-top:28px;
+  }
+  .read-mark-label{
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "default");
+    font-weight: map-get($font-weight, "normal-weight");
+    margin: 0;
+    text-decoration: underline;
+    margin-right: 24px;
+
+  }
+  .notification-list_cont{
+    padding: 16px;
+    background-color: #ffffff;
+    border: solid 1px #DFE1E5;
+    border-radius: 8px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .notification-box{
+      display: flex;
+      align-items: center;
+  }
+  .notification-details{
+      padding-left: 12px;
+  }
+  .notification-details_label{
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "default");
+    margin: 0;
+  }
+  .notification-details_label span{
+    font-weight: map-get($font-weight, "normal-weight");
+    padding-right: 4px;
+  }
+  .notification-details_time{
+    font-size: map-get($font-sizes, "small-xs");
+    color: map-get($font-color, "subdued");
+    margin: 0;
+    padding-top: 4px;
+  }
+  .student-grade_tabs {
+    background-color: #ffffff;
+    padding: 0px 40px;
+  }
+
+  .notification-label_empty{
+    margin: 0;
+    text-align: center;
+    padding-top: 150px;
+    font-size: map-get($font-sizes, "large");
+    color: map-get($font-color, "default");
+  }
+  .notification-file_download{
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "link");
+    font-weight: map-get($font-weight, "normal-weight");
+    cursor: pointer;
+  }

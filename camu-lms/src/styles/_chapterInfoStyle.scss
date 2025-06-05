@@ -1,0 +1,110 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.chapter-info_box {
+  background-color: #f4f5f7;
+  padding-bottom: 70px;
+}
+.chapter-info_options {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #dfe1e5;
+}
+.chapter-info_cont {
+  padding: 32px 40px;
+}
+.chapter-container_box {
+  overflow: hidden;
+  margin: 24px 36px;
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.chapter-view_header {
+  border-bottom: solid 1px #dfe1e5;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chapter-view_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+.chap-heading_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "active");
+}
+.sub-heading_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  padding-bottom: 4px;
+}
+.chapter-con_label {
+  margin: 16px 0 0 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+}
+.stud-label_default {
+  background-color: #ebedf0;
+  padding: 6px 10px;
+  border-radius: 12px;
+  margin-right: 8px;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.chapter-option_tabs {
+  padding: 0 40px;
+  border-bottom: solid 1px #ebedf0;
+  background-color: white;
+}
+.chapter-tabs_container_snippet {
+  background-color: #fafbfc;
+}
+.chapter-tabs_container {
+  background-color: #ffffff;
+  padding: 24px 40px;
+}
+.chapter-lock_info {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "disabled");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.chapter-lock_date {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.chapter-dots_icon {
+  height: 4px;
+  width: 4px;
+  background-color: #7f8a9d;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  margin: 0 5px 0 0;
+}
+.chapter-content_empty {
+  background-color: #f4f5f7;
+  padding: 20px 5px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+}
+.chapter-empty_label {
+  margin: 0;
+  text-align: center;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+}
+.sub-chapter_information {
+  margin: 10px 0 0 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+}

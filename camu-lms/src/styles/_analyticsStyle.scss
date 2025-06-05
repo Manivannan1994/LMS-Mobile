@@ -1,0 +1,102 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.course-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.course-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.analytics-selection {
+  padding: 16px 24px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.analytics-month {
+  margin-left: 32px;
+}
+.analytics-chapter {
+  margin-left: 32px;
+}
+.analytics-content {
+  padding: 34px 24px;
+}
+.analytics-head_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 12px;
+}
+.analytics-span_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "active");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-left: 16px;
+}
+.analytics-dashboard_box {
+  background-color: #ffffff;
+  padding: 24px 12px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  display: flex;
+}
+.dashboard-box_list {
+  background-color: #f4f5f7;
+  padding: 24px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 12px;
+}
+.dashboard-time_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "small-weight");
+  text-align: center;
+}
+.dashboard-days_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  text-align: center;
+  padding-top: 4px;
+}
+.analytics-chart_dashboard {
+  margin-top: 40px;
+}
+.analytics-box_left {
+  margin-right: 12px;
+}
+.analytics-box_right {
+  margin-left: 12px;
+}
+.chart-content_box {
+  background-color: white;
+  padding: 16px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+}
+.assignment-view_modal {
+  text-decoration: underline;
+  cursor: pointer;
+}

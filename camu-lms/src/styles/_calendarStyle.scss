@@ -1,0 +1,71 @@
+.rbc-header {
+  padding: 16px !important;
+}
+.rbc-month-view {
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.schedule-calender_box {
+  padding: 24px;
+  background: #f4f5f7;
+}
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  font-size: 13px !important;
+  padding: 8px 10px !important;
+  margin-top: 0px !important;
+}
+
+.rbc-time-view {
+  background-color: #ffffff;
+}
+.rbc-time-view .rbc-header {
+  height: 68px;
+  line-height: 35px;
+}
+.rbc-timeslot-group {
+  min-height: 100px !important;
+  font-size: 13px;
+  padding: 20px 7px;
+}
+
+.rbc-toolbar button {
+  background-color: #ffffff !important;
+}
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  box-shadow: none !important;
+  background-color: #009ce9 !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+.rbc-row-content {
+  z-index: 0 !important;
+}
+
+// ............agenda view css..................//
+
+.rbc-agenda-view {
+  background-color: #ffffff !important;
+}
+
+.rbc-day-slot .rbc-event-label {
+  display: none;
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border: none !important;
+}
+.rbc-toolbar {
+  display: none !important;
+}
+
+.sch-slot {
+  text-align: center;
+  font-size: 13px;
+}
+
+.sch_time {
+  padding-bottom: 10px;
+}

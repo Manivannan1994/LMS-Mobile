@@ -1,0 +1,152 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+// .atrl-cont {
+//   background: white;
+//   box-shadow: -3px 4px 9px #e9e9e9;
+//   border-radius: 20px 0 0 0;
+// }
+
+// .main-nav {
+//   margin: 0;
+//   list-style: none;
+// }
+// .logo a,
+// .main-nav a {
+//   padding: 10px 15px;
+//   text-transform: uppercase;
+//   text-align: center;
+
+// }
+
+// .main-nav li {
+//   padding: 0;
+//   padding-left: 22px;
+// }
+
+// .header,
+// .main-nav {
+//   display: flex;
+// }
+// .header {
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .header {
+//   flex-direction: row;
+//   justify-content: space-between;
+// }
+
+// .icons-nav {
+//   width: 22px;
+//   align-items: center;
+//   color: #788396;
+// }
+
+// .chapters-cont {
+//   border-right: solid 1px #ebecf0;
+// }
+
+// .cont-listdetails h6 {
+//   font-size: 16px;
+//   color: #091e42;
+//   font-weight: 600;
+// }
+// .cont-listdetails p {
+//   font-size: 14px;
+//   color: #505f79;
+//   margin: 0;
+// }
+// .cont-listdetails {
+//   padding: 10px 15px;
+//   border-radius: 8px;
+//   margin-bottom: 15px;
+// }
+
+.modules-list {
+  background-color: #f4f5f7;
+  height: 100%;
+}
+
+.cont-nav h5 {
+  margin: $margin-default;
+  font-size: 24px;
+  font-weight: 400;
+  color: #091e42;
+}
+.module-header p {
+  color: #505f79;
+  font-size: 18px;
+  margin: 0;
+}
+.cont-box {
+  padding: 10px 20px;
+}
+.select-cont {
+  background: #ebecf0;
+}
+.module-header {
+  padding: 16px 26px;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  border-color: #ebecf0;
+}
+
+.module-header-right {
+  @extend .module-header;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: white;
+}
+.cont-box-right {
+  padding: 24px 40px;
+  background-color: #f4f5f7;
+}
+.cont-box-right h5 {
+  font-size: 24px;
+  color: #091e42;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+.welcome-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.cont-box-right p {
+  font-size: 14px;
+  color: #091e42;
+  margin-top: 20px;
+}
+.welcome-list li {
+  font-size: 14px;
+  color: #091e42;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.welcome-list li span {
+  font-size: 14px;
+  color: #091e41;
+  font-weight: 700;
+}
+.welcome-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+}
+.welcome-list li::before {
+  content: "•";
+  color: #091e41;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  top: 6px;
+  margin-left: -30px;
+  margin-right: 10px;
+}

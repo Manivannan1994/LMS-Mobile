@@ -1,0 +1,101 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.rubric-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.rubric-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.more-options_view {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: solid 1px #dfe1e5;
+  margin-left: 16px;
+}
+.rubrics-selection {
+  padding: 24px;
+}
+.rubrics-search {
+  margin-bottom: 24px;
+}
+.rubrics-select {
+  float: right;
+}
+.rubrics-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.rubrics-list_heading {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-bottom: 3px;
+}
+.rubrics-list_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+}
+.edit-rubrics_cont {
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+}
+.rubrics-list_dropdown {
+  padding-left: 16px;
+}
+.delete-option_btn {
+  color: map-get($font-color, "error");
+}
+
+.rubrics-label_empty{
+  margin: 0;
+  text-align: center;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  margin-top: 84px;
+}
+
+.tooltip-slide_rubric:after {
+  position: absolute;
+  top: -50px;
+  right: 150px;
+  transform: translateX(0%) translateY(0);
+  z-index: 9999;
+  font-size: 13px;
+  width: 250px;
+  word-break: break-word !important;
+  
+}
+.tooltip-slide_rubric:hover:after {
+  transform: translateX(0%) translateY(0);
+}
+

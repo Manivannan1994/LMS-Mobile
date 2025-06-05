@@ -1,0 +1,183 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+.rubrics-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #dfe1e5;
+}
+.view-options {
+  display: flex;
+}
+.option-list_dropdown {
+  padding-left: 16px;
+}
+.edit-chapter_cont {
+  top: 5px !important;
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+  z-index: 1;
+}
+.rubrics-view_content {
+  padding: 24px;
+}
+.rubrics-content_box {
+  padding: 32px 40px;
+  background-color: #ffffff;
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+}
+.view-rubrics_heading {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "link");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.view-rubrics_cont {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding: 12px 0 20px 0;
+}
+.box-view_rubrics {
+  border: 1px solid #dfe1e5;
+  border-radius: 12px 12px 0 0;
+  overflow: auto;
+  max-width: 100%;
+}
+.rubrics-full-table_view{
+  margin: 0;
+  height: 100%;
+  table-layout: fixed;
+  width: auto;
+
+}
+.thead-light_box {
+  background-color: #e2f3fb;
+  padding: 10px 12px;
+}
+.rubrics-thead {
+  border: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  border: none !important;
+}
+
+.rubrics-inner-table_view td {
+  border: 1px solid #dfe1e5;
+  padding: 10px 12px;
+  border-left: 1px solid #dfe1e5;
+  border-bottom: solid 0;
+  border-top: solid 0;
+}
+.rating-point_table_view {
+  padding: 0 !important;
+  border: 0px solid #dfe1e5;
+}
+.rubrics-inner-table_view{
+  height: 100% !important;
+  margin: 0;
+  table-layout: fixed;
+  // width: fit-content;
+}
+.rubrics-box_cont_view{
+  border-top: solid 0 !important;
+}
+.criteria-head_label {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "primary");
+  margin: 0;
+}
+.criteria-cont_label {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  padding-top: 6px;
+}
+.point-view_value {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.point-view_head {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-top: 8px;
+}
+.point-view_cont {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  padding-top: 4px;
+}
+.value-point_total {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.total-point_view {
+  text-align: right;
+  margin: 0;
+  font-size: map-get($font-sizes, "medium");
+  color: map-get($font-color, "default");
+  padding: 16px 28px;
+  border: solid 1px #dfe1e5;
+  border-radius: 0px 0 12px 12px;
+  border-top: 0;
+}
+
+.select-model_rubrics{
+  background-color: #0D9BE1;
+  color: #ffffff;
+}
+
+.rubrics-modal_btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+.tooltip-edit_rubric:after {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+  transform: translateX(0%) translateY(0);
+  z-index: 9999;
+  font-size: 13px;
+  width: 250px;
+  word-break: break-word !important;
+  
+}
+.tooltip-edit_rubric:hover:after {
+  transform: translateX(0%) translateY(0);
+}
+.value-point_input {
+  text-align: center;
+}
+.value-point_view {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding-top: 12px;
+}
+
+.tooltip-edit_ins_rubric:after {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  transform: translateX(0%) translateY(0);
+  z-index: 9999;
+  font-size: 13px;
+  width: 250px;
+  word-break: break-word !important; 
+}
+
+.tooltip-edit_ins_rubric:hover:after {
+  transform: translateX(0%) translateY(0);
+}

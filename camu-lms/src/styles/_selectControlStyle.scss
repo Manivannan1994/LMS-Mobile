@@ -1,0 +1,26 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.select-dropdown_default {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 30px;
+  font-size: 13px;
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: auto;
+  padding: 6px 34px 6px 16px;
+}
+// .css-1s2u09g-control{
+//     line-height: 25px;
+//     border-radius: 30px !important;
+//     font-size: 13px;
+//     color: #091e42;
+//     border: solid 2px #dfe1e5;
+//     width: auto;
+//     padding: 0px 10px 0px 10px;
+// }
+// .css-1s2u09g-control:hover{
+//     border-radius: 30px !important;
+// }

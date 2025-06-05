@@ -1,0 +1,232 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.cont-nav {
+	padding: 22px 24px;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffffff;
+}
+
+.course-name h6 {
+	font-size: map-get($font-sizes, "large");
+	color: map-get($font-color, "default");
+	font-weight: map-get($font-weight, "normal-weight");
+	margin: 0;
+}
+
+.course-name p {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+	font-weight: map-get($font-weight, "small-weight");
+	padding-top: 3px;
+	margin: 0;
+}
+
+.participants-course {
+	background-color: #ffffff;
+	padding: 34px 24px;
+}
+
+.participants-content {
+	padding: 0;
+}
+
+.course-cont_box {
+	border-right: solid 1px #dfe1e5;
+	padding-right: 24px;
+}
+
+.course-link_box {
+	display: flex;
+	align-items: center;
+}
+
+.course-link_label {
+	font-size: map-get($font-sizes, "medium");
+	color: map-get($font-color, "default");
+	margin: 0 24px 0 0;
+}
+
+.url-cont_label {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+	margin: 0;
+	padding-bottom: 6px;
+}
+
+.select-stud_list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.url-link_box {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 16px;
+}
+
+.email-invite {
+	padding: 0 32px;
+}
+
+.invite-email_cont {
+	margin-top: 22px;
+}
+
+.participants-content_tab {
+	padding: 0 24px;
+	border-bottom: solid 1px #ebedf0;
+	background-color: white;
+}
+
+.participants-tabs_cont {
+	padding: 24px;
+}
+
+.student-participants_search {
+	margin-bottom: 24px;
+}
+
+.stud-list_view {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+	margin: 0 24px 0 0;
+}
+.stud-progress_stus {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+.stud-progress {
+	width: 100%;
+}
+.stud-progress_labal {
+	margin: 0 0 0 4px;
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "default");
+}
+.table-header_label{
+	text-transform: uppercase;
+}
+.participant-table_filter{
+	padding: 0px 24px;
+}
+.participant-empty_cont p{
+	margin: 0;
+	text-align: center;
+	font-size: map-get($font-sizes, "large");
+	color: map-get($font-color, "default" );
+	padding-top: 150px;
+}
+
+.header-options {
+	background: #f4f5f7;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 8px;
+	border: solid 1px #dfe1e5;
+	margin-left: 16px;
+  }
+
+  .group-name {
+	font-size: 16px;
+	color: map-get($font-color, "default");
+	font-weight: 400;
+	height: 20px;
+	margin: 0;
+}
+
+.group-stud-names{
+	color: map-get($font-color, "default");
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.view-options_cont_group {
+	top: 60px !important;
+	box-shadow: 0 1px 7px #d8d8d8;
+	border: none;
+	z-index: 1;
+	left: -90px !important;
+	top: 10px !important;
+	width: 550px;
+	height: 700px;
+	overflow: hidden;
+  }
+
+  .view-options_cont_studs{
+	top: 60px !important;
+	box-shadow: 0 1px 7px #d8d8d8;
+	border: none;
+	z-index: 1;
+	left: -50px !important;
+	top: 10px !important;
+	width: auto;
+	max-height: 300px;
+	overflow: auto;
+  }
+
+  .participants-group-students{
+	max-height: 600px;
+	overflow-y: scroll;
+  }
+  
+  .cont-search-box-participant{
+	width: 100%;
+  }
+
+  .group-alert-info{
+	display: flex;
+	background-color: #ECF5FE;
+	height: 30px !important;
+	align-items: center;
+	border-radius: 10px !important;
+  }
+
+  .group-alert-box{
+	min-width: 100%;
+  }
+
+  .group-alert_label{
+	margin: 0;
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "default");
+	padding-left: 12px;
+  }
+
+  .group-label{
+	color: #788396;
+    width: 80px;
+	word-break: normal;
+  }
+
+  .groups_container{
+	height: 60vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+  }
+  .students_left_container{
+	height: auto;
+	border-radius: 10px;
+	background-color: #ECF5FE;
+  }
+
+  .group-info-label-link{
+	margin: 0;
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "primary");
+	font-weight: 500;
+	text-decoration: underline;
+	cursor: pointer;
+  }
+
+  .view-options_cont_participant{
+	top: 0 !important;
+	left: 0 !important;
+  }

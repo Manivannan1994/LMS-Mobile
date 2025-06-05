@@ -1,0 +1,49 @@
+/* styles.css */
+
+.camu-file_dnd {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease-in-out;
+    user-select: none;
+    display: flex;
+    border-radius: 4px;
+    align-items:baseline;
+    justify-content: space-between;
+  }
+  .drag-txt{
+    color: #7F8A9D;
+    margin: 0;
+  }
+  .drop-or{
+    margin-left: 10px;
+    color: #7F8A9D;
+  }
+  .camu-file_dnd.dragging {
+    border-color: #007bff;
+    background-color: #e6f7ff;
+  }
+  
+  .camu-file_dnd input[type="file"] {
+    display: none;
+  }
+  
+  /* Optional styles for the "Or Drag and Drop File Here" text */
+  .camu-file_dnd span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .file-btn{
+    padding: 6px;
+    margin-bottom: 0px !important;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .selective-file{
+    color: #7F8A9D;
+    font-size: 14px;
+    margin-bottom: 0px !important;
+  }
+  

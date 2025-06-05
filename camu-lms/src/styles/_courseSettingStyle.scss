@@ -1,0 +1,236 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.course-setting_container {
+  padding: 42px 60px;
+}
+
+.course-setting_header {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 12px;
+}
+.course-setting_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.course-setting {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}
+.course-form_header {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 4px;
+}
+.course-form_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+.course-setting_form {
+  border-bottom: solid 1px #dfe1e5;
+  padding-bottom: 20px;
+}
+.course-setting_select {
+  padding: 20px 0 0 0;
+}
+.course-setting_list {
+  display: flex;
+  padding-bottom: 24px;
+}
+.course-setting_label {
+  margin-left: 10px;
+}
+.course-label_header {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 4px;
+}
+.course-label_cont {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.course-setting_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.grade-setting_cont{
+  margin-top: 32px;
+}
+
+.grade-course_setting {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  
+}
+.grade-course_select{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grade-category_select{
+  border-top: solid 1px #DFE1E5;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.grade-input_head{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.grade-category_input{
+  padding-top: 8px;
+}
+.grade-category_remove{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.add-grade_category {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "active");
+  margin-top: 16px;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.add-grade_category span {
+  margin-right: 12px;
+}
+.required-label_grade{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "error" );
+  padding-top: 8px;
+}
+
+.grade-course_scheme {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+.grade-category_table{
+  border-top: solid 1px #DFE1E5;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.category-table_heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-inst_name{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.grading-scheme_table{
+  width: 100%;
+  margin-top: 20px;
+}
+.grade-head_table th{
+  text-align: left;
+  padding: 8px;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.grade-range_table td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 14px 8px ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+
+}
+.no-gradscheme {
+  padding: 5px 17px;
+  background-color: #ecf5fe;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+.grade-notfound {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.grade-notfound span {
+  margin-right: 13px;
+}
+.grade-add span {
+  margin-right: 13px;
+}
+.grade-add {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "active");
+}
+.add-grade_scheme {
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "active");
+  cursor: pointer;
+  width: fit-content;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.grade-lists {
+  margin-top: 20px;
+  border-top: 1px solid #dfe1e5;
+  padding-top: 12px;
+}
+.add-cat_grade{
+  margin: 18px 0 0 0;
+}
+.add_cat_remain {
+  margin: 18px 0 0 0;
+  font-size: map-get($font-sizes, "small-xs");
+  color: map-get($font-color, "disabled");
+}
+.add_cat_remain_over {
+  margin: 18px 0 0 0;
+  font-size: map-get($font-sizes, "small-xs");
+  color: map-get($font-color, "error");
+}
+.grade-setting_form{
+  flex: 1;
+  padding-right: 16px;
+}
+.select-cont_archive{
+  border-top: solid 1px #DFE1E5;
+  margin-top: 30px;
+ 
+}
+.select-cont_check{
+  padding-top: 30px;
+}
+.select-cont_check span{
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding-left: 8px;
+  position: relative;
+  top: -4px;
+}
+.notification-course_scheme{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}

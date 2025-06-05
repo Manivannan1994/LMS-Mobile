@@ -1,0 +1,210 @@
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+@import "../styles/colorStyle";
+
+.schedule-content_box {
+  width: 100%;
+  // min-height: 100vh;
+  background-color: #f4f5f7;
+}
+.schedule-content_list {
+  min-height: 100vh;
+  padding-top: 88px;
+}
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #ebedf0;
+}
+.list-cont {
+  background-color: #f5f6f7;
+  padding: 24px 80px;
+  height: 90vh;
+}
+.list-cont_box {
+  padding: 16px;
+  background-color: #ffffff;
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.list-cont_box h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #091e42;
+  margin: 0;
+  padding-bottom: 4px;
+}
+.list-cont_box p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #495973;
+  margin: 0;
+  padding-bottom: 4px;
+}
+ul.list-cont_date {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+ul.list-cont_date li {
+  display: inline;
+  font-size: 13px;
+  color: #7f8a9d;
+  font-weight: 400;
+}
+ul.list-cont_date li + li:before {
+  padding: 8px;
+  color: #7f8a9d;
+  content: "|";
+}
+.cont-search-box {
+  width: 60%;
+}
+.cont-search_box {
+  height: 40px !important;
+  padding: 5px 42px !important;
+  border-radius: 26px !important;
+  background-color: #ffffff !important;
+  border: solid 1px #dfe1e5 !important;
+  font-size: 13px !important;
+  margin-bottom: 16px;
+}
+.icons-search {
+  position: absolute;
+  width: 36px;
+  height: 40px;
+  padding: 8px;
+  margin-left: 3px;
+  color: #788396;
+}
+.option-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.selector select option {
+  color: #333;
+  position: relative;
+  top: 5px;
+}
+select.input-lg {
+  height: 40px !important;
+  line-height: 25px !important;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #091e42;
+  border: solid 1px #dfe1e5;
+}
+
+.icon-dropdown {
+  position: absolute !important;
+  right: 30px !important;
+  top: 10px !important;
+}
+
+.selector {
+  // width: 40%;
+  float: right;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.filter-cont {
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+  color: #495973;
+  padding-top: 10px;
+  padding-right: 12px;
+}
+
+// ......................................course list type css.............................//@extend
+
+.course-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: solid 1px #ebedf0;
+  border-left: solid 5px #880e4f;
+  margin-bottom: 10px;
+}
+.course__code {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.course__name {
+  @include large-text;
+  margin: 0;
+  color: #880e4f;
+}
+.course__nofi {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.course__date {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+
+// ......................... calendar tabs code css...................//@include
+.date-changes {
+  padding: 26px 24px;
+  background-color: #f4f5f7;
+}
+.date-option {
+  background-color: #fff;
+  border-radius: 30px;
+  border: solid 2px #dfe1e5;
+  overflow: hidden;
+}
+.project-tab #tabs .date-option .nav-item.show .nav-link,
+.date-option .nav-link.active {
+  color: #0d9be1;
+  background-color: #e2f3fb;
+  border-color: transparent !important;
+  border-radius: 0;
+  font-size: 16px;
+}
+.project-tab #tabs .date-option .nav-item.show .nav-link,
+.date-option .nav-link {
+  border: 0px solid transparent;
+  color: #495973;
+  font-size: 16px;
+  padding: 10px 0px;
+  cursor: pointer;
+  border: none !important;
+}
+.select-dates {
+  text-align: center;
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  padding-top: 6px;
+}
+.calendar-view_option {
+  padding: 0;
+}
+.schedule-select_dates {
+  text-align: center;
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  cursor: pointer;
+}
+.utc-time_label {
+  text-align: center;
+  font-size: map-get($font-sizes, "small");
+  padding-top: 8px;
+}

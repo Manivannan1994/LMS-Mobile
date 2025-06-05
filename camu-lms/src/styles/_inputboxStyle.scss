@@ -1,0 +1,84 @@
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+@import "../styles/colorStyle";
+
+.input-default {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: map-get($font-sizes, "small");
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: 250px;
+  padding: 0 12px 0px 12px;
+}
+.input-default:focus{
+  border: solid 2px #0D9BE1;
+}
+.input-block {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  color: #091e42;
+  font-size: map-get($font-sizes, "small");
+  border: solid 2px #dfe1e5;
+  width: 100%;
+  padding: 0 12px 0px 12px;
+}
+.input-block:focus {
+  border: solid 2px #0D9BE1;
+}
+
+.input-message-block {
+  height: 400px;
+  line-height: 25px;
+  border-radius: 4px;
+  color: #091e42;
+  font-size: map-get($font-sizes, "small");
+  border: solid 2px #dfe1e5;
+  width: 100%;
+  padding: 0 12px 0px 12px;
+}
+.input-message-block:focus {
+  border: solid 2px #0D9BE1;
+}
+.input-table {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: 70px;
+  padding: 0 12px 0px 12px;
+}
+.input-modal {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: 140px;
+  padding: 0 12px 0px 12px;
+}
+
+.input-modal:focus {
+  border: solid 2px #0D9BE1;
+}
+
+.calender-icon {
+  background: url("data:image/svg+xml;utf8,<svg  width='24' height='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' ><rect x='3' y='4' width='18' height='18' rx='2' ry='2'></rect><line x1='16' y1='2' x2='16' y2='6'></line><line x1='8' y1='2' x2='8' y2='6'></line><line x1='3' y1='10' x2='21' y2='10'></line></svg>")
+    no-repeat;
+  background-position: right 10px top 50%;
+}
+.clock-icon {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' ><circle cx='12' cy='12' r='10'></circle><polyline points='12 6 12 12 16 14'></polyline></svg>")
+    no-repeat;
+  background-position: right 10px top 50%;
+}
+.eye-icon {
+  background: url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z' stroke='#495973' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z' stroke='#20252e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat;
+  background-position: right 10px top 50%;
+}

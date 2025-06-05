@@ -1,0 +1,91 @@
+$font-color: (
+  default: #091e42,
+  subdued: #495973,
+  disabled: #7f8a9d,
+  active: #009ce9,
+  dark: #000000,
+  lite: #ffffff,
+  positive: #469b1f,
+  error: #f24b6b,
+  disabled-lite: #fafbfc,
+  primary: #006fac,
+  warning: #bf8012,
+  link:#0D9BE1
+);
+$bg-color: (
+  navigation: #fafbfc,
+  layout: #f5f6f7,
+  Selection: #ebedf0,
+  light-bg: #ffffff,
+  dark-bg: #000000,
+  error-bg: #f24b6b,
+  lite_dark-bg: #7f8a9d,
+  secondary: #f4f5f7,
+);
+$modelbox-color: (
+  positive: #e7fcba,
+  warning: #fdf3bf,
+  critical: #fef1f3,
+  promote: #f8f2ff,
+  info-alert: #091e42,
+  primary:#ECF5FE,
+);
+$toaster-bg: (
+  success: #e7fcba,
+  error: #fef1f3,
+  warning: #fdf3bf,
+  info: #ecf5fe,
+  success-border: #469b1f,
+  info-border: #0d9be1,
+  error-border: #f24b6b,
+  warning-border: #fdf3bf,
+);
+$icon-color: (
+  primary: #0076ad,
+  warning: #d16d02,
+  positive: #469b1f,
+  error: #f24b6b,
+  dark: #495973,
+  lite: #ffffff,
+  secondary: #091e42,
+  disabled: #7f8a9d,
+);
+$button-color: (
+  default: #f5f6f7,
+  primary: #2d9be1,
+  select: #e7fcba,
+);
+$border-color: (
+  default: #dfe1e5,
+  positive: #469b1f,
+  secondary: #dfe1e5,
+  primary:#091E42A3,
+);
+$spinner-color: (
+  default: #2d9be1,
+  dark: #091e42,
+);
+$button-hover:(
+  primary:#1D98D4,
+  secondary:#EBEDF0,
+);
+ 
+
+$progress-bar-color: (
+  default:
+    linear-gradient(
+      to right,
+      #009ce9 30%,
+      #009be9f1 50%,
+      #009be9c2 80%,
+      #009be996 100%
+    ),
+  primary:
+    linear-gradient(
+      to right,
+      #2fe900 30%,
+      #00e94ef1 50%,
+      #00e93ac2 80%,
+      #00922cc9 100%
+    ),
+);

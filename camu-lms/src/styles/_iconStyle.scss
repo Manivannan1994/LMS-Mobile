@@ -1,0 +1,119 @@
+@import "../styles/fontStyle";
+@import "../styles/colorStyle";
+
+.svg-icon_default {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+.svg-icon_small {
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+}
+.svg-icon_normal {
+  width: 24px;
+  height: 24px;
+  vertical-align: top;
+}
+.svg-icon_extra-small {
+  width: 18px;
+  height: 18px;
+  vertical-align: text-top;
+}
+.svg-icon_light {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.svg-icon_large {
+  width: 36px;
+  height: 36px;
+  vertical-align: top;
+}
+.icon-pointer {
+  cursor: pointer;
+}
+.icon-grab {
+  cursor: grab;
+}
+.icon-primary {
+  color: map-get($icon-color, "primary");
+}
+.icon-alert {
+  color: map-get($icon-color, "warning");
+}
+.icon-positive {
+  color: map-get($icon-color, "positive");
+}
+.icon-dark {
+  color: map-get($icon-color, "dark");
+}
+.icon-white {
+  color: map-get($icon-color, "lite");
+}
+.icon-error {
+  color: map-get($icon-color, "error");
+}
+.icon-default {
+  color: map-get($icon-color, "disabled");
+}
+.icon-secondary {
+  color: map-get($icon-color, "secondary");
+}
+.icon-disable {
+  color: map-get($icon-color, "disabled");
+  cursor: not-allowed;
+}
+.close-icon {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}
+.close-icon-network {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.close-icon-banner {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.icon-left {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+.icon-right {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+.nav-icon {
+  padding: 16px;
+  width: 54px;
+  height: 54px;
+}
+
+.icon-center {
+  vertical-align: baseline;
+}
+.left-icon {
+  margin-left: 16px;
+}
+.right-icon {
+  margin-right: 16px;
+}
+.icon-space {
+  margin-right: 6px;
+}
+.icon-space_left {
+  margin-right: 6px;
+}
+.icon-space_right {
+  margin-left: 6px;
+}
+.icon-right_side {
+  float: right;
+}

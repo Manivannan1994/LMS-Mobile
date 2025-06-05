@@ -1,0 +1,37 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.time-picker {
+  border: solid 2px #dfe1e5;
+  border-radius: 4px;
+  // padding: 8px 12px;
+  padding: 12px 30px 12px 12px;
+  font-size: map-get($font-sizes, "small");
+}
+.time_icon {
+  background: url(../assets/images/clock.svg) no-repeat;
+  // background-position: right 12px top 50%;
+  background-position: right 8px top 50%;
+
+  background-color: #ffffff;
+}
+// .schedule-theme {
+//   background-color: transparent;
+//   border: none;
+//   font-size: 24px;
+//   text-align: center;
+//   color: map-get($font-color, "default");
+// }
+// .react-time_format .react-datepicker__month-container {
+//   display: none !important;
+// }
+// .react-time_format .react-datepicker__navigation--previous {
+//   display: none !important;
+// }
+// .react-time_format .react-datepicker__navigation--next {
+//   display: none !important;
+// }
+// .react-time_format .react-datepicker__input-time-container {
+//   margin: 10px !important;
+// }

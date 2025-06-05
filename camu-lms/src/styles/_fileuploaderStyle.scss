@@ -1,0 +1,248 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.edit-module_container {
+  width: 100%;
+  background-color: #f4f5f7;
+  height: 100%;
+  padding: 0;
+}
+
+.edit-box_heading {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "subdued");
+  margin-bottom: 4px;
+}
+.edit-module_header {
+  padding: 40px 30px 24px;
+  background-color: #ffffff;
+}
+.page-input_title {
+  display: flex;
+  align-items: center;
+}
+.page-input_details {
+  margin-left: 16px;
+  width: 80%;
+  position: relative;
+  top: -16px;
+}
+.publish-btn {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+}
+.save-page_btn {
+  margin-left: 12px;
+}
+.text-editor {
+  padding: 32px 64px;
+}
+.nav-urllink:hover {
+  text-decoration: none;
+}
+.file-upload_content {
+  padding: 24px 80px;
+}
+.check-box-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+.check-box {
+  margin-right: 8px; 
+}
+.check-box-text {
+  color: #495973;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.published-view_label {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "positive");
+  padding-right: 12px;
+}
+.unpublished-view_label {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "disabled");
+  padding-right: 12px;
+}
+// .................. file upload modebar css.................//@include
+.file-upload_box {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.file-upload {
+  padding: 14px;
+  border: dashed 1px #495973;
+  border-radius: 4px;
+  background-color: #fafbfc;
+}
+.drag-files {
+  margin: 0;
+  font-size: 14px;
+  padding: 12px 0;
+  color: #495973;
+}
+.option-file {
+  margin-right: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #495973;
+}
+.file-selection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.uploaded-filename {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin-top: 16px;
+  background: #fafbfc;
+  border-radius: 4px;
+  align-items: center;
+  border: solid 1px #dfe1e5;
+}
+.file-option {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #0086ff;
+  overflow-wrap: anywhere;
+}
+.uploaded-files {
+  font-size: map-get($font-sizes, "normal");
+  margin: 0;
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.uploaded-files_name {
+  display: flex;
+  align-items: center;
+}
+.views-option_file {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #dfe1e5;
+  margin-left: 16px;
+}
+.mandatory-field {
+  color: #f24b6b;
+  font-size: 23px;
+  position: relative;
+  top: 8px;
+  font-weight: normal;
+}
+.more-options {
+  display: flex;
+  align-items: center;
+}
+.reload-content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  text-decoration: underline;
+  color: map-get($font-color, "error");
+  cursor: pointer;
+}
+.img-edit_option {
+  top: 5px !important;
+  box-shadow: 0 1px 7px #d8d8d8; 
+  border: none;
+  z-index: 1;
+  left: -80px !important;
+}
+.text-empty_content{
+  color: map-get($font-color, "error" ) ;
+  padding-top: 6px;
+  font-size: map-get($font-sizes, "xs-small");
+}
+.text-error_content{
+  color: map-get($font-color, "error" ) ;
+  padding-top: 12px;
+  font-size: map-get($font-sizes, "xs-small");
+  margin: 0;
+}
+.external-file_modal{
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px #DFE1E5;
+  left: auto !important;
+  right: -70px !important;
+  width: 300px;
+}
+.form_add_label{
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+  padding-bottom: 14px;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.external-form_list{
+  margin: 0 0 16px 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  cursor: pointer;
+  
+}
+.external-form_list span{
+  margin-right: 16px;
+}
+.external-link_file{
+  border-top: 1px solid #DFE1E5;
+  padding-top: 20px;
+}
+.add-file_label{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding-bottom: 8px;
+}
+.file-url_input{
+  margin-bottom: 8px;
+}
+.file-select_path{
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+  padding-left: 10px;
+}
+.file-select_name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.tooltip--top_filed:after {
+  content: attr(data-tooltip); 
+  position: absolute;
+  left: 50%;
+  bottom: 100%; 
+  transform: translateX(-50%) translateY(-5px);
+  z-index: 9999;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  padding: 5px; 
+  border-radius: 4px; 
+  visibility: hidden; 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+
+.tooltip--top_filed:hover:after {
+  visibility: visible; 
+  opacity: 1;
+}

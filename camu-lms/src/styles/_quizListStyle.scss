@@ -1,0 +1,92 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.quiz-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.quiz-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.quiz-selection {
+  padding: 24px;
+}
+.quiz-search {
+  margin-bottom: 24px;
+}
+.quiz-titles {
+  // cursor: pointer;
+  width: 100%;
+}
+.quiz-lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  // cursor: pointer;
+}
+.quiz-list_heading {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-bottom: 3px;
+}
+.quiz-list_heading_hide {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "disabled");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-bottom: 3px;
+}
+.quiz-list_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+}
+.quiz-options {
+  display: flex;
+  align-items: center;
+}
+.option-list_dropdown {
+  padding-left: 16px;
+}
+.edit-quiz_cont {
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+}
+.quiz_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small-xs");
+  color: map-get($font-color, "subdued");
+}
+.quiz-content_date{
+  margin-left: 4px;
+
+}
+.delete-quiz_cont {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "error");
+  font-weight: map-get($font-weight, "small-weight");
+  position: relative;
+  top: 2px;
+}

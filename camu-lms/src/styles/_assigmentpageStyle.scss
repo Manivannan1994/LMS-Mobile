@@ -1,0 +1,34 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+
+.assignment-page_header {
+  background-color: #1d98d4;
+  padding: 16px;
+}
+.task-name {
+  @include default-text;
+  margin: 0;
+  color: map-get($font-color, "lite");
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.student-badge {
+  display: flex;
+  align-items: center;
+}
+.student-info {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #2fa0d7;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+.stud-name {
+  @include small-text;
+  margin: 0;
+  color: map-get($font-color, "lite");
+  padding-left: 12px;
+}

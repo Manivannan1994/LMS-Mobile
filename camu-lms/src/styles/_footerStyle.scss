@@ -1,0 +1,28 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.footer-policy {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  align-items: center;
+  height: 100%;
+}
+.footer-policy li {
+  margin-right: 10px;
+  border-bottom: solid 1px rgb(233, 233, 233);
+}
+.footer-cont {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 16px 32px;
+  border-top: solid 1px #e0e0e0;
+}
+.app-link {
+  float: right;
+}

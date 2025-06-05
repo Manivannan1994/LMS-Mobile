@@ -1,0 +1,61 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+
+.alert {
+  margin: 0 ;
+  z-index: 99 ;
+  border-radius: 0 ;
+  padding: 0;
+}
+
+.alert-default {
+  @extend .alert;
+  padding: 15px !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.alert-network {
+  @extend .alert;
+  padding: 10px !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.alert-content {
+  text-align: center;
+  margin: 0;
+  justify-content: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+.download-alert {
+  margin: 0 ;
+  z-index: 99;
+  border-radius: 8px !important;
+  padding: 12px !important;
+}
+
+.alert-inline{
+  position: relative;
+  border-radius: 8px !important;
+}
+.alert-text-white {
+  color: map-get($font-color, "lite");
+}
+.alert-warning-bg {
+  background: map-get($modelbox-color, "warning");
+}
+.alert-success-bg {
+  background: map-get($modelbox-color, "positive");
+}
+.alert-danger-bg {
+  background: map-get($modelbox-color, "critical");
+}
+.alert-info-dark {
+  background: map-get($modelbox-color, "info-alert");
+}
+.alert-default-bg {
+  background: map-get($modelbox-color, "primary");
+}

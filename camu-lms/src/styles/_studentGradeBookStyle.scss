@@ -1,0 +1,61 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-grade_tabs {
+  background-color: #ffffff;
+  padding: 0px 40px;
+}
+.student-grade_content {
+  padding: 24px;
+}
+.grade-notification {
+  background-color: #dfe1e5;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  padding: 4px 8px;
+  border-radius: 14px;
+  margin-left: 4px;
+}
+.grade-notification_noAssg {
+  background-color: transparent;
+  padding: 0px;
+}
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.course-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.course-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.grade-options_view {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: solid 1px #dfe1e5;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.grade-view_options {
+  top: 60px !important;
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+  z-index: 1;
+  left: -20px !important;
+}

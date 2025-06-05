@@ -1,0 +1,122 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+
+.dashboard-nav {
+  width: 100%;
+  // height: 100vh;
+  min-height: 100vh;
+}
+.nav-heading {
+  text-align: left;
+  padding: 22px 32px;
+  border-bottom: solid 1px #ebecf0;
+}
+.dashboard-content {
+  padding: 16px 0px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
+  grid-gap: 0px 0px;
+}
+
+.nav-heading p {
+  font-size: 14px;
+  color: #495973;
+  margin: $margin-default;
+  padding-top: 5px;
+}
+
+.nav-heading h5 {
+  font-size: 16px;
+  color: #091e42;
+  margin: $margin-default;
+  font-weight: 600;
+}
+.dashboard-contents {
+  // padding: 24px 16px;
+  padding: 112px 24px 36px 24px;
+}
+.dashboard-search_cont {
+  padding: 0 8px;
+  // padding-bottom: 16px;
+  // margin-top: 86px;
+}
+.cont-search-box {
+  width: 60%;
+}
+.selector-course {
+  float: right;
+}
+.notification-badge {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  right: 20px;
+}
+.badge-list {
+  font-size: 14px;
+  color: #091e42;
+}
+.notification-icons {
+  width: 15px;
+  vertical-align: bottom;
+}
+.box2 {
+  background-color: #8a62f83d;
+}
+.box2 h6 {
+  color: #8962f8;
+}
+.box3 {
+  background-color: #e0694e56;
+}
+.box3 h6 {
+  color: #e0694e;
+}
+.box4 {
+  background-color: #50161c38;
+}
+.box4 h6 {
+  color: #fd4154;
+}
+.box5 {
+  background-color: #4663b23a;
+}
+.box5 h6 {
+  color: #4662b2;
+}
+.box6 {
+  background-color: #7c7a6634;
+}
+.box6 h6 {
+  color: #7c7a66;
+}
+.search-box {
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+}
+.cont-searchbox {
+  height: 40px !important;
+  padding: 5px 42px !important;
+  border-radius: 26px !important;
+  background-color: #f4f5f7 !important;
+  border: solid 1px #dfe1e5 !important;
+  font-size: 13px !important;
+}
+.icons-search {
+  position: absolute;
+  width: 36px;
+  height: 40px;
+  padding: 8px;
+  margin-left: 3px;
+  color: #788396;
+}
+.sub-routing {
+  text-decoration: none !important;
+}
+.dropdown-default::-ms-expand {
+  display: none !important;
+}

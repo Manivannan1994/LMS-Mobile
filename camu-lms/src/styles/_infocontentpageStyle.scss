@@ -1,0 +1,51 @@
+@import "../styles//colorStyle";
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+
+.info-content_box {
+  background-color: map-get($bg-color, "layout");
+  // height: 90vh;
+  padding: 35px;
+}
+.info-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.label-text {
+  @include default-text;
+}
+.textarea-box {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: solid 1px #dfe1e5;
+}
+.text-area_box {
+  margin-bottom: 10px;
+}
+
+.panel-group .panel-heading a {
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+  position: relative;
+}
+
+.panel-group .panel-heading a:after {
+  content: "-";
+  float: right;
+  position: relative;
+  top: -15px;
+  font-size: 30px;
+}
+
+.panel-group .panel-heading a.collapsed:after {
+  content: "+";
+  position: relative;
+  top: -7px;
+  font-size: 24px;
+}
+.label-cont {
+  @include bold-text;
+  color: map-get($font-color, "disabled");
+}

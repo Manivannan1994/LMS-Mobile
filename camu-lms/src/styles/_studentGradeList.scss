@@ -1,0 +1,166 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-grade_tabs {
+  background-color: #ffffff;
+  padding: 0px 40px;
+}
+.student-grade_content {
+  padding: 24px;
+}
+.student-grades_table td {
+  vertical-align: middle !important;
+}
+.grade-notification {
+  background-color: #dfe1e5;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  padding: 4px 8px;
+  border-radius: 14px;
+  margin-left: 4px;
+}
+.posted-info_label {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "positive");
+  margin: 0;
+  margin-left: 24px;
+}
+
+.table-cont td .grad-sub_content {
+  padding: 0px;
+  background: white;
+  border-radius: 0px;
+  color: map-get($font-color, "default");
+}
+.post-align_content {
+  display: flex;
+  align-items: center;
+}
+.feedback-info_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.stud-grad_list {
+  cursor: pointer;
+}
+.edit-feedback_dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.student-table_search {
+  margin-bottom: 24px;
+}
+.feedback-label_edit {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.feedback-content_edit {
+  box-shadow: 0px 4px 20px 0px #091e4226 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  left: auto !important;
+  z-index: 1 !important;
+  right: 24px !important;
+  top: auto !important;
+  width: 350px;
+}
+.stud-feedback_edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stud-feedback_info {
+  display: flex;
+  align-items: center;
+}
+.edit-info_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin-left: 54px;
+}
+.edit-info_date {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+  margin-left: 54px;
+  padding-top: 5px;
+}
+.date-separate {
+  height: 4px !important;
+  width: 4px !important;
+  background-color: map-get($font-color, "disabled") !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  position: relative !important;
+  top: -3px !important;
+  margin: 0 4px !important;
+  padding: 0 !important;
+}
+.stud-img_list {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.feedback-content {
+  box-shadow: 0px 4px 20px 0px #091e4226 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  left: auto !important;
+  z-index: 1 !important;
+  right: 24px !important;
+  top: auto !important;
+}
+.feedback-label {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-bottom: 16px;
+}
+.feedback-buttons {
+  float: right;
+  margin-top: 12px;
+}
+.grade-post {
+  float: right;
+}
+.stud-grad_name {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: map-get($font-color, "default") !important;
+  border-radius: 0 !important;
+  text-decoration: underline !important;
+}
+.stud-grad_name_unimp {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: map-get($font-color, "default") !important;
+  border-radius: 0 !important;
+}
+.edit-stud_name {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.feedback_label {
+  text-align: right;
+}
+.stud-grad_dropped{
+  font-size: map-get($font-sizes, "xs-small") !important;
+  font-weight: map-get($font-weight, "normal-weight")!important;
+  color: #495973!important;
+  background: #EBEDF0!important;
+  border-radius: 12px!important;
+  padding:2px 8px!important;
+  margin-left: 4px;
+}

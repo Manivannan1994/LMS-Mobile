@@ -1,0 +1,122 @@
+@import "../styles//colorStyle";
+@import "../styles/fontStyle";
+@import "../styles//elementStyle";
+
+button {
+  font-size: 14px !important;
+  font-weight: 600 ;
+  padding: 5px 16px !important;
+  outline: none;
+  border: 0;
+  height: 40px !important;
+}
+.btn-block {
+  width: 100%;
+}
+.button-default:focus {
+  outline: none;
+}
+.default {
+  background-color: map-get($button-color, "primary");
+  color: map-get($font-color, "lite");
+  border: solid 2px #2d9be1;
+}
+.default:hover {
+  background-color: map-get($button-hover, "primary");
+  color: map-get($font-color, "lite");
+}
+.default:active {
+  background-color: map-get($button-hover, "primary");
+  color: map-get($font-color, "lite");
+  border: solid 2px #006FAC;
+}
+
+.secondary {
+  background-color: map-get($button-color, "default");
+  color: map-get($font-color, "active");
+  border: none;
+}
+.secondary-btn {
+  background-color: map-get($bg-color, "secondary");
+  color: map-get($font-color, "subdued");
+  border: solid 2px map-get($border-color, "secondary");
+}
+
+.secondary-btn:hover{
+  background-color: map-get($button-hover, "secondary");
+  color: map-get($font-color, "subdued");
+  border: solid 2px map-get($border-color, "secondary");
+}
+.secondary-btn:active{
+  background-color: map-get($button-hover, "secondary");
+  color: map-get($font-color, "subdued");
+  border: solid 2px map-get($border-color, "primary");
+}
+
+
+.positive-btn {
+  background-color: map-get($button-color, "select");
+  color: map-get($font-color, "positive");
+  border: solid 2px map-get($border-color, "positive");
+}
+.lite_dark-btn {
+  background-color: map-get($bg-color, "lite_dark-bg");
+  color: map-get($font-color, "lite");
+}
+.delete-btn {
+  background-color: map-get($bg-color, "error-bg");
+  color: map-get($font-color, "lite");
+}
+.button-lite {
+  background-color: map-get($bg-color, "light-bg");
+  color: map-get($font-color, "subdued");
+  border: solid 2px map-get($border-color, "default");
+}
+.btn-outline {
+  border: solid 2px map-get($border-color, "default");
+  background-color: map-get($button-color, "default");
+  color: map-get($font-color, "subdued");
+}
+.btn-transparent {
+  background: transparent;
+  border: none;
+  color: map-get($font-color, "default");
+  text-decoration: underline;
+}
+.icon-btn {
+  background-color: map-get($button-color, "default");
+  border: solid 2px map-get($border-color, "primary");
+  color: map-get($font-color, "subdued");
+  padding: 10px;
+}
+.icon-rounded {
+  border-radius: 50%;
+}
+.btn-rounded {
+  border-radius: 20px;
+}
+.btn-left {
+  margin-left: 12px;
+}
+.btn-right {
+  margin-right: 12px;
+}
+.btn-space {
+  margin: 0 12px;
+}
+.btn-disable {
+  background-color: map-get($bg-color, "lite_dark-bg");
+  color: map-get($font-color, "disabled-lite");
+  cursor: not-allowed !important;
+}
+.button-overflow_text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chatsendbtn{
+  background-color: transparent;
+  color: #0D9BE1;
+  margin-right: 5px;
+}

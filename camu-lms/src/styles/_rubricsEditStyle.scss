@@ -1,0 +1,310 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+.rubrics-module_header {
+  padding: 40px 30px 24px;
+  background-color: #ffffff;
+}
+.rubrics-input_title {
+  display: flex;
+  align-items: center;
+}
+.rubrics-publish_btn {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+}
+.rubrics-input_details {
+  margin-left: 16px;
+  width: 80%;
+  position: relative;
+  top: -16px;
+}
+.form-cont_label {
+  font-size: map-get($font-sizes, "small");
+  font-weight: map-get($font-weight, "normal-weight");
+  color: map-get($font-color, "subdued");
+  margin-bottom: 8px;
+}
+.mandatory-field {
+  color: #f24b6b;
+  font-size: 23px;
+  position: relative;
+  top: 8px;
+  font-weight: normal;
+}
+.rubrics-edit_content {
+  padding: 24px;
+  overflow: auto;
+}
+.option-mode_content {
+  border-left: solid 1px #dfe1e5;
+  margin-left: 16px;
+}
+.views-option {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #dfe1e5;
+  margin-left: 16px;
+}
+.option-list_dropdown {
+  padding-left: 16px;
+}
+.edit-rubrics_cont {
+  top: 5px !important;
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+  z-index: 1;
+}
+.delete-option_btn {
+  color: map-get($font-color, "error");
+}
+.box-edit_rubrics {
+  border: 1px solid #dfe1e5;
+  border-radius: 12px;
+  overflow: auto;
+    max-width: 100%;
+
+}
+.rubrics-full-table {
+  margin: 0;
+  height: 100%;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  table-layout: fixed;
+  width: auto;
+}
+.thead-light_box {
+  background-color: #e2f3fb;
+  padding: 10px 12px;
+}
+.rubrics-thead {
+  border: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  border: none !important;
+}
+
+.rubrics-full-table td {
+  border: 1px solid #dfe1e5;
+  padding: 10px 16px;
+  border-left: solid 0;
+  border-bottom: solid 0;
+}
+.rating-point_table {
+  padding: 0 !important;
+}
+.rubrics-inner-table {
+  height: 100% !important;
+  margin: 0;
+  table-layout: fixed;
+  // width: fit-content;
+}
+.criteria-head_label {
+  font-size: map-get($font-sizes, "small-xs");
+  color: map-get($font-color, "primary");
+  margin: 0;
+}
+.criteria-cont_label {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  padding-top: 6px;
+}
+.point-view_value {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.point-view_head {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-top: 8px;
+}
+.point-view_cont {
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  padding-top: 4px;
+}
+.value-point_total {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.total-point-edit_view{
+  margin: 0;
+  font-size: map-get($font-sizes, "medium");
+  color: map-get($font-color, "default");
+  padding: 8px;
+}
+.total-point_create {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "link");
+  cursor: pointer;
+}
+.table-footer_point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.range-option_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.range-option_label span {
+  position: relative;
+  top: 3px;
+  left: 8px;
+}
+.range-option_view{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+
+}
+.edit_delete_align{
+ display: flex;
+ align-items: center;
+}
+
+.rubrics-inner-table td{
+  border-top: none;
+  border-right: dotted 2px #DFE1E5;
+  border-top: 0px !important;
+}
+.rubrics-inner-table td:last-child{
+ border: none !important;
+}
+.add-point_table{
+  background-color: #e2f3fb;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid 1px #0D9BE1;
+  position: absolute;
+  top: 38%;
+  right: -11px;
+  cursor: pointer;
+  z-index: 999;
+}
+.add-point_table svg{
+  position: relative;
+  top: -4px;
+  left: 1px;
+  cursor: pointer;
+}
+.range-add_points{
+  position: relative;
+}
+.range-add_points:last-child .add-point_table{
+  display: none;
+}
+.range-add_points:last-child .delete_trash_icon{
+  display: none;
+}
+.range-add_points:first-child .delete_trash_icon{
+  display: none;
+}
+
+.criterion-dropdown{
+padding: 0;
+box-shadow: 0 1px 7px #d8d8d8;
+border: none;
+padding: 16px;
+min-width: 240px;
+}
+.duplicate-header_label{
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-top: 12px;
+}
+.duplicate-labels P{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding: 12px 0 0 8px;
+  cursor: pointer;
+}
+.input-point_value{
+  display: flex;
+  justify-content: center;
+}
+.value-point_total{
+  text-align: center;
+}
+.text-empty_content{
+  color: map-get($font-color, "error" ) ;
+  padding-top: 6px;
+  font-size: map-get($font-sizes, "xs-small");
+}
+.rubrics-alert_box{
+  margin-bottom: 12px;
+}
+
+.rubrics-alert_cont{
+  padding: 10px 16px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ecf5fe;
+  border-radius: 8px;
+}
+.rubrics-warn_cont{
+  padding: 10px 16px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FEF1F3;
+  border-radius: 8px;
+}
+
+.rubrics-alert_info{
+  display: flex;
+}
+.rubrics-alert_label{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding-left: 12px;
+}
+.alert-info-primary {
+  background: map-get($modelbox-color, "primary");
+}
+.rubrics-fullviewmodal_close {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: -34px;
+  right: -16px;
+  z-index: 999;
+  padding: 10px 10px;
+}
+.range-select_option{
+  min-width: 170px;
+}
+.rubric-exit_label{
+  margin: 6px 0 0;
+  font-size: map-get($font-sizes, "small-xs");
+  color: map-get($font-color, "error");
+}
+.rubric-exit_label span{
+  margin-right: 8px;
+}

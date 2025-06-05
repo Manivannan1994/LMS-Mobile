@@ -1,0 +1,157 @@
+.plagiarism-cont {
+  padding: 24px;
+}
+
+.page-header h6 {
+  font-size: 1.5rem;
+  color: #091e42;
+  font-weight: 600;
+  margin: 0;
+}
+
+.page-header p {
+  font-size: 0.875rem;
+  color: #495973;
+  font-weight: 400;
+  padding-top: 3px;
+  margin: 0;
+}
+
+.plagiarism-cont .row {
+  margin-bottom: 16px;
+}
+
+.plagiarism-cont .text-area_table {
+  border: solid 2px #dfe1e5;
+  height: 72px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 0.875rem;
+  color: #091e42;
+}
+
+.plagiarism-form_container {
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 2px #ebebeb59;
+}
+
+.config-btns {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+}
+
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.page-container {
+  min-height: 100vh;
+  background-color: #f4f5f7;
+}
+
+.plagiarism-form_container .dropdown-border {
+  width: 100% !important;
+}
+
+.plagiarism-card_container {
+  padding: 16px 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
+  grid-gap: 12px;
+}
+
+.plagiarism-top-content svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #091e42;
+}
+
+.plagiarism-top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f4f5f7;
+  height: 160px;
+  padding: 8px 16px 16px 8px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0px 0px 8px 2px #ebebeb59;
+  border: 1px solid #E5E5E5;
+  border-bottom: 0;
+}
+
+.plagiarism-top-content p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  line-height: 30px;
+  font-weight: 700;
+  color: #091e42;
+}
+
+.option-stack {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.plagiarism-bottom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 148px;
+  padding: 10px 12px 20px 12px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 0px 8px 2px #ebebeb59;
+  border: 1px solid #E5E5E5;
+}
+
+.status-info {
+  padding: 0.375rem 1rem;
+  background-color: #e2f3fb;
+  border-radius: 20px;
+  color: #0d9be1;
+}
+
+.status-warning {
+  padding: 0.375rem 1rem;
+  background-color: #fdf3bf;
+  border-radius: 20px;
+  color: #bf8012;
+}
+
+.tool-desc {
+  font-size: 1rem;
+  color: #091e42;
+  line-height: 24px !important;
+}
+
+.info-label {
+  color: #091e42;
+  font-weight: 600;
+}
+
+.info-content {
+  color: #495973;
+  font-weight: 500;
+}
+
+.delete-config {
+  color: #091e42;
+  font-weight: 500;
+  margin: 0;
+}
+
+.plagiarism-search{
+  width: 40%;
+}

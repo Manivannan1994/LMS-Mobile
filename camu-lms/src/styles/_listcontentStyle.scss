@@ -1,0 +1,57 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.dept-cont {
+  background: map-get($bg-color, "light-bg");
+  // border-right: solid 1px #ebecf0;
+  // height: 90vh;
+}
+
+.list-groups {
+  font-size: map-get($font-sizes, "normal");
+  font-weight: map-get($font-weight, "normal-weight");
+  color: #788396;
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+}
+.list-item {
+  margin-bottom: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.list-item .list-icons {
+  width: 22px;
+  margin-right: 16px;
+  height: 22px;
+}
+.list-item:hover {
+  background: #ebecf0;
+  border-radius: 7px;
+  color: #009ce9;
+}
+
+// .list-item:active {
+//   background: #ebecf0;
+//   border-radius: 7px;
+//   color: #009ce9;
+// }
+.selected .list-item {
+  background: #e2f3fb;
+  border-radius: 7px;
+  color: map-get($font-color, "active");
+  border: solid 1px #42b1e7;
+}
+.list-groups a {
+  color: #788396;
+  text-decoration: none;
+}
+.list-groups a:hover {
+  text-decoration: none;
+}
+.dept-actionlist{
+  height: calc(100vh - 88px);
+  overflow: auto;
+}

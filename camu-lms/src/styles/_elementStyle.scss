@@ -1,0 +1,43 @@
+@import "../styles/fontStyle";
+$margin-default: 0;
+$padding-default: 0;
+$border: 8px;
+$border-none: none;
+$iconsize: 18px;
+$btnpadding: 8px 30px;
+$btnhight: 40px;
+$text-center: center;
+$text-padding: 10px 0;
+$margin-btm: 10px;
+$no-outline: none;
+$icon-btn-width: 40px;
+$icon-btn-height: 40px;
+$icon-alignment: 6px;
+$btn-border: solid 1px;
+
+$iconsize: (
+  small: 18px,
+  medium: 20px,
+  large: 24px,
+);
+$text-align: (
+  text-left: left,
+  text-center: center,
+  text-right: right,
+);
+@mixin default-text {
+  font-size: map-get($font-sizes, "small");
+  font-weight: map-get($font-weight, "small-weight");
+}
+@mixin bold-text {
+  font-size: map-get($font-sizes, "normal");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+@mixin small-text {
+  font-size: map-get($font-sizes, "xs-small");
+  font-weight: map-get($font-weight, "small-weight");
+}
+@mixin large-text {
+  font-size: map-get($font-sizes, "large");
+  font-weight: map-get($font-weight, "large-weight");
+}

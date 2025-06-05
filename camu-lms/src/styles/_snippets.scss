@@ -1,0 +1,30 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.label-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #DFE1E5;
+    width: 216px;
+    height: 40px;
+    border-radius: 20px;
+    color: #495973;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.label-show.active {
+    background-color: #E2F3FB;
+    border: 2px solid #0D9BE1;
+    color: #0D9BE1;
+    font-weight: 600;
+}
+.show-flex {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 20px;
+}

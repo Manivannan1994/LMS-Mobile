@@ -1,0 +1,73 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-grades_search {
+  margin-bottom: 24px;
+}
+.student-grades_table td {
+  vertical-align: middle !important;
+}
+.details-content_box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.details-content_label {
+  margin-left: 16px;
+}
+.details-content_heading {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.details-sub_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+
+.table-cont td .table-sub_content {
+  padding: 0px;
+  background: white;
+  border-radius: 0px;
+  color: map-get($font-color, "subdued");
+}
+
+.grad-book_list {
+  cursor: pointer;
+}
+
+.grade-right_view{
+  display: flex;
+  justify-content: end;
+}
+.grade-options_dropdown{
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin: 0;
+  padding-bottom: 14px;
+  cursor: pointer;
+}
+
+.grade-options_dropdown:last-child{
+  padding-bottom: 0;
+}
+.option-menu_lists{
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+  left: auto !important;
+  right: 0 !important;
+  padding: 14px;
+  top: 24px !important;
+  transform: translate3d(0px,0px, 0px) !important;
+  
+}
+.dropdown-toggle::after{
+  display: none;
+}
+.student-grade_dropdown{
+  display: flex;
+  justify-content: end;
+}

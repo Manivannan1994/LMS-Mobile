@@ -1,0 +1,59 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.search-box_default {
+  height: 40px;
+  padding: 5px 10px 5px 40px;
+  border-radius: 26px;
+
+  margin-bottom: 0px;
+}
+.search-outline {
+  background-color: #ffffff;
+  border: solid 2px #dfe1e5;
+}
+.search-outline:focus-within {
+  border: solid 2px #0D9BE1 ;
+}
+.search-outline:focus-within svg {
+  color: #0D9BE1;
+}
+.search-dark {
+  background-color: #f4f5f7;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.search-default {
+  position: relative;
+}
+.input-seachfield {
+  border: none;
+  height: 100%;
+  font-size: 14px;
+  color: map-get($font-color, "default" );
+  background-color: transparent;
+  width: 100%;
+}
+
+
+.input-seachfield::placeholder {
+  /* WebKit, Blink, Edge */
+  color: map-get($font-color, "disabled");
+}
+.input-seachfield::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: map-get($font-color, "disabled");
+  opacity: 1;
+}
+.input-seachfield:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: map-get($font-color, "disabled");
+}
+.input-seachfield::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: map-get($font-color, "disabled");
+}
+

@@ -1,0 +1,67 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+
+.information-box {
+  background-color: #fce4ec;
+  // padding: 24px;
+  margin: 8px;
+  border-radius: $border;
+  position: relative;
+  // width: 298px;
+  // height: 298px;
+  transition: box-shadow 0.5s;
+}
+.information-box:hover{
+  box-shadow: 0px 0px 3px rgba(9, 30, 66, 0.1), 0px 4px 20px rgba(9, 30, 66, 0.15);
+}
+.info-content{
+  padding: 10px 12px 20px 12px;
+  height:148px;
+}
+.information-box p {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  margin-bottom: 8px;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.information-box h6 {
+  word-wrap: break-word;
+  margin: $margin-default;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: map-get($font-color, "default");
+  margin-bottom: 124px;
+  filter: alpha(opacity=100) !important;
+  opacity: 1 !important;
+  -moz-opacity: 1 !important;
+}
+.information-box label {
+  margin: $margin-default;
+  font-size: $primary-fontsize;
+  color: #091e42;
+  display: block;
+  margin-bottom: 20%;
+  padding-top: 8px;
+}
+.information-box .infomation-top-content{
+  height: 160px;
+  border-radius:8px;
+}
+.information-box .infomation-top-content img{
+  height: 100%;
+  width:100%;
+  border-radius:8px 8px 0 0;
+}
+
+.class-separator {
+  height: 4px;
+  width: 4px;
+  background-color: #091E42;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+  position: relative;
+  top: -3px;
+}

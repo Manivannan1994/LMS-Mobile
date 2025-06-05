@@ -1,0 +1,43 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+.alert-box {
+  background-color: #f4f5f7;
+  padding: 12px;
+}
+
+.alert-box_cont {
+  padding: 24px;
+  background: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.banner_img {
+  width: 100%;
+}
+.banner_header {
+  @include large-text;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.banner-cont {
+  margin-left: 24px;
+}
+.banner_content {
+  @include default-text;
+  margin: 0;
+  color: map-get($font-color, "default");
+}
+.banner_cont-list {
+  @include default-text;
+  margin: 0;
+  color: map-get($font-color, "active");
+}
+.banner_cont-list span {
+  font-size: 25px;
+  height: 6px;
+  position: relative;
+  top: -2px;
+  margin: 0 8px;
+  color: map-get($font-color, "subdued");
+}

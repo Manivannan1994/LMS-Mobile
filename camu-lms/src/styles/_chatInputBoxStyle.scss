@@ -1,0 +1,13 @@
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+@import "../styles/colorStyle";
+   
+   .chatinputbox{
+        border: 1px solid #EBEDF0;;
+        background-color: #EBEDF0;
+        border-radius: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 94%;
+        height: 45px;
+    }

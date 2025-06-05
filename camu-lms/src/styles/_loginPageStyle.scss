@@ -1,0 +1,132 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+.login-container {
+	background-color: #fafbfc;
+	height: 100%;
+}
+.login-banner {
+	background: linear-gradient(rgb(16 40 102 / 83%) 100%, rgb(8 9 66 / 75%) 100%), url('../assets//images/bg_banner.png');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.product-content {
+	// padding: 70vh 40px 0;
+	padding: 0 40px;
+	position: absolute;
+	bottom: 20%;
+}
+.product-overview_label {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "lite");
+	margin: 0;
+}
+.user-overview_label {
+	font-size: map-get($font-sizes, "normal");
+	color: map-get($font-color, "lite");
+	font-weight: map-get($font-weight, "normal-weight");
+	margin: 12px 0 0;
+}
+.user-position_label {
+	color: #4CBBF2;
+	font-weight: map-get($font-weight, "normal-weight");
+	font-size: map-get($font-sizes, "xs-small");
+	margin: 0;
+}
+.login-details {
+	padding: 32px 70px;
+}
+.product-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.product-login {
+	display: flex;
+	align-items: center;
+}
+.account-cont_label {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "default");
+	margin: 0 12px 0 0;
+	cursor: pointer;
+}
+.wave-img {
+	margin-top: 50px;
+}
+.wave-img img {
+	width: 100%;
+}
+.account-cont {
+	margin: 0 25%;
+	padding-top: 52px;
+}
+.account-create_label {
+	font-size: map-get($font-sizes, "large");
+	color: map-get($font-color, "default");
+	font-weight: map-get($font-weight, "normal-weight");
+	margin: 0;
+}
+.account-create_label span {
+	color: map-get($font-color, "active");
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	cursor: pointer;
+}
+.account-name_label {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+	margin: 0;
+	padding-top: 6px;
+}
+.details-input_box {
+	padding-top: 24px;
+}
+.input-box_cont {
+	margin-bottom: 20px;
+}
+.input-label_cont {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+	margin: 0;
+	padding-bottom: 4px;
+}
+.user-reg_label {
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "subdued");
+	margin: 0;
+}
+.login-btn_group {
+	padding: 20px 0;
+}
+.user-account_cont {
+	margin: 28px 0;
+}
+.more-login_label {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #dfe1e5;
+	line-height: 0.1em;
+	margin: 0;
+}
+.more-login_label span {
+	background-color: #fafbfc;
+	padding: 0 8px;
+	font-size: map-get($font-sizes, "small");
+	color: map-get($font-color, "dark");
+}
+.chat-user_cont {
+	position: absolute;
+	bottom: 20%;
+	right: 10%;
+	cursor: pointer;
+}
+.login-date_selection {
+	display: flex;
+	margin-top: 12px;
+}
+.login-start_date {
+	margin-right: 12px;
+}

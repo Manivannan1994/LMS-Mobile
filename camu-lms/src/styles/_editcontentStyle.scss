@@ -1,0 +1,79 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.edit-module_container {
+  width: 100%;
+  background-color: #f4f5f7;
+  height: 100%;
+  padding: 0;
+}
+.edit-box_heading {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "subdued");
+  margin-bottom: 4px;
+}
+.edit-module_header {
+  padding: 40px 30px 24px;
+  background-color: #ffffff;
+}
+.page-input_title {
+  display: flex;
+  align-items: center;
+}
+.page-input_details {
+  margin-left: 16px;
+  width: 80%;
+  position: relative;
+  top: -16px;
+}
+.publish-btn {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+}
+.save-page_btn {
+  margin-left: 12px;
+}
+.text-editor {
+  padding: 32px 64px;
+}
+.nav-urllink:hover {
+  text-decoration: none;
+}
+
+.views-option {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #dfe1e5;
+  margin-left: 16px;
+}
+.mandatory-field { 
+  color: #f24b6b;
+  font-size: 23px;
+  position: relative;
+  top: 8px;
+  font-weight: normal;
+}
+.published-view_label {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "positive");
+  padding-right: 12px;
+}
+.unpublished-view_label {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "disabled");
+  padding-right: 12px;
+}
+.text-empty_content{
+  color: map-get($font-color, "error" ) ;
+  padding-top: 6px;
+  font-size: map-get($font-sizes, "xs-small");
+}

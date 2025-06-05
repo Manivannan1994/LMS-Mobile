@@ -1,0 +1,267 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.export-header_box{
+    padding: 22px 24px;
+    background-color: #ffffff;
+}
+.export-header{
+    display: flex;
+    align-items: center;
+}
+.export-head_label{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "large");
+    font-weight: map-get($font-weight, "normal-weight" );
+    padding-left: 24px;
+}
+.export-container_box{
+    padding: 32px 16px;
+}
+.export-start_box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.export-cont_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.start-export_label{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "normal");
+    font-weight: map-get($font-weight, "normal-weight" );
+}
+.start-cont_label{
+    margin: 0;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "small");
+    padding-top: 4px;
+}
+.recent-exports_table{
+    margin-top: 48px;
+}
+.exports-table_label{
+    margin: 0;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "normal");
+    font-weight: map-get($font-weight, "normal-weight" );
+}
+.exports-table_box{
+    margin-top: 16px;
+}
+.progress-view_box{
+    margin-top: 16px;
+}
+.progress-view_label{
+    margin: 0;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "small");
+    padding-top: 8px;
+}
+.import-alert_error{
+    background-color: #FDF3BF;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.progress-view_error{
+    background-color: #fef1f3;
+    padding: 14px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.progress-error_cont{
+    display: flex;
+    align-items: center; 
+}
+.progress-retry_cont{
+    display: flex;
+    align-items: center; 
+}
+.error-report_cont{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "small");
+    padding-left: 14px;
+}
+.report-retry_label{
+    margin: 0;
+    color: map-get($font-color, "primary");
+    font-size: map-get($font-sizes, "small");
+    padding-right: 14px;
+}
+.import-view_btn{
+    margin-top: 20px;
+}
+.select-file_import{
+    padding: 16px 20px;
+    border: dashed 1px #7F8A9D;
+    border-radius: 4px;
+    background-color: #FAFBFC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.start-import{
+    flex: 1;
+}
+.drop-choose_label{
+    margin: 0 20px;
+    font-size: map-get($font-sizes, "xs-small" );
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "normal-weight" );
+}
+.drop-file_label{
+    margin: 0;
+    font-size: map-get($font-sizes, "small" );
+    color: map-get($font-color, "subdued");
+}
+.course-file_import{
+    padding: 8px 12px;
+    border: solid 1px #DFE1E5;
+    border-radius: 4px;
+    background-color: #FAFBFC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.file-import_label{
+    margin: 0;
+    font-size: map-get($font-sizes, "small" );
+    color: map-get($font-color, "subdued");
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    padding-right: 20px;
+}
+.import-type_label{
+    margin: 0;
+    font-size: map-get($font-sizes, "small" );
+    color: map-get($font-color, "subdued");
+    padding-bottom: 6px;
+}
+.select-course_label{
+    margin: 32px 0 0;
+    font-size: map-get($font-sizes, "small" );
+    color: map-get($font-color, "subdued");
+    padding-bottom: 6px;
+}
+.import-course_range{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+.import-space_cont{
+    font-size: map-get($font-sizes, "small" );
+    color: map-get($font-color, "disabled");
+}
+.running-import_status{
+    margin: 0;
+    background-color: #FDF3BF;
+    width: fit-content;
+    padding: 2px 10px;
+    color: map-get($font-color, "warning");
+    font-size: map-get($font-sizes, "xs-small" );
+    font-weight: map-get($font-weight, "normal-weight" );
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.completed-import_status{
+    margin: 0;
+    background-color: #E7FCBA;
+    width: fit-content;
+    padding: 2px 10px;
+    color: map-get($font-color, "positive");
+    font-size: map-get($font-sizes, "xs-small" );
+    font-weight: map-get($font-weight, "normal-weight" );
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.in-progress_status{
+    margin: 0;
+    background-color: #dfe1e5;
+    width: fit-content;
+    padding: 2px 10px;
+    color: map-get($font-color, "subdued");
+    font-size: map-get($font-sizes, "xs-small" );
+    font-weight: map-get($font-weight, "normal-weight" );
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.error-import_status {
+    margin: 0;
+    background-color: #fcf1f3;
+    width: fit-content;
+    padding: 2px 10px;
+    color: map-get($font-color, "error");
+    font-size: map-get($font-sizes, "xs-small" );
+    font-weight: map-get($font-weight, "normal-weight" );
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.import-table_head{
+    text-transform: uppercase;
+}
+.import-course_label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width:300px;
+    margin: 0;
+}
+.filed-cont_info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.import-table_cont{
+    overflow: auto;
+}
+[class^="tooltip"] {
+    position: relative;
+  }
+  [class^="tooltip"]:after {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    content: attr(data-tooltip);
+    padding: 8px;
+    background: #091e42;
+    color: white;
+    border-radius: 8px;
+    transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+      transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  }
+  [class^="tooltip"]:hover:after {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .tooltip--bottom_filed:after {
+    position: absolute;
+    left: auto;
+    right: 0;
+    transform: translateX(0%) translateY(0) !important;
+    z-index: 9999 !important;
+    width: 200px;
+  }
+  .tooltip--bottom_filed:hover:after {
+    transform: translateX(0%) translateY(0);
+    z-index: 9999 !important;
+  }

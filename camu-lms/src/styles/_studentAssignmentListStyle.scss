@@ -1,0 +1,136 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-assignment {
+  padding: 0 40px;
+  background-color: #ffffff;
+}
+.student-assignment_tab {
+  padding: 24px 40px;
+}
+.assignment-due_info {
+  margin: 0;
+  font-size: 16px;
+  color: #495973;
+  margin-bottom: 8px;
+}
+.assignment-search_box {
+  width: 30%;
+  margin-bottom: 24px;
+}
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.course-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.course-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.stud-assignment_list {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  border: solid 1px #dfe1e5;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.assignment-due_title {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.assignment-due_cont {
+  margin: 0;
+  padding-top: 6px;
+}
+.student-assignment_content {
+  // margin-bottom: 24px;
+}
+.assign-submit {
+  font-size: map-get($font-sizes, "xs-small");
+  background-color: #e7fcba;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: map-get($font-color, "positive");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.assign-dues {
+  font-size: map-get($font-sizes, "xs-small");
+  background-color: #fdf3bf;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #bf8012;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.assign-missed {
+  font-size: map-get($font-sizes, "xs-small");
+  background-color: #fef1f3;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #f24b6b;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+
+.assign-grad {
+  font-size: map-get($font-sizes, "xs-small");
+  background-color: #ebedf0;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+
+.assign-dot {
+  height: 4px;
+  width: 4px;
+  background-color: #495973;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  margin: 0 8px;
+}
+.assignment-due {
+  font-size: 13px;
+  color: map-get($font-color, "subdued");
+}
+
+.stud-assignment_list--hide {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  border: solid 1px #dfe1e5;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: not-allowed;
+}
+.assignment-due--hide {
+  font-size: 13px;
+  color: map-get($font-color, "disabled");
+}
+.assignment-due_title--hide {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "disabled");
+  font-weight: map-get($font-weight, "normal-weight");
+}

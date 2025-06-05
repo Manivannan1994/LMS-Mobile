@@ -1,0 +1,116 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+
+// .toster {
+//   margin: 0 !important;
+//   width: 380px;
+//   position: fixed !important;
+//   bottom: -80px;
+//   right: 10px;
+//   z-index: 9;
+//   box-shadow: -4px 4px 8px #cecece;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 16px !important;
+//   border-radius: 8px !important;
+// }
+// .toast-content {
+//   font-size: map-get($font-sizes, "small");
+//   font-weight: map-get($font-weight, "normal-weight");
+//   margin: 0;
+//   align-items: center;
+//   display: flex;
+// }
+
+// .warning-bg {
+//   background: map-get($modelbox-color, "warning");
+// }
+// .sucess-bg {
+//   background: map-get($modelbox-color, "positive");
+// }
+// .danger-bg {
+//   background: map-get($modelbox-color, "critical");
+// }
+// .slide-bottom {
+//   -webkit-animation: slide-bottom 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+//   animation: slide-bottom 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+// }
+
+// @-webkit-keyframes slide-bottom {
+//   0% {
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//   }
+//   100% {
+//     -webkit-transform: translateY(-100px);
+//     transform: translateY(-100px);
+//   }
+// }
+// @keyframes slide-bottom {
+//   0% {
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//   }
+//   100% {
+//     -webkit-transform: translateY(-100px);
+//     transform: translateY(-100px);
+//   }
+// }
+
+.success-background {
+  background: map-get($toaster-bg, "success") !important;
+  border: solid 1px map-get($toaster-bg, "success-border");
+  width: max-content;
+}
+.error-background {
+  background: map-get($toaster-bg, "error") !important;
+  border: solid 1px map-get($toaster-bg, "error-border");
+  max-width: 500px;
+}
+.warning-background {
+  background: map-get($toaster-bg, "warning") !important;
+  border: solid 1px map-get($toaster-bg, "warning-border");
+
+  width: max-content;
+}
+.information-background {
+  background: map-get($toaster-bg, "info") !important;
+  border: solid 1px map-get($toaster-bg, "info-border");
+
+  width: max-content;
+}
+.toaster-heading {
+  color: map-get($font-color, "default");
+  font-size: map-get($font-sizes, "small");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+  display: flex;
+}
+
+.toaster-icons_success {
+  margin-right: 17px;
+  color: map-get($icon-color, "positive");
+}
+.toaster-icons_error {
+  margin-right: 17px;
+  color: map-get($icon-color, "error");
+}
+.toaster-icons_warning {
+  margin-right: 17px;
+  color: map-get($icon-color, "warning");
+}
+.toaster-icons_info {
+  margin-right: 17px;
+  color: map-get($icon-color, "primary");
+}
+.Toastify__toast-container {
+  width: auto !important;
+}
+.toaster-content_info{
+    margin: 0;
+    padding: 0 0px 0 42px;
+    max-width: 340px;
+    word-wrap: break-word;
+    font-size: map-get($font-sizes, "small");
+    font-weight: map-get($font-weight, "small-weight");
+}

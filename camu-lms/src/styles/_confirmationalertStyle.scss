@@ -1,0 +1,128 @@
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+@import "../styles/colorStyle";
+
+.react-responsive-modal-modal {
+  max-width:100% !important ;
+  padding: 0;
+  border-radius: 8px;
+}
+
+// .model-content_box {
+//   width: 76vw;
+// }
+.model-content_header {
+  padding: 20px 24px;
+}
+.model-header_content {
+  font-size: 16px;
+  font-weight: 600;
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.model-content_content {
+  padding: 16px;
+  background-color: map-get($bg-color, "layout");
+  width: 500px;
+}
+.model-content_footer {
+  background-color: map-get($bg-color, "light-bg");
+  padding: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+// .model-content_inputs {
+//   border: solid 2px #DFE1E5 !important;
+//   border-radius: 4px ;
+// }
+.react-responsive-modal-closeButton {
+  top: 10px !important;
+  width: 54px;
+  right: 6px;
+  fill: #495973;
+}
+.react-responsive-modal-closeButton_hide {
+ display: none;
+}
+.confirmation-text {
+  margin: 0;
+  font-size: 14px;
+  padding: 0 8px;
+  color: map-get($font-color, "default");
+}
+
+// ..................................modal table box cont...........................//@at-root
+.table-tab_container {
+  width: 70vw;
+}
+.table-modal_box {
+  background-color: #ffffff;
+}
+.student-table_tab {
+  padding: 0 40px;
+  border-bottom: 1px solid #dee2e6;
+  border-top: solid 1px #e5e5e5;
+}
+.student-table_tab .nav-tabs {
+  border-bottom: 0px solid #dee2e6;
+}
+.tabs-notification {
+  background-color: #dfe1e5;
+  padding: 2px 8px;
+  border-radius: 18px;
+  color: map-get($font-color, "subdued");
+  font-size: map-get($font-sizes, "small");
+  margin-left: 4px;
+}
+
+// .................................modal design rubrics page .......................//
+
+.rating-range_box{
+  display: flex;
+  align-items: center;
+}
+.range-to_label{
+  font-size: 14px;
+  color: #091E42;
+  margin: 0 8px;
+
+}
+
+
+// ........................... full view modal box css code............................//
+.full-view_box {
+  width: 78vw;
+}
+.modal-full_view_label{
+  font-size: 16px;
+  font-weight: 600;
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+
+.time-duration_box{
+  display: flex;
+  align-items: center;
+}
+.min-to_label{
+  font-size: map-get($font-sizes, "small" );
+  color: map-get($font-color, "subdued");
+  margin: 0 8px;
+}
+.req-filed_label{
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small" );
+  color: map-get($font-color, "error");
+  padding-top: 8px;
+}
+
+.input-modal {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: 140px;
+  padding: 0 12px 0px 12px;
+}

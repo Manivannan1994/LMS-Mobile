@@ -1,0 +1,26 @@
+$font-sizes: (
+  xs-small: 0.75rem,
+  //12px
+  small-xs: 0.813rem,
+  //13px
+  small: 0.875rem,
+  //14px
+  normal: 1rem,
+  //16px
+  medium: 1.125rem,
+  large: 1.5rem,
+);
+$font-weight: (
+  small-weight: 400,
+  normal-weight: 600,
+  large-weight: 700,
+);
+$line-height: (
+  basic-height: 24px,
+);
+
+$primary-fontsize: 13px;
+$secondary-fontsize: 16px;
+$defaultfontweight: 600;
+$secondaryfontweight: 400;
+$fontFamily: "Manrope", sans-serif;

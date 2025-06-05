@@ -1,0 +1,30 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.url-uploader {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: map-get($font-sizes, "small");
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: 70%;
+  padding: 0 12px 0px 12px;
+}
+.url-uploader:focus{
+  border: solid 2px #0D9BE1;
+}
+.url-uploader_default {
+  height: 40px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-size: map-get($font-sizes, "small");
+  color: #091e42;
+  border: solid 2px #dfe1e5;
+  width: 100%;
+  padding: 0 12px 0px 12px;
+}
+.url-uploader_default:focus{
+  border: solid 2px #0D9BE1;
+}

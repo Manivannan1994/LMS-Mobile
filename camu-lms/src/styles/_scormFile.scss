@@ -1,0 +1,186 @@
+@import '../styles/elementStyle';
+@import '../styles/fontStyle';
+@import '../styles/colorStyle';
+
+
+.scorm-table {
+  padding: 0 24px !important;
+}
+.scorm-subheading {
+  background-color: #ebedf0 !important;
+  border-radius: 12px !important;
+  padding: 1px 8px !important;
+  color: #495973 !important;
+}
+.scorm-sub_head {
+  background-color: transparent !important;
+  padding: 0 !important;
+  color: #495973 !important;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+.sub-data {
+  background-color: transparent !important;
+  padding: 0 !important;
+  color: #495973 !important;
+}
+.gap-1 {
+  gap: 0.75rem;
+}
+.dropdown-menu {
+  top: 0 !important;
+  left: 0 !important;
+  box-shadow: 0 1px 7px #d8d8d8;
+  border: none;
+  z-index: 1;
+}
+.sub_name {
+  border: 1px solid #495973;
+  border-radius: 16px;
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  padding: 0 5px;
+  align-items: center;
+}
+.scorm-tab {
+  flex: unset !important;
+}
+.scorm-icon {
+  width: 25px !important;
+  height: 25px !important;
+  vertical-align: middle;
+}
+.scorm-checkBox {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.dropdown-menu.file-upload_dropdown.show {
+  left: -2% !important;
+}
+
+.uploaded-filename {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin-top: 16px;
+  background: #fafbfc;
+  border-radius: 4px;
+  align-items: center;
+  border: solid 1px #dfe1e5;
+}
+.scorm-trash svg {
+  width: 16px !important;
+  height: 16px !important;
+  vertical-align: middle;
+}
+.scorm-trash.show{
+  left: 0 !important;
+}
+.file-upload_box {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+.css-9beube-control {
+  max-width: 100% !important;
+  // border-radius: 0px !important;
+}
+.css-3368mn-control {
+  max-width: 100% !important;
+  // border-radius: 0px !important;
+}
+.css-az6svi-control{
+  max-width: 100% !important;
+  // border-radius: 0px !important; 
+}
+.scorm-itemlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 16px;
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.scorm-label_empty{
+  margin: 0;
+  text-align: center;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  margin-top: 84px;
+}
+[class^='tooltip'] {
+  position: relative;
+}
+[class^='tooltip']:after {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  content: attr(data-tooltip);
+  padding: 8px;
+  transform: translateX(-50%) translateY(-2px);
+  background: #091e42;
+  color: white;
+  white-space: normal !important;
+  border-radius: 8px;
+  transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+    transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+[class^='tooltip']:hover:after {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip--scorm-file:after {
+  position: absolute;
+  top: 15px !important;
+  left: 0px !important;
+  transform: translateX(12%) translateY(0) !important;
+  z-index: 9999;
+  white-space: pre-line !important;
+  width: 300px;
+  word-break: break-word;
+}
+.tooltip--scorm-file:hover:after {
+  transform: translateX(10%) translateY(0);
+}
+.scorm-detail_head{
+  font-weight: 600;
+    color: #495973;
+}
+.scorm-detail_head_{
+    color: #495973;
+    font-weight: 400;
+    font-size: 13px;
+}
+.scorm-sub_head_{
+  text-decoration: underline;
+  margin-left: 5px; 
+}
+.list-form_container {
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 2px #ebebeb59;
+}
+.svg-icon_extra-small {
+  width: 18px !important;
+  height: 18px !important;
+  vertical-align: text-top;
+}
+.icon-default {
+  color: map-get($icon-color, "disabled") !important;
+}
+.scorm-warning {
+  padding: 1px 8px !important;
+  background-color: #fdf3bf !important;
+  border-radius: 12px;
+  color: #bf8012 !important;
+  margin-left: 6px !important;
+}

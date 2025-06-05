@@ -1,0 +1,208 @@
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+@import "../styles/colorStyle";
+
+.project-tab {
+  padding: 0px;
+}
+
+.project-tab .nav {
+  width: fit-content;
+  border: none;
+}
+
+.project-tab #tabs h6.section-title {
+  color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #091e42 !important;
+  background-color: transparent;
+  border-color: transparent !important;
+  border-bottom: 3px solid #0d9be1 !important;
+  border-radius: 0;
+  font-size: map-get($font-sizes, "normal");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  border: 0px solid transparent;
+  color: #495973;
+  font-size: map-get($font-sizes, "normal");
+  padding: 16px 0px;
+  margin-right: 48px;
+  cursor: pointer;
+  border: none !important;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.project-tab .nav-link:hover {
+  border: none;
+}
+
+.thead-list {
+  background: #d8eaf4;
+}
+
+.table-cont {
+  border-radius: 8px;
+  background: white;
+  // overflow: hidden;
+  margin: 0 !important;
+}
+.table-stud_header {
+  border-radius: 0;
+}
+.thead-list {
+  background: #d8eaf4;
+}
+th.sortable::after {
+  font-family: FontAwesome;
+  content: "\f0dc";
+  position: relative;
+  left: 6px;
+  color: #7f8a9d;
+}
+.table-cont th {
+  font-size: 14px;
+  color: #091e42;
+  padding: 16px;
+  font-weight: 600;
+  border-top: 0 !important;
+}
+.table-cont th:first-child {
+  border-radius: 8px 0 0 0 !important;
+}
+.table-cont th:last-child {
+  border-radius: 0 8px 0 0  !important;
+}
+.table-stud_header th {
+  padding: 16px 40px;
+}
+.table-cont td {
+  font-size: 14px;
+  color: #091e42;
+  padding: 16px;
+  border-top: 1px solid #dfe1e5;
+}
+.table-stud_header td {
+  padding: 16px 40px;
+}
+.table-cont td span {
+  padding: 6px 24px;
+  background: #e7fcba;
+  border-radius: 20px;
+  color: #469b1f;
+}
+span[target="grad-B"] {
+  padding: 6px 24px;
+  background: #fdf3bf !important;
+  border-radius: 20px;
+  color: #bf8012 !important;
+}
+[target="grad-F"] {
+  padding: 6px 24px;
+  background: #fef1f3 !important;
+  border-radius: 20px;
+  color: #f24b6b !important;
+}
+.message-discussion_icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit-marks {
+  display: flex;
+  align-items: center;
+}
+.table-cont td .grad-sub_content {
+  padding: 0px;
+  background: white;
+  border-radius: 0px;
+  color: #091e42;
+}
+.student-grades_table th {
+  border-top: 0;
+}
+.student_table th {
+  border-top: 0;
+}
+
+.react-responsive-modal-modal {
+  padding: 0 !important;
+}
+
+.table-header-font {
+  padding-left: 6px;
+  color: #7f8a9d;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-badge {
+  background-color: #DFE1E5;
+}
+.react-responsive-modal-modal.custom-modal-sm {
+  width: 30% !important;
+  max-width: 100% !important;
+}
+.react-responsive-modal-modal.custom-modal-md {
+  width: 50% !important;
+  max-width: 100% !important;
+}
+
+.react-responsive-modal-modal.custom-modal-lg {
+  width: 80% !important;
+  max-width: 100% !important;
+}
+
+.react-responsive-modal-modal.custom-modal-xl {
+  width: 96% !important;
+  max-width: 100% !important;
+  height: calc(100% - 38px);
+  overflow-y: hidden;
+}
+.react-responsive-modal-modal.custom-modal-xl .model-content_content,
+.react-responsive-modal-modal.custom-modal-lg .model-content_content,
+.react-responsive-modal-modal.custom-modal-md .model-content_content,
+.react-responsive-modal-modal.custom-modal-sm .model-content_content{
+  width: 100% !important;
+  height: calc(100% - 58px);
+}
+.react-responsive-modal-modal.custom-modal-xl .model-content_box{
+  height: 100% !important;
+}
+.file_title{
+  text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.text-error_content{
+  color: map-get($font-color, "error" ) ;
+  padding-top: 12px;
+  font-size: map-get($font-sizes, "xs-small");
+  margin: 0;
+}
+.warning-message_container {
+  padding: 20px 32px;
+  width: 100%;
+  background: #fdf3bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  z-index: 1000;
+}
+.content-container {
+  overflow-y: auto;
+  scrollbar-width: none;
+  max-height: calc(100vh - 152px); 
+}
+.warning-cont_label {
+  margin-left: 6px !important;
+  color: map-get($font-color, 'default');
+  font-size: map-get($font-sizes, 'normal');
+}
+.palagirasim-search{
+  width: 35%;
+}

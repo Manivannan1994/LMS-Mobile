@@ -1,0 +1,33 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+
+.mail-support_container{
+    padding: 20px 32px;
+    width: 100%;
+    position: fixed;
+    background: #FDF3BF;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.support-cont_box{
+    display: flex;
+    align-items: center;
+}
+.support-content{
+    margin-left: 30px;
+}
+.email-cont_label{
+    margin: 0;
+    color: map-get($font-color, "default");
+    font-size: map-get($font-sizes, "small");
+}
+.email-cont_label span{
+    font-weight: map-get($font-weight, "normal-weight" );
+    color: map-get($font-color, "link");
+
+}

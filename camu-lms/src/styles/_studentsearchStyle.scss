@@ -1,0 +1,37 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.stud-list {
+  position: relative;
+}
+.student-search_list {
+  height: 40px;
+  padding: 5px 42px;
+  border-radius: 26px;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  font-size: 13px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.stud-list_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.modal-footer_student{
+  display: flex;
+  justify-content: flex-end;
+
+}
+.match-result{
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.match-result p{
+  font-size: map-get($font-sizes, "medium");
+  color: map-get($font-color, "subdued");
+  margin: 8px 0;
+}

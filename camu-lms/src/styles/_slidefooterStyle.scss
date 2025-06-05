@@ -1,0 +1,89 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.slider-footer {
+  padding: 11px 34px;
+  border-top: solid 1px #dfe1e5;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #ffffff;
+}
+.move-forward {
+  display: flex;
+  align-items: center;
+}
+.move-backward {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.current-chapter {
+  padding-left: 14px;
+  cursor: pointer;
+}
+.subchapter__name {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+.subchapter__items {
+  margin: 0;
+  font-size: map-get($font-sizes, "medium");
+  color: map-get($font-color, "default");
+}
+.subchapter-name_disable {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+}
+.subchapter-items_disable {
+  margin: 0;
+  font-size: map-get($font-sizes, "medium");
+  color: map-get($font-color, "disabled");
+}
+.next-chapter {
+  padding-right: 14px;
+  cursor: pointer;
+}
+
+.current-chapter_disable{
+  cursor: not-allowed;
+}
+
+[class^="tooltip"] {
+  position: relative;
+}
+[class^="tooltip"]:after {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  content: attr(data-tooltip);
+  padding: 8px;
+  transform: translateX(-50%) translateY(-2px);
+  background: #091e42;
+  color: white;
+  white-space: nowrap;
+  border-radius: 8px;
+  transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+    transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+[class^="tooltip"]:hover:after {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip-slide_right:after {
+  position: absolute;
+  top: -48px;
+
+  right: -160px;
+  transform: translateX(12%) translateY(0);
+  z-index: 9999;
+}
+.tooltip-slide_right:hover:after {
+  transform: translateX(10%) translateY(0);
+}

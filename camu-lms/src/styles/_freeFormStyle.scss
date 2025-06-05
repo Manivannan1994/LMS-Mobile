@@ -1,0 +1,120 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.liner-form_header {
+  padding: 40px 30px 24px;
+  background-color: #ffffff;
+}
+.page-input_title {
+  display: flex;
+  align-items: center;
+}
+.page-input_details {
+  margin-left: 16px;
+  width: 80%;
+  position: relative;
+  top: -16px;
+}
+.save-page_btn {
+  margin-left: 12px;
+}
+.views-option {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #dfe1e5;
+  margin-left: 16px;
+}
+.publish-btn {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+}
+.course-setting_container {
+  padding: 42px 60px;
+}
+
+.course-setting_header {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 12px;
+}
+.course-setting_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.course-setting {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.course-form_header {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 4px;
+}
+.course-form_content {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+.course-setting_cont {
+  border-bottom: solid 1px #dfe1e5;
+  padding-bottom: 20px;
+}
+.course-setting_select {
+  padding: 20px 0 0 0;
+}
+.course-form_select {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.requirement-label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin-bottom: 6px;
+}
+.mark-select_box {
+  display: flex;
+  align-items: center;
+}
+.mark-select_box span {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "dark");
+  margin-left: 8px;
+}
+.remove-cont-list {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+}
+.requirement-list {
+  margin-bottom: 8px;
+}
+.add-requirement_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "active");
+  margin-top: 16px;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.add-requirement_label span {
+  margin-right: 12px;
+}

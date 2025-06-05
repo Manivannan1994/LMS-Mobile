@@ -1,0 +1,46 @@
+.table-cont {
+  border-radius: 8px;
+  background: white;
+  overflow: hidden;
+  margin: 0 !important;
+}
+.thead-list {
+  background: #d8eaf4;
+}
+th.sortable::after {
+  font-family: FontAwesome;
+  content: "\f0dc";
+  position: relative;
+  left: 6px;
+  color: #7f8a9d;
+}
+.table-cont th {
+  font-size: 14px;
+  color: #091e42;
+  padding: 16px;
+  font-weight: 600;
+}
+.table-cont td {
+  font-size: 14px;
+  color: #091e42;
+  padding: 16px !important;
+  border-top: 1px solid #dfe1e5;
+}
+.table-cont td span {
+  padding: 6px 24px;
+  background: #e7fcba;
+  border-radius: 20px;
+  color: #469b1f;
+}
+span[target="grad-B"] {
+  padding: 6px 24px;
+  background: #fdf3bf !important;
+  border-radius: 20px;
+  color: #bf8012 !important;
+}
+[target="grad-F"] {
+  padding: 6px 24px;
+  background: #fef1f3 !important;
+  border-radius: 20px;
+  color: #f24b6b !important;
+}

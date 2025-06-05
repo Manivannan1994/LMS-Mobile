@@ -1,0 +1,102 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+
+.report-heading{
+    padding: 22px 24px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.report-name h6 {
+    font-size: map-get($font-sizes, "large");
+    color: map-get($font-color, "default");
+    font-weight: map-get($font-weight, "normal-weight");
+    margin: 0;
+  }
+  .report-view_list{
+    padding: 24px;
+  }
+  .report-type_label{
+    margin: 0;
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "subdued");
+    padding-bottom: 4px;
+  }
+  .download-report_btn{
+    padding: 12px 0;
+  }
+
+  .report-name p {
+    font-size: map-get($font-sizes, "small");
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "small-weight");
+    padding-top: 3px;
+    margin: 0;
+  }
+
+  .report-view_batch {
+    font-size: map-get($font-sizes, "normal");
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "normal-weight");
+  }
+
+  .report-pending_text {
+    font-size: map-get($font-sizes, "xs-small");
+    background-color: #ebedf0;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: map-get($font-color, "subdued");
+    font-weight: map-get($font-weight, "normal-weight");
+    text-transform: uppercase;
+    display: inline;
+  }
+  .report-in-progress_text {
+    font-size: map-get($font-sizes, "xs-small");
+    background-color: #fdf3bf;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: #bf8012;
+    font-weight: map-get($font-weight, "normal-weight");
+    text-transform: uppercase;
+    display: inline;
+  }
+  .report-completed_text {
+    font-size: map-get($font-sizes, "xs-small");
+    background-color: #e7fcba;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: map-get($font-color, "positive");
+    font-weight: map-get($font-weight, "normal-weight");
+    text-transform: uppercase;
+    display: inline;
+  }
+  .report-error_text {
+    font-size: map-get($font-sizes, "xs-small");
+    background-color: #fef1f3;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: #f24b6b;
+    font-weight: map-get($font-weight, "normal-weight");
+    text-transform: uppercase;
+    display: inline;
+  }
+  .duration-time {
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid #dfe1e5;
+    padding-bottom: 8px;
+  }
+  .date_space {
+    margin-left: 16px;
+  }
+  .date_label {
+    width: 250px;
+  }
+  .no_margin {
+    margin-top: 0px!important;
+  }
+  

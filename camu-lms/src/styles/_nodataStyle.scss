@@ -1,0 +1,50 @@
+@import "../styles/fontStyle";
+@import "../styles/elementStyle";
+@import "../styles/colorStyle";
+
+.no-data_img-default {
+  margin: 0 auto;
+  display: block;
+  width: 270px;
+  margin-top: 40px;
+}
+.no-data_img-small {
+  margin: 0 auto;
+  display: block;
+  width: 140px;
+  margin-top: 40px;
+}
+.data-text {
+  font-size: map-get($font-sizes, "large");
+  margin: 0;
+  color: map-get($font-color, "default");
+  text-align: center;
+  padding-top: 40px;
+}
+.data-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data-btn Button {
+  margin: 24px 8px;
+}
+.course-details {
+  font-size: map-get($font-sizes, "small");
+  margin: 0 auto;
+  color: map-get($font-color, "default");
+  border-bottom: solid 1px #091e4228;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+}
+.empty-grade_label {
+  margin: 0;
+  text-align: center;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  margin-top: 50px;
+}
+.data-notfound {
+  padding-bottom: 60px;
+}

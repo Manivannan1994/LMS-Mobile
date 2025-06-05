@@ -1,0 +1,243 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-info_content {
+  display: flex;
+  align-items: center;
+}
+.cont-nav {
+  padding: 22px 34px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.course-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.course-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.stud-info_img {
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+  border-radius: 50%;
+}
+.student-grade_container {
+  padding: 24px;
+}
+.edit-marks {
+  display: flex;
+  align-items: center;
+}
+.stud-mark_label {
+  margin: 0;
+}
+.grade-post_details {
+  display: flex;
+  justify-content: end;
+}
+.student-table_search {
+  margin-bottom: 24px;
+}
+.details-content_box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.course-name {
+  float: left;
+}
+.course-name p {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.course-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.details-content_heading {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.details-content_label {
+  margin-left: 16px;
+  flex: 1;
+}
+.grade-notification {
+  background-color: #dfe1e5;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  padding: 4px 8px;
+  border-radius: 14px;
+  margin-left: 4px;
+}
+.posted-info_label {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "positive");
+  margin: 0;
+  margin-left: 24px;
+}
+
+.table-cont td .grad-sub_content {
+  padding: 0px;
+  background: white;
+  border-radius: 0px;
+  color: map-get($font-color, "default");
+}
+.post-align_content {
+  display: flex;
+  align-items: center;
+}
+.feedback-info_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.stud-grad_list {
+  cursor: pointer;
+  // text-decoration: underline;
+}
+.edit-feedback_dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.student-table_search {
+  margin-bottom: 24px;
+}
+.feedback-content {
+  box-shadow: 0px 4px 20px 0px #091e4226 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  left: auto !important;
+  z-index: 1 !important;
+  right: 24px !important;
+  top: auto !important;
+}
+.feedback-content_edit {
+  box-shadow: 0px 4px 20px 0px #091e4226 !important;
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  left: auto !important;
+  z-index: 1 !important;
+  right: 24px !important;
+  top: auto !important;
+  width: 350px;
+}
+.edit-feedback_dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.stud-feedback_edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stud-feedback_info {
+  display: flex;
+  align-items: center;
+}
+.edit-info_label {
+  margin: 0;
+  font-size: 14px;
+  color: #091e42;
+  margin-left: 54px;
+}
+.edit-info_date {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8a9d;
+  margin-left: 54px;
+  padding-top: 5px;
+}
+.date-separate {
+  height: 4px !important;
+  width: 4px !important;
+  background-color: #7f8a9d !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  position: relative !important;
+  top: -3px !important;
+  margin: 0 4px !important;
+  padding: 0 !important;
+}
+.feedback-label_edit {
+  font-size: 12px;
+  color: #091e42;
+  margin: 0;
+  font-weight: 600;
+}
+.feedback-label {
+  font-size: 12px;
+  color: #091e42;
+  margin: 0;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+.feedback-buttons {
+  float: right;
+  margin-top: 12px;
+}
+.grade_align {
+  margin-left: 8px;
+}
+.student-grades_table td {
+  vertical-align: middle !important;
+}
+.stud-grad_name {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: map-get($font-color, "default") !important;
+  border-radius: 0 !important;
+  text-decoration: underline !important;
+}
+.stud-img_list {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.feedback_label {
+  text-align: right;
+}
+.overall-grd_pnt_stud{
+  font-size: map-get($font-sizes, "small"); 
+  color: map-get($font-color, "primary") !important;
+  background-color: #e2f3fb !important;
+  padding: 6px 12px !important;
+  border-radius: 20px;
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-left: 12px !important;
+}
+.overall-grd_label{
+  margin: 0;
+  color: map-get($font-color, "default");
+  font-size: map-get($font-sizes, "small");
+}
+.asgnmt-cat_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}

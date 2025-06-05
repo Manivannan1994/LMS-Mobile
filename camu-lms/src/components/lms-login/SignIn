@@ -1,0 +1,186 @@
+import React, { Component } from "react";
+import { withTranslation } from "react-i18next";
+import "../../styles/_signInPageStyle.scss";
+import SvgLogo from "../../assets/images/camusvglogo.svg";
+import WaveImg from "../../assets/images/waveimg.svg";
+import Button from "../button/Button";
+import InputBox from "../input-box/InputBox";
+// import ReactDatePicker from '../components/date-picker/DatePicker';
+import { GoogleIcon, MicrosoftIcon } from "../icons/Icons";
+
+export class SignInPageComponent extends Component {
+  render() {
+    return (
+      <div>
+        <div className="login-container">
+          <div className="row m-0">
+            <div className="col-3 p-0">
+              <div className="login-banner">
+                <div className="product-content">
+                  <p className="product-overview_label">
+                    “I like that Camu LMS always deploys new features, listens
+                    to instructors and I also like the community they've been
+                    developing among the teachers. So, they both try to improve
+                    their product and their users at the same time.”
+                  </p>
+                  <p className="user-overview_label">Jake Kane</p>
+                  <p className="user-position_label">Physics teacher</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-9 p-0">
+              <div className="login-details">
+                <div className="product-details">
+                  <div className="product-logo">
+                    <img src={SvgLogo} alt="camu-logo" />
+                  </div>
+                  <div className="product-login">
+                    <p className="account-cont_label">
+                      Already have an account?
+                    </p>
+                    <Button theme="btn-rounded secondary-btn btn-outline">Log in</Button>
+                  </div>
+                </div>
+                <div className="wave-img">
+                  <img src={WaveImg} alt="camu-logo" />
+                </div>
+                <div className="account-cont">
+                  <p className="account-create_label">
+                    Create your account as a <span>teacher</span>
+                  </p>
+                  <p className="account-name_label">
+                    Camu can make your learners engaging and you creative
+                  </p>
+                  <div className="details-input_box">
+                    <div className="input-box_cont">
+                      <p className="input-label_cont">Email ID</p>
+                      <InputBox className="input-block "></InputBox>
+                    </div>
+                    <div className="input-box_cont">
+                      <p className="input-label_cont">Your name</p>
+                      <InputBox className="input-block "></InputBox>
+                    </div>
+                    <div className="input-box_cont">
+                      <p className="input-label_cont">Password</p>
+                      <InputBox
+                        className="input-block"
+                        placeholder="8 characters or longer"
+                      ></InputBox>
+                    </div>
+
+                    {/* <div className="input-box_cont">
+                                        <p className="input-label_cont">Name of the institution</p>
+                                        <InputBox className="input-block "  ></InputBox>
+                                    </div>
+                                    <div className="input-box_cont">
+                                        <p className="input-label_cont">Degrees you are offering</p>
+                                        <InputBox className="input-block "  ></InputBox>
+                                    </div>
+                                    <div className="input-box_cont">
+                                        <p className="input-label_cont">Programs you are offering</p>
+                                        <InputBox className="input-block" ></InputBox>
+                                    </div>
+                                    <div className="input-box_cont">
+                                        <p className="input-label_cont">Term/session</p>
+                                        <InputBox className="input-block"  ></InputBox>
+                                        <div className="login-date_selection">
+                                            <div className="login-start_date">
+                                            <ReactDatePicker  type='date'  datePickerTheme="date-picker calendar_icon" dateFrmt = "dd-MMM-yyyy    h:mm aa"/>
+                                            </div>
+                                            <div className="login-end_date">
+                                            <ReactDatePicker  type='date'  datePickerTheme="date-picker calendar_icon" dateFrmt = "dd-MMM-yyyy    h:mm aa"/>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                  </div>
+                  <p className="user-reg_label">
+                    When registering, you agree that we may use your provided
+                    data for the registration and to send you notifications on
+                    our products and services. You can unsubscribe from
+                    notifications at any time in your settings. For additional
+                    info please refer to our Privacy Policy.
+                  </p>
+                  <div className="login-btn_group">
+                    <Button theme="btn-rounded default btn-block">
+                      Create Camu account
+                    </Button>
+                    <div className="user-account_cont">
+                      <p className="more-login_label">
+                        <span>OR</span>
+                      </p>
+                    </div>
+                    <Button theme="btn-rounded secondary-btn btn-outline btn-block">
+                      <GoogleIcon iconStyle="svg-icon_small icon-space_left" />
+                      Continue with google
+                    </Button>
+                    <Button theme="btn-rounded secondary-btn btn-outline btn-block">
+                      <MicrosoftIcon iconStyle="svg-icon_small icon-space_left" />
+                      Continue with microsoft
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div className="chat-user_cont">
+                <svg
+                  width="68"
+                  height="68"
+                  viewBox="0 0 68 68"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_8895_107153)">
+                    <circle cx="34" cy="30" r="30" fill="#0D9BE1" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.327 15.638C20 16.2798 20 17.1198 20 18.8V38.2C20 39.8802 20 40.7202 20.327 41.362C20.6146 41.9265 21.0735 42.3854 21.638 42.673C22.2798 43 23.1198 43 24.8 43H40.0148C40.3827 43 40.5667 43 40.7477 43.0221C40.9086 43.0417 41.0676 43.0744 41.2232 43.1197C41.3983 43.1707 41.5674 43.2432 41.9056 43.3881L48 46V43V18.8C48 17.1198 48 16.2798 47.673 15.638C47.3854 15.0735 46.9265 14.6146 46.362 14.327C45.7202 14 44.8802 14 43.2 14H24.8C23.1198 14 22.2798 14 21.638 14.327C21.0735 14.6146 20.6146 15.0735 20.327 15.638ZM24.303 35.2166C24.3423 35.2535 24.4314 35.3371 24.4821 35.3815C24.5936 35.479 24.7537 35.6122 24.9625 35.7687C25.38 36.0818 25.9933 36.4897 26.8028 36.8944C28.4251 37.7056 30.8272 38.5 34 38.5C37.1728 38.5 39.5749 37.7056 41.1972 36.8944C42.0067 36.4897 42.62 36.0818 43.0375 35.7687C43.2463 35.6122 43.4064 35.479 43.5179 35.3815L43.7071 35.2071C44.0976 34.8166 44.0976 34.1834 43.7071 33.7929C43.3168 33.4026 42.6841 33.4024 42.2936 33.7922L42.2009 33.8763C42.1248 33.9429 42.0037 34.0441 41.8375 34.1687C41.505 34.4182 40.9933 34.7603 40.3028 35.1056C38.9251 35.7944 36.8272 36.5 34 36.5C31.1728 36.5 29.0749 35.7944 27.6972 35.1056C27.0067 34.7603 26.495 34.4182 26.1625 34.1687C25.9963 34.0441 25.8752 33.9429 25.7991 33.8763L25.7046 33.7904C25.3138 33.403 24.6824 33.4034 24.2929 33.7929C23.9024 34.1834 23.9024 34.8166 24.2929 35.2071L24.303 35.2166Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_8895_107153"
+                      x="0"
+                      y="0"
+                      width="68"
+                      height="68"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_8895_107153"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_8895_107153"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default withTranslation()(SignInPageComponent);

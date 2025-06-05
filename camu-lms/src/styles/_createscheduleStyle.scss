@@ -1,0 +1,79 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.create-schedule {
+  padding: 40px 24px;
+  background-color: #f4f5f7;
+}
+.event-names {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  margin-bottom: 4px;
+}
+.schedule-form {
+  border: 2px solid #dfe1e5;
+  display: block;
+  width: 100%;
+  padding: 7px 12px;
+  font-size: map-get($font-sizes, "small");
+  height: 40px;
+  border-radius: 4px;
+}
+.add-description {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "active");
+  margin-top: 10px;
+}
+.add-location {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  margin-bottom: 4px;
+}
+.meeting_url {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  margin-bottom: 4px;
+}
+.meeting_link {
+  border: 2px solid #dfe1e5;
+  display: block;
+  width: 100%;
+  padding: 7px 12px;
+  font-size: map-get($font-sizes, "small");
+  height: 40px;
+  border-radius: 4px;
+}
+.meeting-urls {
+  margin-left: 24px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.schedule-date {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.schedule__name {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.schedule__details {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "default");
+  padding-top: 4px;
+}
+.schedule-time {
+  margin: 30px 0;
+}

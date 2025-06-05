@@ -1,0 +1,537 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+.calender-list {
+  padding: 14px 24px;
+  background-color: #f4f5f7;
+  padding-bottom: 0;
+}
+
+.less-content {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  height: 98px;
+  overflow: hidden;
+}
+
+.more-content {
+  display: block;
+}
+
+.calender-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 8px 16px 8px;
+}
+
+.calendar-day {
+  margin: 0;
+  @include large-text;
+  color: map-get($font-color, "subdued");
+  border-bottom: solid 1px #dfe1e5;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
+}
+
+.holiday-info {
+  margin: 0;
+  // font-size: map-get($font-sizes, "small");
+  // color: map-get($font-color, "disabled");
+  background-color: #e7fcba;
+  color: map-get($font-color, "positive");
+  padding: 8px 16px;
+  border-radius: 26px;
+  font-size: map-get($font-sizes, "normal");
+  width: fit-content;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+
+.calender-header p {
+  margin: 0;
+  @include default-text;
+  color: map-get($font-color, "subdued");
+}
+
+.calender_date {
+  @include bold-text;
+}
+
+.schedule-datalist {
+  padding: 16px 0px;
+  border: 1px solid #ebedf0;
+  border-radius: 12px;
+  // border-left: solid 8px #e0694e;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+}
+
+.calender-header_links {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.video-link_cont {
+  display: flex;
+  align-items: center;
+}
+
+.no-data_label {
+  // margin: 0;
+  // font-size: map-get($font-sizes, "small");
+  // color: map-get($font-color, "disabled");
+  // padding-left: 16px;
+  // padding-top: 8px;
+  margin: 0 16px;
+  font-size: 14px;
+  color: #7f8a9d;
+  padding-left: 16px;
+  /* padding-top: 8px; */
+  /* margin: 10px 0px; */
+  background: #f4f5f7;
+  // width: 90%;
+  // margin-left: 16px;
+  padding: 22px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.more-data_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  text-align: center;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+// .calender-list:nth-child(odd) .schedule-datalist {
+//   border-left: solid 12px #0d9be1;
+// }
+// .calender-list:nth-child(even) .schedule-datalist {
+//   border-left: solid 12px #fd4154;
+// }
+.calender-schedule {
+  padding: 16px;
+  border: 1px solid #ebedf0;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+
+.schedule-date_changes {
+  padding: 26px 24px;
+  background-color: #f4f5f7;
+  position: sticky;
+  top: 88px;
+  z-index: 2;
+  border-bottom: solid 1px #dfe1e5;
+}
+
+.schedule-more {
+  display: flex;
+  align-items: center;
+}
+
+.more-option {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: solid 1px #dfe1e5;
+  margin-left: 16px;
+}
+
+.schedule-name {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+
+.schedule-date_selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.dot-video_pointer {
+  height: 4px;
+  width: 4px;
+  background-color: #495973;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin: 0 8px;
+}
+
+.dot-pointer_list {
+  height: 4px;
+  width: 4px;
+  background-color: #495973;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin: 0 8px;
+  top: -3px;
+}
+
+.schedule-contents {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+
+.schedule-select_dates {
+  text-align: center;
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  cursor: pointer;
+}
+
+// .schedule-date_backward {
+//   margin-right: 24px;
+// }
+// .schedule-date_forward {
+//   margin-left: 24px;
+// }
+// .calender-datalist:nth-child(odd) {
+//   border-left: solid 8px #fd4154;
+// }
+.calenderdata_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calenderdata_header h6 {
+  @include default-text;
+}
+
+.calenderdata_header p {
+  margin: 0;
+  @include small-text;
+  color: map-get($font-color, "default");
+}
+
+.calender-activity {
+  padding: 0;
+}
+
+.calender-activity_name {
+  margin: 0px 16px;
+  @include small-text;
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+
+.calender-activity_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 12px 16px 0;
+  cursor: pointer;
+}
+
+.activity-list_name p {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+
+.activity-list_name span {
+  @include small-text;
+  color: map-get($font-color, "subdued");
+}
+
+.calender-activity_location {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+  border-top: 1px solid #ebedf0;
+  margin-top: 14px;
+  padding-top: 7px;
+}
+
+.more-data {
+  @include default-text;
+  color: map-get($font-color, "subdued");
+  margin: 0;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.no-lesson_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+// ......................... calendar tabs code css...................//@include
+.date-changes {
+  padding: 0;
+  background-color: #f4f5f7;
+  float: right;
+}
+
+.date-option {
+  background-color: #fff;
+  border-radius: 30px;
+  border: solid 2px #dfe1e5 !important;
+  overflow: hidden;
+  float: right;
+}
+
+.project-tab #tabs .date-option .nav-item.show .nav-link,
+.date-option .nav-link.active {
+  color: #0d9be1;
+  background-color: #e2f3fb;
+  border-color: transparent !important;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.project-tab #tabs .date-option .nav-item.show .nav-link,
+.date-option .nav-link {
+  border: 0px solid transparent;
+  color: #495973;
+  font-size: 16px;
+  padding: 8px 24px !important;
+  cursor: pointer;
+  border: none !important;
+  margin: 0;
+  font-weight: 400;
+}
+
+.select-dates {
+  text-align: center;
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  padding: 11px 24px;
+}
+
+.calendar-view_option {
+  padding: 0;
+}
+
+.sub-name_content {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+  padding-left: 16px;
+}
+
+.sub-name_lists {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  margin: 0;
+  padding: 3px 0 8px 16px;
+}
+
+[class^="tooltip"] {
+  position: relative;
+}
+
+[class^="tooltip"]:after {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  content: attr(data-tooltip);
+  padding: 8px;
+  background: #091e42;
+  color: white;
+  white-space: nowrap;
+  border-radius: 8px;
+  transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1),
+    transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+[class^="tooltip"]:hover:after {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip--zoom_link:after {
+  position: absolute;
+  left: 24px;
+  top: -28px;
+  z-index: 1;
+  transform: translateX(0) translateY(0) !important;
+  width: max-content;
+}
+
+.tooltip--zoom_btn:after {
+  position: absolute;
+  left: 24px;
+  top: 48px;
+  z-index: 1;
+  transform: translateX(0) translateY(0) !important;
+  width: 250px;
+}
+
+.zoom-link_modal {
+  box-shadow: 0px 4px 20px 0px #091e4226;
+  border-radius: 12px;
+  border: none;
+  padding: 17px 24px 24px;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  top: 43px;
+  background-color: #fafbfc;
+  width: 400px;
+  display: block;
+}
+
+.meet-link_box {
+  margin-bottom: 20px;
+}
+
+.attendance-link_modal {
+  box-shadow: 0px 4px 20px 0px #091e4226;
+  border-radius: 12px;
+  border: none;
+  padding: 17px 24px 24px;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  top: 43px;
+  background-color: #fafbfc;
+  width: 400px;
+  display: block;
+}
+
+.zoom-link_dismiss {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+}
+
+.zoom-link_label {
+  font-size: map-get($font-sizes, "small") !important;
+  color: map-get($font-color, "default") !important;
+  margin: 0 !important;
+  padding-bottom: 16px;
+}
+
+.zoom-meet_add {
+  display: flex;
+  justify-content: center;
+}
+
+.student-attn_view {
+  margin-left: 12px;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  background-color: #f4f5f7;
+  padding: 8px 16px;
+  border: solid 2px #dfe1e5;
+  border-radius: 26px;
+}
+
+.text-empty_content {
+  color: map-get($font-color, "error");
+  padding-top: 6px;
+  font-size: map-get($font-sizes, "xs-small");
+}
+
+// ......................... Virtual Class schedules css...................//
+
+.vir-class-container {
+  border: 1px solid #dfe1e5;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.disabled-text {
+  font-size: 0.875rem;
+  color: #495973;
+  font-weight: 400;
+  padding-top: 3px;
+  margin: 0 15px;
+}
+
+.vir-class-container .btn-left {
+  margin-left: 0 !important;
+}
+
+.virtual-cls_content {
+  margin: 20px 0;
+}
+
+.vir-class-container {
+
+  .sub-name_lists,
+  .sub-name_content {
+    padding-left: 0;
+  }
+
+  .sub-name_lists {
+    padding-bottom: 0 !important;
+  }
+}
+
+.virtual-cls_btn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: end;
+}
+
+.status-success {
+  padding: 0.4rem 1.5rem;
+  background-color: #e4f7ec !important;
+  border-radius: 30px;
+  color: #158444 !important;
+}
+
+.status-info {
+  padding: 0.4rem 1.5rem;
+  border-radius: 15px;
+  color: #0d9be1;
+  background-color: #e2f3fb;
+}
+
+.schedule-cont_list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feedback-table{
+  .table-cont td{
+    vertical-align: middle;
+  }
+}
+
+.feedback-table{
+  .simpleStarRating{
+    margin-bottom: 26px;
+  }
+}
+
+.tch_remarks-label {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #091e42;
+  line-height: 22px;
+  padding-top: 8px;
+}

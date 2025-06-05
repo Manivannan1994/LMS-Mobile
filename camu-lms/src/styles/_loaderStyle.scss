@@ -1,0 +1,14 @@
+@import "../styles/colorStyle";
+@import "../styles/fontStyle";
+
+.spinner-border {
+  width: 48px !important;
+  height: 48px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+.spinner-default {
+  color: map-get($spinner-color, "default");
+}

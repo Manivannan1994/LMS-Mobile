@@ -1,0 +1,143 @@
+@import "../styles/fontStyle";
+@import "../styles//colorStyle";
+@import "../styles/elementStyle";
+
+.calender-list {
+  padding: 24px;
+  background-color: #f4f5f7;
+}
+
+.calender-header p {
+  margin: 0;
+  @include default-text;
+  color: map-get($font-color, "subdued");
+}
+.calender_date {
+  @include bold-text;
+}
+.calender-datalist {
+  padding: 8px 0px;
+  border: 1px solid #ebedf0;
+  border-radius: 12px;
+  // border-left: solid 8px #e0694e;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+.calender-schedule {
+  padding: 16px;
+  border: 1px solid #ebedf0;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+
+.schedule-more {
+  display: flex;
+  align-items: center;
+}
+.more-option {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: solid 1px #dfe1e5;
+  margin-left: 16px;
+}
+.schedule-name {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.schedule-contents {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}
+.sub-name_content {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.sub-name_lists {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "small-weight");
+  padding-top: 3px;
+  margin: 0;
+}
+.calender-sub_name {
+  margin: 12px 0 20px 16px;
+}
+.date-backward {
+  position: relative;
+  top: 8px;
+  margin-right: 24px;
+}
+.date-forward {
+  position: relative;
+  top: 8px;
+  margin-left: 24px;
+}
+.calender-datalist:nth-child(odd) {
+  border-left: solid 8px #0d9be1;
+}
+.calender-datalist:nth-child(even) {
+  border-left: solid 8px #fd4154;
+}
+.calenderdata_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calenderdata_header h6 {
+  @include default-text;
+}
+.calenderdata_header p {
+  margin: 0;
+  @include small-text;
+  color: map-get($font-color, "default");
+}
+.calender-activity {
+  padding: 0;
+}
+.calender-activity_name {
+  margin: 0px 16px;
+  @include small-text;
+  color: map-get($font-color, "subdued");
+}
+.calender-activity_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  padding: 14px;
+  margin: 8px 16px 0;
+}
+.activity-list_name p {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.activity-list_name span {
+  @include small-text;
+  color: map-get($font-color, "subdued");
+}
+.calender-activity_location {
+  @include default-text;
+  color: map-get($font-color, "default");
+  margin: 0;
+  border-top: 1px solid #ebedf0;
+  margin-top: 14px;
+  padding-top: 7px;
+}
+.more-data {
+  @include default-text;
+  color: map-get($font-color, "subdued");
+  margin: 0;
+  text-align: center;
+  padding-top: 7px;
+}

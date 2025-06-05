@@ -1,0 +1,323 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.assignment-submission_container {
+  padding: 24px;
+}
+.assignment-submission_title {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "primary");
+  font-weight: map-get($font-weight, "large-weight");
+}
+.assignment-submission_header {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.assignment-submission_content {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "default");
+  line-height: 29px;
+}
+.assignment-submission_content img {
+  max-width: 100%;
+
+}
+.assignment-attachment {
+  margin: 0;
+  color: map-get($font-color, "default");
+  font-size: map-get($font-sizes, "xs-small");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-top: 30px;
+  padding-bottom: 4px;
+}
+.assignment-grade_due {
+  margin: 12px 0 0 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.date-view_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "small-weight");
+}
+.attachment-files {
+  padding: 10px 16px;
+  border: solid 1px #dfe1e5;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.attachment-files_name {
+  margin: 0;
+}
+.attachment-files_name span {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  margin-left: 10px;
+  text-decoration: underline;
+}
+.submission-container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 2px rgba(9, 30, 66, 0.2),
+    0px 2px 10px rgba(9, 30, 66, 0.1);
+  border-radius: 16px;
+  margin-top: 32px;
+  padding-bottom: 40px;
+}
+.submission-container_box {
+  padding: 28px 34px 0 34px;
+}
+.submission-header {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  font-weight: map-get($font-weight, "large-weight");
+  color: map-get($font-color, "default");
+  margin-bottom: 20px;
+}
+.entry-header {
+  margin: 0;
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "subdued");
+  margin-bottom: 12px;
+}
+.edit-option {
+  margin-right: 18px;
+}
+
+.editor-content_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.submission-btn_group {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  border: solid 1px #dfe1e5;
+  padding: 16px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 11;
+}
+.submission-btn_group p {
+  margin: 0;
+}
+.submission-btn_group span {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding-left: 12px;
+  cursor: pointer;
+}
+.submission-upload_btn {
+  margin-top: 20px;
+}
+.btn-line {
+  border: 1px solid #dfe1e5;
+  z-index: 0;
+  position: relative;
+  top: 30px;
+}
+.submission-submit_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.files-attachment {
+  padding: 10px 16px;
+  border: solid 1px #dfe1e5;
+  border-radius: 4px;
+  width: 100%;
+  margin-right: 18px;
+  background-color: #fafbfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.url-attachment {
+  width: 100%;
+  margin-right: 18px;
+}
+.not-completed_status {
+  background-color: #e2f3fb;
+  padding: 8px;
+  border-radius: 20px;
+}
+.not-completed_status p {
+  margin: 0;
+  text-align: center;
+}
+.not-completed_status span {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "large-weight");
+  padding-left: 12px;
+}
+.submitted-status {
+  background-color: #e7fcba;
+  padding: 8px;
+  border-radius: 20px;
+}
+.submitted-status p {
+  margin: 0;
+  text-align: center;
+}
+.submitted-status span {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "large-weight");
+  padding-left: 12px;
+}
+.grade-status {
+  background-color: #e2f3fb;
+  padding: 8px;
+  border-radius: 20px;
+}
+.grade-status p {
+  margin: 0;
+  text-align: center;
+}
+.grade-status span {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "large-weight");
+  padding-left: 12px;
+}
+
+.assignment-grad {
+  margin-left: 30px;
+}
+
+.assignment-grade_points {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  padding-top: 12px;
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.assignment-grade_points span {
+  margin: 0;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "small-weight");
+}
+.empty-stud_assignment {
+  text-align: center;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  margin-top: 10%;
+}
+
+.stud-feedback_container {
+  margin-top: 32px;
+}
+.submission-comments_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-bottom: 16px;
+}
+.stud-feedback_edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stud-feedback_info {
+  display: flex;
+  align-items: center;
+}
+.stud-img_list {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.edit-stud_name {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.edit-info_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin-left: 54px;
+}
+.edit-info_date {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+  margin-left: 54px;
+  padding-top: 5px;
+}
+
+.rubrics-assign-stud{
+  padding-top: 10px;
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.rubrics-assign-stud span{
+  cursor: pointer;
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "link");
+}
+.text-empty_content{
+  color: map-get($font-color, "error" ) ;
+  padding-top: 6px;
+  font-size: map-get($font-sizes, "xs-small");
+}
+.rubrics-list{
+  margin-top: 16px;
+}
+.rubrics-modal_list{
+  margin-top: 26px;
+}
+.rubrics-list_point{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rubrics-name_view{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "primary");
+}
+.rubrics-name_point{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.rubrics-exemplary{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-top: 8px;
+}
+.rubrics-exemplary_content{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  padding-top: 8px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.download-File_s3{
+  color: map-get($font-color, "active") !important;
+}

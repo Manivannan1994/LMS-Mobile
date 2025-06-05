@@ -1,0 +1,126 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-grade_tabs {
+  background-color: #ffffff;
+  padding: 0px 40px;
+}
+.student-grade_content {
+  padding: 24px;
+}
+.stud-grade_heading {
+  display: flex;
+  align-items: center;
+}
+.cont-nav {
+  padding: 22px 24px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.course-name h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+
+.grade-notification {
+  background-color: #dfe1e5;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  padding: 4px 8px;
+  border-radius: 14px;
+  margin-left: 4px;
+}
+.student-overall_grade {
+  background-color: #ffffff;
+  padding: 8px 32px 32px 32px;
+}
+.grade-views {
+  border: solid 1px #dfe1e5;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.grade-view_header {
+  font-size: map-get($font-sizes, "large");
+  margin: 0;
+  color: map-get($font-color, "default");
+}
+.grade-view_header span {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  padding-left: 5px;
+}
+.grade-view_cont {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.grade-view_list {
+  border-right: solid 1px #dfe1e5;
+  width: 25%;
+  padding: 0 26px;
+}
+.grade-view_list:last-child {
+  border-right: solid 0px #dfe1e5;
+}
+.grade-options_view {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: solid 1px #dfe1e5;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.alert-download_container{
+  padding: 10px 32px;
+  background-color: #ffffff;
+  margin: 0;
+  z-index: 1;
+}
+.submission-view_cont{
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  justify-content: space-between;
+}
+.cont-loader_view{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.submission-head_cont{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.submission-sub_cont{
+  margin: 0;
+  font-size: map-get($font-sizes, "small-xs");
+  color: map-get($font-color, "subdued");
+}
+.close-view_modal{
+  display: flex;
+  align-items: center;
+}
+.download-size_label{
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "link");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-right: 30px;
+  cursor: pointer;
+}
+.asgnmt-cat_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+}

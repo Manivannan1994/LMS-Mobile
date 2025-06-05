@@ -1,0 +1,481 @@
+@import "../styles/colorStyle";
+@import "../styles/elementStyle";
+@import "../styles/fontStyle";
+
+.student-assignment_heading {
+  padding: 22px 32px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: solid 1px #ebedf0;
+}
+.student-grades_table td {
+  vertical-align: middle !important;
+}
+.student-assign_content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.student-assign_label {
+  flex: 1;
+}
+.student-assign_content h6 {
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+}
+.student-assign_content p {
+  font-size: map-get($font-sizes, "small");
+  margin: 0;
+  color: map-get($font-color, "subdued");
+}
+.grade-assignment_container {
+  background-color: #ffffff;
+  min-height: calc(100vh - 88px);
+}
+.grade-assignment_lists {
+  padding: 20px 30px;
+  overflow-y: auto;
+  height: inherit;
+  max-height: 100vh;
+}
+#scroll-style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 0px !important;
+  background-color: #f5f5f5 !important;
+}
+
+#scroll-style::-webkit-scrollbar {
+  width: 12px !important;
+  background-color: #f5f5f5 !important;
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background-color: #56647d !important;
+}
+.grade-assignment_head {
+  font-size: map-get($font-sizes, "normal");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin: 0;
+  padding-bottom: 8px;
+}
+.grade-assignment_cont {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin: 0;
+}
+.grade-submission_image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  border-top: dashed 1px #7f8a9d;
+  padding-top: 42px;
+  min-height: 50vh;
+}
+.assignment-subject_img {
+  width: 90%;
+}
+.assignment-img_download {
+  background: #f4f5f7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  border: solid 1px #dfe1e5;
+  margin-left: 16px;
+}
+.assignment-files_container {
+  border-top: dashed 1px #7f8a9d;
+  margin-top: 40px;
+}
+.assignment-cont_files {
+  padding: 14px;
+  background-color: #fafbfc;
+  border-radius: 4px;
+  margin-top: 16px;
+  border: solid 2px #dfe1e5;
+}
+.assignment-cont_name {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin-left: 12px;
+  overflow-wrap: break-word;
+}
+.assignment-cont_name span {
+  color: map-get($font-color, "active");
+  text-decoration: underline;
+  cursor: pointer;
+}
+.assignment-url_name {
+  padding: 14px;
+  background-color: #fafbfc;
+  border-radius: 4px;
+  border: solid 2px #dfe1e5;
+  margin-top: 16px;
+}
+.assignment-submission_url {
+  border-top: dashed 1px #7f8a9d;
+  margin-top: 16px;
+}
+.student-list_dropdown {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 2px rgb(9 30 66 / 20%), 0px 2px 10px rgb(9 30 66 / 10%);
+}
+.assignment-submission_details {
+  padding: 36px 20px;
+  min-height: 50vh;
+}
+.assignment-submission_details_group{
+  padding: 16px 10px;
+  min-height: 50vh;
+
+}
+.submit-date_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  margin-bottom: 52px;
+}
+.date-view_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "small-weight");
+}
+.late-submission_label {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "small-weight");
+  background: #ebedf0;
+  padding: 4px 8px;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+.grade-mark_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-top: 12px;
+}
+.mark-view_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "small-weight");
+}
+.grade-assign_view {
+  display: flex;
+  align-items: center;
+  // margin-top: 52px;
+}
+.assign-grade_value {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-right: 16px;
+}
+.submission-comments_cont {
+  margin-top: 34px;
+}
+.submission-comments_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-bottom: 16px;
+}
+.group-details_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.student-name_lists {
+  background-color: #f4f5f7;
+  padding: 6px 8px;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.stud-img_list {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+.student-names_list {
+  margin: 0;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 0px;
+  margin-right: 10px;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.stud-list_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.filter-stud_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.total-stud_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.stud-search_list {
+  background-color: #f4f5f7;
+  padding: 16px 20px;
+}
+.stud-grade_list {
+  padding: 12px 16px;
+  border-bottom: solid 1px #dfe1e5;
+}
+.stud-list_grade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stud-profile_list {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.stud-names_label {
+  margin: 0;
+  padding-left: 16px;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.stud-upgrade_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "subdued");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.stud-grade_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "positive");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.stud-missed_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "error");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.edits-img_feedback {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.stud-feedback_container {
+  margin-top: 32px;
+}
+.submission-comments_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.empty-stud_assignment {
+  text-align: center;
+  font-size: map-get($font-sizes, "large");
+  color: map-get($font-color, "default");
+  margin-top: 10%;
+}
+.stud-feedback_edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stud-feedback_info {
+  display: flex;
+  align-items: center;
+}
+.edit-info_grade {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin-left: 44px;
+}
+.edit-label_date {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+  margin-left: 44px;
+  padding-top: 5px;
+}
+.date-separate {
+  height: 4px !important;
+  width: 4px !important;
+  background-color: map-get($font-color, "disabled") !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+  position: relative !important;
+  top: -3px !important;
+  margin: 0 4px !important;
+  padding: 0 !important;
+}
+.edit-stud_name {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.posted-info_label {
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "positive");
+  margin: 0;
+  margin-left: 24px;
+}
+.edit-info_label {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  margin-left: 54px;
+}
+.group-info-label{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.group-info-label-link{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "primary");
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.group-students-list{
+  margin-top: 5px;
+  max-height: 30vh;
+  min-height: 30vh;
+  overflow-y: auto;
+}
+
+.edit-info_date {
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "disabled");
+  margin-left: 54px;
+  padding-top: 5px;
+}
+.link-url_label {
+  overflow-wrap: break-word;
+  margin-left: 12px !important;
+  margin: 0;
+}
+.link-download_icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.grade-assignment_cont img {
+  max-width: 100%;
+ 
+}
+.rubrics-model_viewer{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.rubrics-model_name{
+  margin: 0 16px 0 0;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.rubrics-list{
+  margin-top: 16px;
+}
+.rubrics-modal_list{
+  margin-top: 26px;
+}
+.rubrics-list_point{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rubrics-name_view{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "primary");
+}
+.rubrics-name_point{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+}
+.rubrics-exemplary{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+  padding-top: 8px;
+}
+.rubrics-exemplary_content{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "xs-small");
+  color: map-get($font-color, "default");
+  padding-top: 8px;
+}
+.grade-max_mark{
+  margin: 0 ;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  padding-left: 4px;
+}
+.cont-drop_info{
+  margin: 20px 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ECF5FE;
+  border-radius: 8px;
+  padding: 6px 16px;
+}
+.drop-info_cont{
+  margin: 0;
+  font-size: map-get($font-sizes, "small");
+  color: map-get($font-color, "default");
+  font-weight: map-get($font-weight, "normal-weight");
+}
+.show-filter_label {
+  text-align: center;
+  color: #091E42;
+  font-size: 13px;
+  background: #E2F3FB;
+  padding: 4px;
+}
+
+.show-filter_label svg{
+  cursor: pointer;
+  margin-left: 2px;
+  
+}
