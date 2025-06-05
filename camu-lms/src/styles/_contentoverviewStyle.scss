@@ -150,3 +150,96 @@
   margin-left: -30px;
   margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+  .cont-nav h5,
+  .cont-box-right h5 { /* 24px font */
+    font-size: 20px;
+  }
+  .module-header p { /* 18px font */
+    font-size: 16px;
+  }
+  .module-header {
+    padding: 12px 16px;
+  }
+  .cont-box {
+    padding: 8px 12px;
+  }
+  .module-header-right {
+    padding: 12px 16px;
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  .cont-box-right {
+    padding: 16px 20px;
+  }
+  .cont-box-right h5 {
+    padding-bottom: 12px; /* Adjusted from 16px */
+  }
+  .welcome-list {
+    padding: 0 16px;
+  }
+  .welcome-list li::before {
+    margin-left: -20px; /* Adjust bullet position */
+    margin-right: 8px;
+    font-size: 26px; /* Slightly reduce bullet size */
+    top: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Assuming a parent container might switch to flex-direction: column */
+  /* For .modules-list (left pane) and the right pane content */
+  .modules-list {
+    height: auto; /* If it stacks */
+    margin-bottom: 16px; /* Space if it stacks above right pane content */
+   }
+
+  .cont-nav h5,
+  .cont-box-right h5 { /* 24px font */
+    font-size: 18px;
+  }
+  .module-header p { /* 18px font */
+    font-size: 15px;
+  }
+  .module-header {
+    padding: 10px 12px;
+  }
+  .cont-box {
+    padding: 8px;
+  }
+  .module-header-right {
+    padding: 10px 12px;
+    flex-direction: column; /* Stack items in right header */
+    align-items: flex-start;
+  }
+  .module-header-right > *:not(:last-child) {
+      margin-bottom: 8px; /* Space between stacked items */
+  }
+  .cont-box-right {
+    padding: 12px;
+  }
+  .cont-box-right h5 {
+    padding-bottom: 10px;
+  }
+  .cont-box-right p,
+  .welcome-list li,
+  .welcome-list li span { /* 14px font */
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .welcome-list {
+    padding: 0 0 0 20px; /* Indent list content, not using negative margin for bullets */
+  }
+  .welcome-list li::before {
+    /* Standard bullet, or simplified custom one if needed */
+    content: "•";
+    color: #091e41;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1em; /* Relative to li font size */
+    position: static;
+    margin-left: -1em; /* Adjust to align with text */
+    margin-right: 0.5em;
+    top: auto;
+  }
+}

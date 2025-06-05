@@ -46,7 +46,7 @@
 .table-cont {
   border-radius: 8px;
   background: white;
-  // overflow: hidden;
+  overflow-x: auto; /* Enable horizontal scrolling for tables */
   margin: 0 !important;
 }
 .table-stud_header {
@@ -205,4 +205,59 @@ span[target="grad-B"] {
 }
 .palagirasim-search{
   width: 35%;
+}
+
+@media (max-width: 768px) {
+  .project-tab #tabs .nav-tabs .nav-link {
+    margin-right: 24px;
+    padding: 16px 0px; /* Ensure padding is maintained or adjusted as needed */
+  }
+  .table-stud_header th,
+  .table-stud_header td {
+    padding: 16px 20px;
+  }
+  .palagirasim-search {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-tab #tabs .nav-tabs .nav-link {
+    margin-right: 16px;
+    font-size: map-get($font-sizes, "small"); /* Optionally adjust font size */
+    padding: 12px 0px;
+  }
+  .table-stud_header th,
+  .table-stud_header td {
+    padding: 12px 10px;
+    font-size: 13px; /* Adjust font size for table headers on mobile */
+  }
+  .table-cont td {
+    padding: 12px 10px; /* Adjust general table cell padding */
+    font-size: 13px; /* Adjust font size for table cells on mobile */
+  }
+  .table-cont td span,
+  span[target="grad-B"],
+  [target="grad-F"] {
+    padding: 4px 10px; /* Reduce padding for badges */
+    font-size: 12px; /* Reduce font size for badges */
+  }
+  .warning-message_container {
+    padding: 16px;
+    height: auto; /* Allow height to adjust to content */
+  }
+  .warning-cont_label {
+    font-size: map-get($font-sizes, "small"); /* Adjust font size for warning label */
+  }
+  .palagirasim-search {
+    width: 100%; /* Make search full width on mobile */
+  }
+
+  /* Adjust modal widths for very small screens if necessary, though max-width: 100% helps */
+  .react-responsive-modal-modal.custom-modal-sm,
+  .react-responsive-modal-modal.custom-modal-md,
+  .react-responsive-modal-modal.custom-modal-lg,
+  .react-responsive-modal-modal.custom-modal-xl {
+    width: 90% !important; /* Or ensure they are scrollable if content overflows */
+  }
 }

@@ -215,6 +215,50 @@ button:focus {
   color: map-get($font-color, "default");
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .header-nav {
+    padding: 16px;
+  }
+  .dept-name {
+    float: none;
+    width: 100%;
+  }
+  .manual-setting {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .dept-name p {
+    font-size: 12px;
+  }
+  .dept-name h6 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-nav {
+    padding: 12px;
+  }
+  .info-icons,
+  .question-icons {
+    display: none;
+  }
+  .user-info {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  .expand-box {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    margin-top: 10px;
+  }
+}
 .user-information {
   padding: 6px 16px;
   font-size: map-get($font-sizes, "small");

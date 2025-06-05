@@ -50,3 +50,58 @@
   color: map-get($font-color, "default" );
   font-weight: map-get($font-weight, "large-weight");
 }
+
+@media (max-width: 768px) {
+  .fixed-header {
+    /* Assuming the 79px part might be a collapsed main sidebar or a still visible mini-nav */
+    /* If the 220px sidebar is just shrinking, the 79px might still be relevant */
+    /* For now, let's assume the 79px part persists unless it's the main sidebar itself collapsed */
+  }
+  .fixed-list_content {
+    width: 180px; /* Reduced sidebar width */
+    top: 70px; /* Assuming header height might be slightly reduced for tablet */
+  }
+  .fixed-page_content {
+    margin-left: 180px; /* Adjust margin to new sidebar width */
+    padding-top: 70px; /* Match potential new header height */
+  }
+  .fixed-header {
+    height: 70px; /* Slightly reduced header height for tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .fixed-header {
+    width: 100%; /* Full width, assuming 79px element is hidden or part of main nav */
+    height: 60px; /* Reduced header height for mobile */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: add shadow if it was borderless */
+  }
+  .fixed-list_content {
+    display: none; /* Hide sidebar by default on mobile */
+    /* Or, for an overlay effect (would need JS to toggle a class):
+    left: -100%;
+    width: 80%;
+    top: 0;
+    height: 100vh;
+    border-right: none;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: left 0.3s ease-in-out;
+    */
+  }
+  /* Example class to show overlay sidebar:
+  .fixed-list_content.is-open {
+    left: 0;
+  }
+  */
+  .fixed-page_content {
+    margin-left: 0; /* No sidebar margin */
+    padding-top: 60px; /* Match new header height */
+  }
+
+  .course-alert {
+    padding: 12px 10px; /* Reduce padding for alert */
+  }
+  .course-alert_label {
+    font-size: 13px; /* Adjust font size if map-get($font-sizes, "small") is too large */
+  }
+}

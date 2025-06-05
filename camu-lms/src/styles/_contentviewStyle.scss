@@ -144,3 +144,111 @@
   color: map-get($font-color, "default");
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .page-content_box {
+    margin: 24px 20px; /* Reduced horizontal margin */
+  }
+  .content-view_header,
+  .page-view_header {
+    padding: 16px 20px; /* Reduced padding */
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  .contentview-footer {
+    padding: 10px 20px; /* Reduced padding */
+  }
+  .content-view_options {
+    padding: 16px 20px; /* Reduced padding */
+    flex-wrap: wrap;
+  }
+  .page-tabs_container {
+    padding: 20px; /* Reduced padding */
+  }
+  .page-option_tabs {
+    padding: 0 20px; /* Reduced padding */
+  }
+
+  .cont-header_text { /* Assuming this is 'large' font size */
+    font-size: 22px; /* Example reduction for large text */
+  }
+  .cont-subheader_text,
+  .subchapter__items { /* 18px fonts */
+    font-size: 17px; /* Slight reduction */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content_box {
+    margin: 16px 10px;
+    border-left: none; /* Optional: remove borders if full width desired */
+    border-right: none;
+    border-radius: 0; /* Optional: remove radius if full width */
+  }
+  .content-view_header,
+  .page-view_header {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* Add margin between stacked items in headers */
+  .content-view_header > *:not(:last-child),
+  .page-view_header > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .contentview-footer {
+    padding: 8px 15px;
+  }
+  .content-view_options {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content-view_options .view-options { /* If .view-options also needs stacking */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Take full width */
+  }
+  .content-view_options .view-options > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+   .option-list_dropdown {
+    padding-left: 0; /* Remove padding if items are stacked */
+    margin-top: 5px;
+  }
+
+
+  .page-tabs_container {
+    padding: 16px 15px;
+  }
+  .page-option_tabs {
+    padding: 0 15px;
+  }
+
+  .current-chapter,
+  .next-chapter {
+    padding: 0 8px; /* Reduced padding for chapter nav links */
+  }
+  .move-forward { /* If prev/next chapter links need to stack */
+    flex-direction: column;
+    align-items: center; /* Center them when stacked */
+  }
+  .move-forward .current-chapter,
+  .move-forward .next-chapter {
+    padding: 8px 0; /* Adjust padding for stacked items */
+  }
+
+
+  .cont-header_text { /* Assuming this is 'large' font size */
+    font-size: 20px; /* Further reduction for mobile */
+    margin-bottom: 12px;
+  }
+  .cont-subheader_text,
+  .subchapter__items { /* 18px fonts */
+    font-size: 16px; /* Further reduction for mobile */
+    margin-bottom: 8px;
+  }
+  .page-title_name { /* Assuming this uses 'large' font size */
+     font-size: 20px;
+  }
+}

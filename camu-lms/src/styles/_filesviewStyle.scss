@@ -212,6 +212,137 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .file-container_box {
+    margin: 24px 20px;
+  }
+  .files-view_header,
+  .content-view_header {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .files-view_header > *:first-child, /* Assuming title/text is first child */
+  .content-view_header > *:first-child {
+    margin-bottom: 10px; /* Add space if actions wrap below */
+  }
+  .file-tabs_container {
+    padding: 20px;
+  }
+  .file-option_tabs {
+    padding: 0 20px;
+  }
+  .filesview-footer {
+    padding: 10px 20px;
+  }
+  .files-view_options {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .files-view_options .view-options { /* Child of options bar */
+      flex-basis: 100%;
+      margin-top: 10px;
+      justify-content: flex-start;
+  }
+
+  .file-title_name,
+  .file-header_text { /* 'large' font */
+    font-size: 20px;
+  }
+  .subchapter__items { /* 18px font */
+    font-size: 16px;
+  }
+  .file-chap_name,
+  .content-header_label,
+  .file-url_label { /* 'small' font */
+    font-size: 13px;
+  }
+  .pdf-drawer {
+    width: 70vw; /* Adjust drawer width */
+    max-width: 500px;
+  }
+  .fileUpload_pdf-container { /* Container for PDF preview before opening drawer */
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .file-container_box {
+    margin: 16px 10px;
+  }
+  .files-view_header,
+  .content-view_header {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .files-view_header > *:not(:last-child),
+  .content-view_header > *:not(:last-child) {
+      margin-bottom: 8px;
+  }
+  .file-tabs_container {
+    padding: 16px 15px;
+  }
+  .file-option_tabs {
+    padding: 0 15px;
+  }
+  .filesview-footer {
+    padding: 8px 15px;
+  }
+  .files-view_options {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .files-view_options .view-options {
+      width: 100%;
+      margin-top: 10px;
+  }
+  .img-file_upload { /* Image preview and download icon */
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .img-download_icon {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%; /* Make download button full width */
+      text-align: center;
+  }
+  .move-forward, .move-backwordward { /* Chapter navigation */
+      flex-direction: column;
+      align-items: center; /* Center items if preferred */
+      width: 100%;
+  }
+  .move-forward > *, .move-backwordward > * {
+      margin-bottom: 5px;
+  }
+  .current-chapter, .next-chapter {
+      padding: 8px 0;
+  }
+
+  .file-title_name,
+  .file-header_text {
+    font-size: 18px;
+  }
+  .subchapter__items {
+    font-size: 15px;
+  }
+  .file-chap_name,
+  .content-header_label,
+  .file-url_label,
+  .subchapter__name,
+  .cont-text,
+  .file-uploader_name {
+    font-size: 12px;
+  }
+  .pdf-drawer {
+    width: 90vw;
+    max-width: none; /* Allow it to be wider on small landscape if needed */
+  }
+  .pdf-drawer-header, .drawer-title {
+      font-size: 16px; /* Adjust drawer header font */
+  }
+}
 .img-cancel_option{
   width: 100%;
   display: flex;
@@ -328,7 +459,7 @@
 }
 
 .pdf-thumbnail {
-  width: 800%;
+  width: 100%; /* Corrected from 800% */
   height: 100%;
   object-fit: contain;
   border-radius: 5px;

@@ -184,3 +184,86 @@
   color: #bf8012 !important;
   margin-left: 6px !important;
 }
+
+@media (max-width: 768px) {
+  .scorm-table {
+    padding: 0 16px !important;
+  }
+  .uploaded-filename {
+    padding: 10px 12px;
+  }
+  .file-upload_box {
+    padding: 16px;
+  }
+  .scorm-itemlist {
+    padding: 12px;
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  /* Style for options on the right if they wrap */
+  .scorm-itemlist > div:last-child:not(:first-child) {
+    flex-basis: 100%;
+    margin-top: 8px;
+    justify-content: flex-start; /* Or your desired alignment */
+  }
+  .list-form_container {
+    padding: 1rem;
+  }
+  .scorm-label_empty { /* 'large' font */
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .tooltip--scorm-file:after {
+    width: 220px;
+    /* Adjust left/transform if it causes overflow */
+    left: 20px !important; /* Example adjustment */
+    transform: translateX(0) translateY(0) !important;
+  }
+  .tooltip--scorm-file:hover:after {
+    transform: translateX(0) translateY(0) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .scorm-table {
+    padding: 0 10px !important;
+  }
+  .uploaded-filename {
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .uploaded-filename > *:not(:last-child) {
+      margin-bottom: 8px;
+  }
+  .file-upload_box {
+    padding: 12px;
+  }
+  .scorm-itemlist {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+   .scorm-itemlist > div:last-child:not(:first-child) {
+    margin-top: 10px;
+    width: 100%;
+    /* Add styles for buttons/dropdowns within this options container if needed */
+  }
+  .list-form_container {
+    padding: 0.75rem;
+  }
+  .scorm-label_empty {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .scorm-subheading,
+  .scorm-sub_head,
+  .scorm-detail_head,
+  .scorm-detail_head_ {
+    font-size: 12px; /* Adjust small text elements */
+  }
+  .tooltip--scorm-file:after {
+    width: 150px; /* Or max-width: 90vw */
+    font-size: 11px;
+    left: 10px !important; /* Adjust for smaller screens */
+  }
+}

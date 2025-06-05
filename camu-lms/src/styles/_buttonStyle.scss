@@ -120,3 +120,47 @@ button {
   color: #0D9BE1;
   margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+  button {
+    font-size: 14px !important; /* Maintain font size for tablet or slightly reduce if needed */
+    padding: 5px 14px !important; /* Slightly reduce padding */
+    height: 38px !important; /* Slightly reduce height */
+  }
+  .icon-btn {
+    padding: 8px !important; /* Adjust padding for icon buttons */
+  }
+  .btn-left {
+    margin-left: 10px;
+  }
+  .btn-right {
+    margin-right: 10px;
+  }
+  .btn-space {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    font-size: 13px !important; /* Reduce font size for mobile */
+    padding: 4px 12px !important; /* Reduce padding */
+    height: 36px !important; /* Reduce height */
+  }
+  /* If buttons are stacked using .btn-block or flex-direction column, specific margins might not be needed */
+  /* Or they might need to be adjusted for vertical spacing, e.g., margin-bottom */
+  .btn-left,
+  .btn-right {
+    margin-left: 0; /* Remove side margins if they stack or are full width */
+    margin-right: 0;
+    /* Add margin-bottom if they are stacked and need space */
+    /* margin-bottom: 8px; */
+  }
+  .btn-space { /* This class might be problematic if buttons stack. Consider vertical margin instead. */
+    margin: 0;
+    /* margin-bottom: 8px; */
+  }
+  .icon-btn {
+    padding: 6px !important;
+  }
+}

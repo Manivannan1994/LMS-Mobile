@@ -136,3 +136,74 @@ margin: 5px;
     font-size: 1.5rem;
     color: #091e42;
 }
+
+@media (max-width: 768px) {
+  .message-nav {
+    padding: 16px 20px;
+  }
+  .message-content_tab {
+    padding: 0 20px;
+  }
+  .message-tabs_cont {
+    padding: 20px;
+  }
+  .message-list-width {
+    width: 45%; /* Adjust if part of a two-pane layout */
+  }
+  .message-head-name h6 { /* 'large' font size */
+    font-size: 22px; /* Example reduction */
+  }
+  .no-message-text {
+    font-size: 18px;
+  }
+  .nogroup-records {
+    padding-top: 100px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .message-nav {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .message-nav > *:not(:last-child) { /* Assuming direct children need spacing when stacked */
+    margin-bottom: 10px;
+  }
+  .message-content_tab {
+    padding: 0 15px;
+  }
+  .message-tabs_cont {
+    padding: 15px;
+  }
+  .message-list-width {
+    width: 100%; /* Message list takes full width */
+  }
+  .message-lists {
+    padding: 12px;
+  }
+  .chat-profile-image,
+  .chat-profile-icon {
+    height: 32px;
+    width: 32px;
+    font-size: 14px; /* Adjust font size if it's text based icon */
+    padding: 6px; /* Adjust padding for icon */
+  }
+  .message-head-name h6 { /* 'large' font size */
+    font-size: 18px;
+  }
+  .message_heading { /* 'normal' font size */
+    font-size: 15px;
+  }
+  .message_content { /* 'xs-small' font size */
+    font-size: 13px;
+  }
+  .no-message-text {
+    font-size: 16px;
+  }
+  .nogroup-records {
+    padding-top: 50px;
+    font-size: 1rem;
+  }
+}

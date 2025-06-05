@@ -132,3 +132,64 @@ select {
   color: map-get($font-color, "default");
   font-size: map-get($font-sizes, "small");
 }
+
+@media (max-width: 768px) {
+  .dropdown-default,
+  .dropdown-default_modal,
+  .dropdown-border,
+  .dropdown-select,
+  .dropdown-transparent {
+    font-size: 13px; /* Maintain font size or adjust if global form font size changes */
+    /* height: 38px; /* Optional: slightly reduce height */
+    /* line-height: 23px; */
+  }
+
+  .dropdown-border {
+    width: 100%; /* Make fixed-width dropdowns responsive */
+    padding: 0 30px 0 10px; /* Adjust padding */
+  }
+  .dropdown-default { /* If auto width becomes too small in some contexts */
+    min-width: 150px; /* Example: ensure a minimum width */
+  }
+  .dropdown-default_modal {
+      width: 100%; /* Ensure it's truly full-width if parent has no padding */
+  }
+  .dropdown-select {
+    margin-right: 10px; /* Reduce margin if needed */
+  }
+  .drop-down_arrow {
+    background-position: right 10px top 50%; /* Adjust arrow position */
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown-default,
+  .dropdown-default_modal,
+  .dropdown-border,
+  .dropdown-select,
+  .dropdown-transparent {
+    height: 38px;
+    line-height: 23px; /* Adjust line height for new height */
+    font-size: 12px; /* Smaller font for mobile */
+    width: 100%; /* Ensure all main dropdowns are full width */
+    padding-left: 10px; /* Standardize left padding */
+    padding-right: 30px; /* Standardize right padding for arrow */
+  }
+
+  .dropdown-select {
+    margin-right: 0; /* Remove margin if it's full width */
+  }
+
+  .dropdown-round { /* Small round dropdown */
+    width: 24px;
+    height: 24px;
+    line-height: 23px;
+  }
+  .drop-down_round { /* Arrow for round dropdown */
+      background-position: right 4px top 50%;
+      margin-left: 8px;
+  }
+  .group-options { /* Text within optgroup or similar */
+      font-size: 12px; /* Adjust if map-get 'small' is too large */
+  }
+}

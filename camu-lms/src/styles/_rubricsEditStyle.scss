@@ -308,3 +308,141 @@ min-width: 240px;
 .rubric-exit_label span{
   margin-right: 8px;
 }
+
+@media (max-width: 768px) {
+  .rubrics-module_header {
+    padding: 24px 20px;
+  }
+  .rubrics-input_title {
+    flex-wrap: wrap; /* Allow button to wrap */
+  }
+  .rubrics-publish_btn {
+    float: none; /* Clear float if it wraps */
+    width: 100%;   /* Make it full width when wrapped */
+    margin-top: 10px;
+    justify-content: flex-end; /* Keep button content to right */
+  }
+  .rubrics-input_details {
+    width: 100%; /* Take full width */
+    margin-left: 0;
+    margin-top: 10px; /* Add space if title elements are above */
+    top: 0; /* Reset relative positioning */
+  }
+  .rubrics-edit_content {
+    padding: 16px;
+  }
+  .rubrics-full-table td {
+    padding: 8px 10px;
+  }
+  .point-view_value,
+  .value-point_total,
+  .total-point_create,
+  .range-option_label,
+  .rubrics-alert_label { /* 'small' font sizes */
+    font-size: 13px; /* Adjust if map-get is too large */
+  }
+  .total-point-edit_view { /* 'medium' font size */
+    font-size: 16px;
+  }
+  .criterion-dropdown {
+    min-width: 200px;
+    padding: 12px; /* Adjust padding */
+  }
+  .add-point_table { /* Adjust position if cell padding changes significantly */
+    right: -8px;
+    top: calc(50% - 10px); /* Center vertically */
+  }
+}
+
+@media (max-width: 480px) {
+  .rubrics-module_header {
+    padding: 16px 15px;
+  }
+  .rubrics-input_title {
+    flex-direction: column; /* Stack title input and button container */
+    align-items: flex-start;
+  }
+  .rubrics-publish_btn {
+    width: 100%;
+    margin-top: 15px;
+    justify-content: flex-start; /* Align button to start */
+  }
+  .rubrics-publish_btn button { /* Assuming a button element */
+      width: 100%; /* Make button full width */
+  }
+  .views-option { /* Options icon next to title */
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .rubrics-edit_content {
+    padding: 10px;
+  }
+  .rubrics-full-table td {
+    padding: 6px 8px;
+  }
+  .thead-light_box { /* Header for criteria descriptions etc. */
+      padding: 8px 10px;
+  }
+  .rubrics-thead { /* Font size for th elements */
+      font-size: 11px;
+  }
+  .criteria-head_label,
+  .criteria-cont_label,
+  .point-view_head,
+  .point-view_cont { /* xs-small or small-xs */
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  .point-view_value,
+  .value-point_total,
+  .total-point_create,
+  .range-option_label,
+  .rubrics-alert_label { /* 'small' font sizes */
+    font-size: 12px;
+  }
+  .total-point-edit_view { /* 'medium' font size */
+    font-size: 14px;
+  }
+
+  .table-footer_point { /* Footer for total points */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .table-footer_point > *:not(:last-child) {
+      margin-bottom: 8px;
+  }
+
+  .rubrics-alert_cont,
+  .rubrics-warn_cont {
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rubrics-alert_label {
+    padding-left: 0;
+    margin-top: 5px;
+  }
+  .add-point_table {
+    width: 18px;
+    height: 18px;
+    right: -9px;
+    top: calc(50% - 9px);
+  }
+  .add-point_table svg { /* Adjust SVG if needed */
+    transform: scale(0.8);
+    top: -5px;
+    left: 0px;
+  }
+  .criterion-dropdown {
+    min-width: 150px; /* Or width: 90vw for very small screens */
+    padding: 10px;
+  }
+  .duplicate-labels P {
+    font-size: 13px; /* Adjust font size */
+    padding: 8px 0 0 4px;
+  }
+  .rubrics-fullviewmodal_close { /* Close button for a modal presumably */
+    top: -28px;
+    right: -10px;
+  }
+}

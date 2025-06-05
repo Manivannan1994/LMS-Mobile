@@ -227,3 +227,132 @@
   padding: 0 40px;
   background-color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .list-cont {
+    padding: 16px 20px;
+    height: auto; /* Or a calculated min-height if needed */
+    min-height: calc(100vh - 120px); /* Example: considering header/footer heights */
+  }
+  #sidebar-message {
+    min-width: 400px;
+    max-width: 400px;
+    margin-right: -400px;
+    height: auto;
+    min-height: calc(100vh - 120px);
+  }
+  .sidebar-header {
+    padding: 16px 20px;
+  }
+  .sidebar-buttons {
+    padding: 16px 8px;
+    margin: 0 12px;
+  }
+  .sidebar-description {
+    margin: 16px;
+  }
+  .description_heading { /* 'large' font */
+    font-size: 20px;
+  }
+  .sidebar-form_list {
+    padding: 16px 24px;
+  }
+  .student-rating_box {
+    padding: 16px;
+  }
+  .message-blue,
+  .message-orange {
+    width: 70%; /* Wider messages */
+    padding: 8px;
+  }
+  .message-orange {
+    margin-left: calc(100% - (70% + 16px)); /* Adjust based on new width & parent padding */
+  }
+  .sender-box {
+    padding: 10px 16px;
+  }
+  .discussion_tab {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-cont {
+    padding: 12px 15px;
+  }
+  #sidebar-message {
+    min-width: 0;
+    width: 90vw; /* Take most of screen */
+    max-width: 90vw;
+    margin-right: -90vw; /* Adjust for new width */
+  }
+  #sidebar-message.active {
+    margin-right: 0px;
+  }
+  .sidebar-header {
+    padding: 12px 15px;
+    flex-direction: column; /* Stack items if needed */
+    align-items: flex-start;
+  }
+  .sidebar-header > *:not(:last-child) {
+      margin-bottom: 8px;
+  }
+  .sidebar-buttons {
+    padding: 12px 8px;
+    margin: 0 10px;
+  }
+  .description_heading {
+    font-size: 18px;
+  }
+  .description_content,
+  .description_data,
+  .description_more,
+  .form-list_value { /* 'small' font */
+    font-size: 13px;
+  }
+  .form-list_points { /* 'xs-small' font */
+      font-size: 12px;
+  }
+  .sidebar-form_list {
+    padding: 12px 16px;
+  }
+  .student-rating_box {
+    padding: 12px;
+  }
+  .point-table { /* 'large' font for points */
+      font-size: 18px;
+  }
+  .message-blue,
+  .message-orange {
+    width: 85%; /* Even wider messages */
+    padding: 6px 8px;
+    margin-bottom: 16px;
+  }
+  .message-orange {
+    margin-left: calc(100% - (85% + 10px)); /* Adjust for parent padding */
+  }
+  .message-content,
+  .message-content-right,
+  .message-timestamp-right,
+  .message-timestamp-left {
+    font-size: 11px; /* Slightly smaller message text if needed */
+  }
+  .user-message,
+  .user-message-right {
+    width: 32px;
+    height: 32px;
+  }
+  .sender-box {
+    padding: 8px 10px;
+  }
+  .msg-content { /* Input field text */
+      font-size: 12px;
+      margin-left: 8px;
+  }
+  .attached-ion {
+      margin-right: 10px;
+  }
+  .discussion_tab {
+    padding: 0 15px;
+  }
+}

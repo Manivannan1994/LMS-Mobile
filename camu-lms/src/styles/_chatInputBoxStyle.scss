@@ -11,3 +11,21 @@
         width: 94%;
         height: 45px;
     }
+
+@media (max-width: 768px) {
+    .chatinputbox {
+        width: 100%; /* Assume parent container has padding */
+        height: 42px;
+        padding-left: 10px; /* Maintain padding or adjust slightly */
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatinputbox {
+        height: 40px;
+        padding-left: 8px;
+        padding-right: 8px;
+        /* Font size should be inherited or handled by global input styles */
+    }
+}

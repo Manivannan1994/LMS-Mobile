@@ -130,3 +130,70 @@
   margin-top: 12px;
   padding: 0 48px;
 }
+
+@media (max-width: 768px) {
+  .conversation-content {
+    padding: 16px;
+  }
+  .conversation-content_replay {
+    margin-left: 30px;
+    padding: 12px 16px;
+  }
+  .reply-btn_option {
+    padding: 0 24px; /* Reduced padding */
+  }
+  .option-views { /* Ensure it doesn't cause overflow with text */
+    margin-left: 8px; /* Add some space if text wraps near it */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-post_img {
+    width: 32px;
+    height: 32px;
+  }
+  .conversation-content {
+    padding: 12px 10px;
+  }
+  .staff-content_name {
+    font-size: 15px; /* Adjust if 'normal' is too large */
+  }
+  .staff-content_name span { /* Badge next to name */
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+  .staff-content_label { /* Main message text */
+    font-size: 14px; /* Adjust if 'small' is too small for body */
+    line-height: 20px;
+  }
+  .option-views {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    top: 10px; /* Adjust if absolutely positioned relative to parent */
+    right: 10px;
+  }
+  .conversation-content_replay {
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .replay-content_label {
+    flex-direction: column; /* Stack "Reply" and time */
+    align-items: flex-start;
+  }
+  .replay_time {
+    margin-left: 0; /* Remove margin when stacked */
+    margin-top: 4px; /* Add space above time when stacked */
+  }
+  .reply-btn_option {
+    padding: 0; /* Remove padding, buttons can be styled for full width */
+  }
+  /* Example for buttons within .reply-btn_option if they need to stack */
+  .reply-btn_option .btn { /* Assuming buttons have a common class like .btn */
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .reply-btn_option .btn:last-child {
+    margin-bottom: 0;
+  }
+}

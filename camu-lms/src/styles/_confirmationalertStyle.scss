@@ -126,3 +126,96 @@
   width: 140px;
   padding: 0 12px 0px 12px;
 }
+
+@media (max-width: 768px) {
+  .model-content_header {
+    padding: 16px 20px;
+  }
+  .model-header_content { /* 16px font */
+    font-size: 15px;
+  }
+  .model-content_content {
+    width: auto; /* Remove fixed width */
+    padding: 16px;
+  }
+  .model-content_footer {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center buttons if they wrap */
+  }
+  .model-content_footer .btn { /* Assuming buttons have a .btn class */
+      margin: 5px; /* Add some margin if they wrap */
+  }
+  .table-tab_container {
+    width: 85vw;
+  }
+  .full-view_box {
+    width: 90vw;
+  }
+  .student-table_tab {
+    padding: 0 20px; /* Reduced padding */
+  }
+  .input-modal {
+    width: 100%; /* Make specific input full width if it's block */
+  }
+  .confirmation-text, /* 14px font */
+  .range-to_label,
+  .min-to_label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .react-responsive-modal-modal { /* Ensure modal itself has some margin on very small screens */
+      margin: 10px;
+      max-width: calc(100% - 20px) !important;
+  }
+  .model-content_header {
+    padding: 12px 16px;
+  }
+  .model-header_content {
+    font-size: 14px;
+  }
+  .model-content_content {
+    padding: 12px;
+  }
+  .model-content_footer {
+    padding: 12px 16px;
+    flex-direction: column;
+  }
+  .model-content_footer .btn {
+    width: 100%;
+    margin: 0 0 8px 0; /* Stacked buttons margin */
+  }
+  .model-content_footer .btn:last-child {
+    margin-bottom: 0;
+  }
+  .react-responsive-modal-closeButton {
+      top: 4px !important;
+      right: 0px !important;
+      width: 40px !important; /* Make close button smaller */
+      height: 40px !important;
+  }
+  .table-tab_container,
+  .full-view_box {
+    width: 90vw; /* Maintain or slightly adjust for very small screens */
+  }
+  .student-table_tab {
+    padding: 0 10px;
+  }
+  .tabs-notification { /* Badge in tab */
+      font-size: 11px;
+      padding: 2px 6px;
+  }
+  .confirmation-text,
+  .range-to_label,
+  .min-to_label {
+    font-size: 12px;
+  }
+  .modal-full_view_label { /* 16px modal title */
+      font-size: 15px;
+  }
+  .req-filed_label { /* xs-small */
+      font-size: 11px;
+  }
+}

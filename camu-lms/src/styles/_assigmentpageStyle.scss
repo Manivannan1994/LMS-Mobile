@@ -32,3 +32,61 @@
   color: map-get($font-color, "lite");
   padding-left: 12px;
 }
+
+@media (max-width: 768px) {
+  .assignment-page_header {
+    /* Allow items to wrap if they are flex items in a row */
+    flex-wrap: wrap;
+    /* Adjust padding if needed, though 16px might still be fine */
+    padding: 14px;
+  }
+  .student-info {
+    margin: 5px; /* Reduce margin for tablet, allow stacking with less space */
+  }
+  .task-name {
+    /* If task-name and student-badge are side-by-side and need to stack under 768px */
+    /* This assumes .task-name might be one of those items */
+    /* Add margin-bottom if it stacks above another element */
+     margin-bottom: 5px; /* Example if it stacks */
+  }
+}
+
+@media (max-width: 480px) {
+  .assignment-page_header {
+    padding: 12px;
+    /* If direct children of header need stacking */
+    /* display: flex; already on .task-name, .student-badge. Assuming header itself is the flex container */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+
+  /* If .task-name and .student-badge are main blocks within the header */
+  /* and the header itself is NOT the flex container for their stacking: */
+  .task-name, .student-badge {
+    width: 100%; /* Make them full width to stack */
+    margin-bottom: 8px; /* Add space when stacked */
+  }
+  .task-name:last-child, .student-badge:last-child {
+    margin-bottom: 0; /* Remove margin for the last stacked item */
+  }
+
+  .student-info {
+    margin: 5px 0; /* Vertical margin when stacked or alone on a line */
+    padding: 8px 10px; /* Slightly adjust padding if needed */
+  }
+  .stud-name {
+    padding-left: 8px; /* Slightly reduce padding */
+  }
+
+  /* If .task-name itself contains multiple items that need to stack: */
+  .task-name {
+     flex-direction: column; /* Stack items within .task-name if applicable */
+     align-items: flex-start;
+  }
+  .task-name > * { /* Children of .task-name if it becomes a column */
+    margin-bottom: 5px;
+  }
+  .task-name > *:last-child {
+    margin-bottom: 0;
+  }
+}

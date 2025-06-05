@@ -155,3 +155,115 @@
 .plagiarism-search{
   width: 40%;
 }
+
+@media (max-width: 768px) {
+  .plagiarism-cont {
+    padding: 16px;
+  }
+  .plagiarism-form_container {
+    padding: 1rem;
+  }
+  .cont-nav {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+  .cont-nav > *:first-child { /* Assuming title/text is first child */
+    margin-bottom: 10px; /* Add space if actions wrap below */
+  }
+  .page-header h6 {
+    font-size: 1.25rem;
+  }
+  .plagiarism-card_container {
+    grid-gap: 10px; /* Slightly reduce gap */
+  }
+  .plagiarism-top-content {
+    height: auto; /* Allow height to adjust */
+    min-height: 140px; /* Optional: maintain a minimum height */
+    padding: 8px 12px 12px 8px;
+  }
+  .plagiarism-top-content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  .plagiarism-bottom-content {
+    height: auto;
+    min-height: 120px; /* Optional */
+    padding: 8px 10px 16px 10px;
+  }
+  .plagiarism-search {
+    width: 70%;
+  }
+  .status-info,
+  .status-warning {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem; /* Adjust badge font size */
+  }
+  .tool-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plagiarism-cont {
+    padding: 10px;
+  }
+  .plagiarism-form_container {
+    padding: 0.75rem;
+  }
+  .config-btns {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .config-btns .btn { /* Assuming buttons have .btn or similar class */
+    width: 100%;
+  }
+  .cont-nav {
+    padding: 12px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+   .cont-nav > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .page-header h6 {
+    font-size: 1.1rem;
+  }
+  .page-header p {
+      font-size: 0.8rem;
+  }
+  .plagiarism-card_container {
+    /* Grid will become 1 column due to minmax(298px, 1fr) */
+  }
+  .plagiarism-top-content {
+    min-height: auto; /* Remove min-height or set very low */
+    padding: 8px;
+  }
+  .plagiarism-top-content p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .plagiarism-bottom-content {
+    min-height: auto;
+    padding: 8px;
+  }
+  .option-stack { /* Buttons inside cards */
+      gap: 8px; /* Reduce gap */
+  }
+  .option-stack svg { /* Reduce size of icons in buttons if they are SVG */
+      width: 16px; height: 16px;
+  }
+  .plagiarism-search {
+    width: 100%;
+  }
+  .tool-desc {
+    font-size: 0.875rem;
+  }
+  .status-info,
+  .status-warning {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .info-label, .info-content, .delete-config {
+      font-size: 0.8rem;
+  }
+}

@@ -59,3 +59,33 @@
 .alert-default-bg {
   background: map-get($modelbox-color, "primary");
 }
+
+@media (max-width: 768px) {
+  .alert-default {
+    padding: 12px !important; /* Slightly reduce padding */
+  }
+  /* .alert-network and .download-alert paddings are likely fine for tablet */
+}
+
+@media (max-width: 480px) {
+  .alert-default {
+    padding: 10px !important;
+    font-size: 13px;
+  }
+  .alert-network {
+    padding: 8px !important;
+    font-size: 13px;
+  }
+  .download-alert {
+    padding: 10px !important;
+  }
+  .alert-content {
+    /* If icons are used, ensure they scale or have appropriate margin */
+    font-size: 13px; /* Match alert text font size */
+  }
+  .alert-content svg { /* Example if SVG icons are used */
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+  }
+}

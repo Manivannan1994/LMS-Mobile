@@ -69,3 +69,82 @@
 .sch_time {
   padding-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .schedule-calender_box {
+    padding: 16px;
+  }
+  .rbc-month-view {
+    margin-top: 16px;
+  }
+  .rbc-header {
+    padding: 12px !important;
+    font-size: 13px; /* Adjust day header font size if needed */
+  }
+  .rbc-event,
+  .rbc-day-slot .rbc-background-event {
+    font-size: 12px !important;
+    padding: 6px 8px !important;
+  }
+  .rbc-time-view .rbc-header {
+    height: 60px;
+    line-height: 30px; /* Adjust line height */
+  }
+  .rbc-timeslot-group {
+    min-height: 80px !important;
+    padding: 15px 5px;
+    font-size: 12px;
+  }
+  .sch-slot, .sch_time { /* Agenda view text */
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule-calender_box {
+    padding: 10px;
+  }
+  .rbc-month-view {
+    margin-top: 10px;
+    border-radius: 4px; /* Slightly reduce radius */
+  }
+  .rbc-header { /* Headers for days of week, or date in time view */
+    padding: 8px 4px !important; /* Reduce padding significantly */
+    font-size: 12px; /* Smaller font for day names like Mon, Tue */
+  }
+  .rbc-date-cell { /* Individual date cell in month view */
+    padding: 2px; /* Reduce padding within the cell if possible */
+  }
+  .rbc-row-segment .rbc-event { /* Ensure events in month view don't cause too much height */
+     margin-bottom: 1px; /* Reduce space between events if they stack */
+  }
+  .rbc-event,
+  .rbc-day-slot .rbc-background-event {
+    font-size: 11px !important;
+    padding: 3px 4px !important; /* Minimal padding for events */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate event text */
+  }
+  .rbc-time-view .rbc-header {
+    height: 50px;
+    line-height: 25px; /* Adjust line height */
+  }
+  .rbc-timeslot-group {
+    min-height: 60px !important;
+    padding: 10px 3px;
+    font-size: 11px;
+  }
+  .rbc-time-column .rbc-timeslot-group { /* Ensure time labels on left are visible */
+    padding-left: 5px;
+  }
+   .rbc-day-slot .rbc-event { /* Events in day/week view */
+    margin-bottom: 1px;
+  }
+  .sch-slot, .sch_time { /* Agenda view text */
+    font-size: 11px;
+  }
+  .sch_time {
+    padding-bottom: 6px;
+  }
+}
